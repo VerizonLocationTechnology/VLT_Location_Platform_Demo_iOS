@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qx8-08-i08">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Modes-->
+        <scene sceneID="XhG-Bj-VZd">
+            <objects>
+                <viewController id="Qx8-08-i08" customClass="ModesViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qXH-VC-BPn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3E3-eH-vbN">
+                                <rect key="frame" x="12" y="92" width="390" height="29"/>
+                                <color key="backgroundColor" name="Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Dbs-ZN-i91"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Day"/>
+                                    <segment title="Dark"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="Primary"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="Qx8-08-i08" eventType="valueChanged" id="tcQ-Uk-KxY"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5B-ZZ-O6P" customClass="VLTMapView" customModule="VLTMaps">
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Wkh-XQ-thW" firstAttribute="bottom" secondItem="b5B-ZZ-O6P" secondAttribute="bottom" id="1eL-9e-nSg"/>
+                            <constraint firstItem="Wkh-XQ-thW" firstAttribute="trailing" secondItem="b5B-ZZ-O6P" secondAttribute="trailing" id="2i7-Qd-eca"/>
+                            <constraint firstItem="b5B-ZZ-O6P" firstAttribute="top" secondItem="3E3-eH-vbN" secondAttribute="bottom" constant="4" id="J7l-FP-dcf"/>
+                            <constraint firstItem="b5B-ZZ-O6P" firstAttribute="leading" secondItem="Wkh-XQ-thW" secondAttribute="leading" id="T2p-Sd-Ez9"/>
+                            <constraint firstItem="3E3-eH-vbN" firstAttribute="top" secondItem="Wkh-XQ-thW" secondAttribute="top" constant="4" id="fCW-x7-RcK"/>
+                            <constraint firstItem="Wkh-XQ-thW" firstAttribute="trailing" secondItem="3E3-eH-vbN" secondAttribute="trailing" constant="12" id="nO8-dI-qzR"/>
+                            <constraint firstItem="3E3-eH-vbN" firstAttribute="leading" secondItem="Wkh-XQ-thW" secondAttribute="leading" constant="12" id="ycT-zL-wrh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wkh-XQ-thW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Modes" id="ZjE-uO-GGe"/>
+                    <connections>
+                        <outlet property="mapView" destination="b5B-ZZ-O6P" id="7BY-q6-Y0O"/>
+                        <outlet property="segmentedControl" destination="3E3-eH-vbN" id="C3a-on-XQA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X7s-dZ-z4z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1413" y="879"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y31-IW-We6">
+            <objects>
+                <navigationController storyboardIdentifier="ModesNavigationController" id="gCG-dg-fiZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xHY-Dd-fgV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qx8-08-i08" kind="relationship" relationship="rootViewController" id="61c-ag-fJn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xyZ-v3-F18" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="555" y="879"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Background">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

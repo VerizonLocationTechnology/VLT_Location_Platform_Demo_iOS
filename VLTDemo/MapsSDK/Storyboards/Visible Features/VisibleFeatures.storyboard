@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ho3-zV-u52">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="2nW-Oy-a4u">
+            <objects>
+                <navigationController storyboardIdentifier="VisibleFeaturesNavigationController" id="Hqv-D3-T6G" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3w2-Vm-N1Y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ho3-zV-u52" kind="relationship" relationship="rootViewController" id="cTf-6l-rHm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GiZ-Sv-TYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1017" y="141"/>
+        </scene>
+        <!--Visible Features-->
+        <scene sceneID="7FQ-3O-JsM">
+            <objects>
+                <viewController id="ho3-zV-u52" customClass="VisibleFeaturesViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z55-1j-O6s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NSI-zv-Jbb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="separatorColor" name="MediumAccentGray"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="LOo-pN-bB3">
+                                    <rect key="frame" x="0.0" y="100" width="414" height="0.6666666666666714"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" name="MediumAccentGray"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShapeMarkerOptionsCellReuseIdentifier" id="zHj-4S-pzI">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zHj-4S-pzI" id="ICP-7A-gMc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ho3-zV-u52" id="6Rj-az-zW7"/>
+                                    <outlet property="delegate" destination="ho3-zV-u52" id="jvB-5j-zO7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NSI-zv-Jbb" secondAttribute="bottom" id="QHK-ep-fUU"/>
+                            <constraint firstItem="NSI-zv-Jbb" firstAttribute="top" secondItem="mz1-cD-nff" secondAttribute="top" id="euc-kn-LeT"/>
+                            <constraint firstItem="NSI-zv-Jbb" firstAttribute="leading" secondItem="mz1-cD-nff" secondAttribute="leading" id="le6-7d-W2Q"/>
+                            <constraint firstItem="mz1-cD-nff" firstAttribute="trailing" secondItem="NSI-zv-Jbb" secondAttribute="trailing" id="zco-2m-J6f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mz1-cD-nff"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Visible Features" id="rjk-7Z-61V">
+                        <barButtonItem key="backBarButtonItem" title="Map" id="NSK-zN-ka4"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="NSI-zv-Jbb" id="nGT-Ka-1jF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SpN-rt-Gv5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133" y="141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="MediumAccentGray">
+            <color red="0.84705882352941175" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

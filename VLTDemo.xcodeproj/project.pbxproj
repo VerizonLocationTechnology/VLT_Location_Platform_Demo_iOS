@@ -8,46 +8,65 @@
 
 /* Begin PBXBuildFile section */
 		5834F686249EB1DC897E39B2 /* Pods_VLTDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213B7357FDE149C2FB6EAA0F /* Pods_VLTDemo.framework */; };
-		6A186EBF247879C9006BF48A /* VLTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A186EBE247879C9006BF48A /* VLTView.swift */; };
-		6A40C58A2494146D00F3F1CA /* VLTDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A40C5892494146D00F3F1CA /* VLTDemoTests.swift */; };
-		6A40C58C249414AE00F3F1CA /* VLTDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A40C58B249414AE00F3F1CA /* VLTDemoUITests.swift */; };
 		6A540DFB2491926A002FF921 /* VLTLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A540DFA2491926A002FF921 /* VLTLabel.swift */; };
 		6A540DFD249275CB002FF921 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A540DFC249275CB002FF921 /* UIViewController+Extensions.swift */; };
 		6A630DA52497DBAA0043D272 /* VLTLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A630DA42497DBAA0043D272 /* VLTLiterals.swift */; };
-		6A848167247EDC1F00D0E514 /* VLTMapMode+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A848166247EDC1F00D0E514 /* VLTMapMode+extensions.swift */; };
-		6A84816C247F0D1F00D0E514 /* MapFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A84816B247F0D1F00D0E514 /* MapFeature.swift */; };
-		6A84817224800B7300D0E514 /* CameraMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A84817124800B7300D0E514 /* CameraMetrics.swift */; };
 		6A869C2F248EC6D4005A77E3 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A869C2E248EC6D4005A77E3 /* Double+Extensions.swift */; };
 		6A869C3124913F15005A77E3 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A869C3024913F15005A77E3 /* UIColor+Extensions.swift */; };
-		6A98AD762497E9C400FA2DBF /* DemoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A98AD752497E9C400FA2DBF /* DemoFeature.swift */; };
-		6A98AD7824993B0C00FA2DBF /* ShapesViewController+MarkerExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A98AD7724993B0C00FA2DBF /* ShapesViewController+MarkerExamples.swift */; };
-		6A98AD7A24993B2100FA2DBF /* ShapesViewController+CircleExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A98AD7924993B2100FA2DBF /* ShapesViewController+CircleExamples.swift */; };
-		6A98AD7C24993B3A00FA2DBF /* ShapesViewController+PolylineExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A98AD7B24993B3A00FA2DBF /* ShapesViewController+PolylineExamples.swift */; };
-		6A98AD7E24993B5D00FA2DBF /* ShapesViewController+PolygonExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A98AD7D24993B5D00FA2DBF /* ShapesViewController+PolygonExamples.swift */; };
-		6A98AD8024993B7C00FA2DBF /* ShapesViewController+UserInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A98AD7F24993B7C00FA2DBF /* ShapesViewController+UserInteraction.swift */; };
-		6A98AD8224993F1C00FA2DBF /* ShapesViewController+TrafficExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A98AD8124993F1C00FA2DBF /* ShapesViewController+TrafficExamples.swift */; };
-		6ACD74792476CC0C006F7B0E /* VLTHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD74772476CC0C006F7B0E /* VLTHomeTableViewCell.swift */; };
-		6ACD747A2476CC0C006F7B0E /* VLTHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD74782476CC0C006F7B0E /* VLTHomeTableViewCell.xib */; };
+		6AD5D87F24EDCABF004AFCDD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D87E24EDCABE004AFCDD /* String+Extension.swift */; };
+		6AD5D88124EDCACC004AFCDD /* ImageDownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D88024EDCACC004AFCDD /* ImageDownloadHelper.swift */; };
+		6AD5D8A824EDCCDF004AFCDD /* GeoJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A224EDCCDF004AFCDD /* GeoJSONViewController.swift */; };
+		6AD5D8A924EDCCDF004AFCDD /* GeoJSONViewController+Polylines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A324EDCCDF004AFCDD /* GeoJSONViewController+Polylines.swift */; };
+		6AD5D8AA24EDCCDF004AFCDD /* GeoJSONViewController+Polygons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A424EDCCDF004AFCDD /* GeoJSONViewController+Polygons.swift */; };
+		6AD5D8AB24EDCCDF004AFCDD /* GeoJSONViewController+MixedFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A524EDCCDF004AFCDD /* GeoJSONViewController+MixedFeatures.swift */; };
+		6AD5D8AC24EDCCDF004AFCDD /* GeoJSON.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A624EDCCDF004AFCDD /* GeoJSON.storyboard */; };
+		6AD5D8AD24EDCCDF004AFCDD /* GeoJSONViewController+MultiPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A724EDCCDF004AFCDD /* GeoJSONViewController+MultiPoints.swift */; };
+		6AD5D8B124EDCD13004AFCDD /* VisibleFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8AF24EDCD13004AFCDD /* VisibleFeaturesViewController.swift */; };
+		6AD5D8B224EDCD13004AFCDD /* VisibleFeatures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8B024EDCD13004AFCDD /* VisibleFeatures.storyboard */; };
+		6AD5D8B424EDCDAC004AFCDD /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8B324EDCDAC004AFCDD /* Data+Extensions.swift */; };
+		6AD5D8B924EDD132004AFCDD /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8B724EDD132004AFCDD /* Contents.json */; };
+		6AD5D8C924EDE0EB004AFCDD /* MixedFeatureCollection.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C524EDE0EB004AFCDD /* MixedFeatureCollection.json */; };
+		6AD5D8CA24EDE0EC004AFCDD /* Points.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C624EDE0EB004AFCDD /* Points.json */; };
+		6AD5D8CB24EDE0EC004AFCDD /* Polylines.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C724EDE0EB004AFCDD /* Polylines.json */; };
+		6AD5D8CC24EDE0EC004AFCDD /* Polygons.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C824EDE0EB004AFCDD /* Polygons.json */; };
 		6AE7ECB824745D1100821502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7ECB724745D1100821502 /* AppDelegate.swift */; };
 		6AE7ECBA24745D1100821502 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7ECB924745D1100821502 /* SceneDelegate.swift */; };
-		6AE7ECBF24745D1100821502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7ECBD24745D1100821502 /* Main.storyboard */; };
+		6AE7ECBF24745D1100821502 /* FeatureList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7ECBD24745D1100821502 /* FeatureList.storyboard */; };
 		6AE7ECC124745D1300821502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7ECC024745D1300821502 /* Assets.xcassets */; };
 		6AE7ECC424745D1300821502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7ECC224745D1300821502 /* LaunchScreen.storyboard */; };
 		6AE7ECF724747EF000821502 /* FeatureListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7ECF624747EF000821502 /* FeatureListViewController.swift */; };
-		8738C25B2491615A00ACC309 /* VisibleFeaturesControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8738C25A2491615A00ACC309 /* VisibleFeaturesControllerDelegate.swift */; };
-		8738C25D249161C500ACC309 /* VisibleFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8738C25C249161C500ACC309 /* VisibleFeaturesViewController.swift */; };
-		87438B5C2485A03C0007D1FC /* Shapes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87438B5B2485A03C0007D1FC /* Shapes.storyboard */; };
-		87438B602485A05E0007D1FC /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87438B5E2485A05E0007D1FC /* ShapesViewController.swift */; };
-		87438B662485A2040007D1FC /* Modes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87438B642485A2040007D1FC /* Modes.storyboard */; };
-		87438B672485A2040007D1FC /* ModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87438B652485A2040007D1FC /* ModesViewController.swift */; };
-		87438B6A2485A2120007D1FC /* UserLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87438B682485A2120007D1FC /* UserLocationViewController.swift */; };
-		87438B6B2485A2120007D1FC /* UserLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87438B692485A2120007D1FC /* UserLocation.storyboard */; };
-		87438B702485A4430007D1FC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87438B6D2485A4430007D1FC /* CameraViewController.swift */; };
-		87438B712485A4430007D1FC /* CameraMetricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87438B6E2485A4430007D1FC /* CameraMetricsViewController.swift */; };
-		87438B722485A4430007D1FC /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87438B6F2485A4430007D1FC /* Camera.storyboard */; };
+		874080E824F47F0D0085DC6E /* VLTLiterals+VLTMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007824C2522C00D10382 /* VLTLiterals+VLTMaps.swift */; };
+		874080E924F47F910085DC6E /* VLTLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A630DA42497DBAA0043D272 /* VLTLiterals.swift */; };
 		87438B752485A45C0007D1FC /* VLTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87438B732485A45B0007D1FC /* VLTButton.swift */; };
 		87438B762485A45C0007D1FC /* VLTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87438B742485A45C0007D1FC /* VLTTextField.swift */; };
-		87438B7F2485ADDF0007D1FC /* CameraMetricsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87438B7D2485ADDF0007D1FC /* CameraMetricsControllerDelegate.swift */; };
+		876FA84724CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876FA84624CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift */; };
+		876FA84924CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876FA84824CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift */; };
+		87D4004724C24AB000D10382 /* VLTHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4004424C24AB000D10382 /* VLTHomeTableViewCell.swift */; };
+		87D4004824C24AB000D10382 /* VLTHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87D4004524C24AB000D10382 /* VLTHomeTableViewCell.xib */; };
+		87D4004924C24AB000D10382 /* VLTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4004624C24AB000D10382 /* VLTView.swift */; };
+		87D4007924C2522C00D10382 /* ModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4005B24C2522C00D10382 /* ModesViewController.swift */; };
+		87D4007A24C2522C00D10382 /* Modes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D4005C24C2522C00D10382 /* Modes.storyboard */; };
+		87D4007B24C2522C00D10382 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4005E24C2522C00D10382 /* CameraViewController.swift */; };
+		87D4007C24C2522C00D10382 /* CameraMetricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4005F24C2522C00D10382 /* CameraMetricsViewController.swift */; };
+		87D4007D24C2522C00D10382 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D4006024C2522C00D10382 /* Camera.storyboard */; };
+		87D4007E24C2522C00D10382 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006224C2522C00D10382 /* ShapesViewController.swift */; };
+		87D4007F24C2522C00D10382 /* ShapesViewController+MarkerExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006324C2522C00D10382 /* ShapesViewController+MarkerExamples.swift */; };
+		87D4008024C2522C00D10382 /* ShapesViewController+PolylineExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006424C2522C00D10382 /* ShapesViewController+PolylineExamples.swift */; };
+		87D4008124C2522C00D10382 /* ShapesViewController+CircleExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006524C2522C00D10382 /* ShapesViewController+CircleExamples.swift */; };
+		87D4008224C2522C00D10382 /* ShapesViewController+UserInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006624C2522C00D10382 /* ShapesViewController+UserInteraction.swift */; };
+		87D4008324C2522C00D10382 /* ShapesViewController+TrafficExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006724C2522C00D10382 /* ShapesViewController+TrafficExamples.swift */; };
+		87D4008524C2522C00D10382 /* Shapes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D4006924C2522C00D10382 /* Shapes.storyboard */; };
+		87D4008624C2522C00D10382 /* ShapesViewController+PolygonExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006A24C2522C00D10382 /* ShapesViewController+PolygonExamples.swift */; };
+		87D4008724C2522C00D10382 /* UserLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D4006C24C2522C00D10382 /* UserLocation.storyboard */; };
+		87D4008824C2522C00D10382 /* UserLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006D24C2522C00D10382 /* UserLocationViewController.swift */; };
+		87D4008924C2522C00D10382 /* VLTMaps.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D4006E24C2522C00D10382 /* VLTMaps.xcassets */; };
+		87D4008A24C2522C00D10382 /* VLTMapMode+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007024C2522C00D10382 /* VLTMapMode+extensions.swift */; };
+		87D4008B24C2522C00D10382 /* VisibleFeaturesControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007224C2522C00D10382 /* VisibleFeaturesControllerDelegate.swift */; };
+		87D4008C24C2522C00D10382 /* CameraMetricsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007324C2522C00D10382 /* CameraMetricsControllerDelegate.swift */; };
+		87D4008D24C2522C00D10382 /* CameraMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007524C2522C00D10382 /* CameraMetrics.swift */; };
+		87D4008E24C2522C00D10382 /* MapFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007624C2522C00D10382 /* MapFeature.swift */; };
+		87D4008F24C2522C00D10382 /* DemoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007724C2522C00D10382 /* DemoFeature.swift */; };
+		87D4009024C2522C00D10382 /* VLTLiterals+VLTMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007824C2522C00D10382 /* VLTLiterals+VLTMaps.swift */; };
 		8D68C28F388525AB65C2475E /* Pods_VLTDemo_VLTDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D7F79DAC61642321567F4C /* Pods_VLTDemo_VLTDemoUITests.framework */; };
 		C15DAD1EFFD20F0ACE3A9F32 /* Pods_VLTDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759CC16120E616DF2E5B7B75 /* Pods_VLTDemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -74,30 +93,31 @@
 		2DC7BB54C1B902D49600ABCF /* Pods-VLTDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-VLTDemoTests/Pods-VLTDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3463E94B447EF31AEE501274 /* Pods-VLTDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo.release.xcconfig"; path = "Target Support Files/Pods-VLTDemo/Pods-VLTDemo.release.xcconfig"; sourceTree = "<group>"; };
 		440923A5F7EF230FEB7AD312 /* Pods-VLTDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemoTests.release.xcconfig"; path = "Target Support Files/Pods-VLTDemoTests/Pods-VLTDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		6A186EBE247879C9006BF48A /* VLTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTView.swift; sourceTree = "<group>"; };
-		6A40C5892494146D00F3F1CA /* VLTDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTDemoTests.swift; sourceTree = "<group>"; };
-		6A40C58B249414AE00F3F1CA /* VLTDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTDemoUITests.swift; sourceTree = "<group>"; };
 		6A540DFA2491926A002FF921 /* VLTLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTLabel.swift; sourceTree = "<group>"; };
 		6A540DFC249275CB002FF921 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		6A630DA42497DBAA0043D272 /* VLTLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTLiterals.swift; sourceTree = "<group>"; };
-		6A848166247EDC1F00D0E514 /* VLTMapMode+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VLTMapMode+extensions.swift"; sourceTree = "<group>"; };
-		6A84816B247F0D1F00D0E514 /* MapFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFeature.swift; sourceTree = "<group>"; };
-		6A84817124800B7300D0E514 /* CameraMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMetrics.swift; sourceTree = "<group>"; };
 		6A869C2E248EC6D4005A77E3 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		6A869C3024913F15005A77E3 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		6A98AD752497E9C400FA2DBF /* DemoFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFeature.swift; sourceTree = "<group>"; };
-		6A98AD7724993B0C00FA2DBF /* ShapesViewController+MarkerExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+MarkerExamples.swift"; sourceTree = "<group>"; };
-		6A98AD7924993B2100FA2DBF /* ShapesViewController+CircleExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+CircleExamples.swift"; sourceTree = "<group>"; };
-		6A98AD7B24993B3A00FA2DBF /* ShapesViewController+PolylineExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+PolylineExamples.swift"; sourceTree = "<group>"; };
-		6A98AD7D24993B5D00FA2DBF /* ShapesViewController+PolygonExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+PolygonExamples.swift"; sourceTree = "<group>"; };
-		6A98AD7F24993B7C00FA2DBF /* ShapesViewController+UserInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+UserInteraction.swift"; sourceTree = "<group>"; };
-		6A98AD8124993F1C00FA2DBF /* ShapesViewController+TrafficExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+TrafficExamples.swift"; sourceTree = "<group>"; };
-		6ACD74772476CC0C006F7B0E /* VLTHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTHomeTableViewCell.swift; sourceTree = "<group>"; };
-		6ACD74782476CC0C006F7B0E /* VLTHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VLTHomeTableViewCell.xib; sourceTree = "<group>"; };
+		6AD5D87E24EDCABE004AFCDD /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		6AD5D88024EDCACC004AFCDD /* ImageDownloadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadHelper.swift; sourceTree = "<group>"; };
+		6AD5D8A224EDCCDF004AFCDD /* GeoJSONViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONViewController.swift; sourceTree = "<group>"; };
+		6AD5D8A324EDCCDF004AFCDD /* GeoJSONViewController+Polylines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeoJSONViewController+Polylines.swift"; sourceTree = "<group>"; };
+		6AD5D8A424EDCCDF004AFCDD /* GeoJSONViewController+Polygons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeoJSONViewController+Polygons.swift"; sourceTree = "<group>"; };
+		6AD5D8A524EDCCDF004AFCDD /* GeoJSONViewController+MixedFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeoJSONViewController+MixedFeatures.swift"; sourceTree = "<group>"; };
+		6AD5D8A624EDCCDF004AFCDD /* GeoJSON.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GeoJSON.storyboard; sourceTree = "<group>"; };
+		6AD5D8A724EDCCDF004AFCDD /* GeoJSONViewController+MultiPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeoJSONViewController+MultiPoints.swift"; sourceTree = "<group>"; };
+		6AD5D8AF24EDCD13004AFCDD /* VisibleFeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibleFeaturesViewController.swift; sourceTree = "<group>"; };
+		6AD5D8B024EDCD13004AFCDD /* VisibleFeatures.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VisibleFeatures.storyboard; sourceTree = "<group>"; };
+		6AD5D8B324EDCDAC004AFCDD /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		6AD5D8B724EDD132004AFCDD /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = VLTMaps.xcassets/Contents.json; sourceTree = "<group>"; };
+		6AD5D8C524EDE0EB004AFCDD /* MixedFeatureCollection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MixedFeatureCollection.json; sourceTree = "<group>"; };
+		6AD5D8C624EDE0EB004AFCDD /* Points.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Points.json; sourceTree = "<group>"; };
+		6AD5D8C724EDE0EB004AFCDD /* Polylines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Polylines.json; sourceTree = "<group>"; };
+		6AD5D8C824EDE0EB004AFCDD /* Polygons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Polygons.json; sourceTree = "<group>"; };
 		6AE7ECB424745D1100821502 /* VLTDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VLTDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE7ECB724745D1100821502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AE7ECB924745D1100821502 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6AE7ECBE24745D1100821502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6AE7ECBE24745D1100821502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FeatureList.storyboard; sourceTree = "<group>"; };
 		6AE7ECC024745D1300821502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AE7ECC324745D1300821502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AE7ECC524745D1300821502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,20 +128,36 @@
 		6AE7ECF624747EF000821502 /* FeatureListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureListViewController.swift; sourceTree = "<group>"; };
 		759CC16120E616DF2E5B7B75 /* Pods_VLTDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D9FAAC7BE65257A03C5B5FD /* Pods-VLTDemo-VLTDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo-VLTDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8738C25A2491615A00ACC309 /* VisibleFeaturesControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibleFeaturesControllerDelegate.swift; sourceTree = "<group>"; };
-		8738C25C249161C500ACC309 /* VisibleFeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibleFeaturesViewController.swift; sourceTree = "<group>"; };
-		87438B5B2485A03C0007D1FC /* Shapes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shapes.storyboard; sourceTree = "<group>"; };
-		87438B5E2485A05E0007D1FC /* ShapesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
-		87438B642485A2040007D1FC /* Modes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Modes.storyboard; sourceTree = "<group>"; };
-		87438B652485A2040007D1FC /* ModesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
-		87438B682485A2120007D1FC /* UserLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationViewController.swift; sourceTree = "<group>"; };
-		87438B692485A2120007D1FC /* UserLocation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserLocation.storyboard; sourceTree = "<group>"; };
-		87438B6D2485A4430007D1FC /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		87438B6E2485A4430007D1FC /* CameraMetricsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMetricsViewController.swift; sourceTree = "<group>"; };
-		87438B6F2485A4430007D1FC /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		87438B732485A45B0007D1FC /* VLTButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTButton.swift; sourceTree = "<group>"; };
 		87438B742485A45C0007D1FC /* VLTTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTTextField.swift; sourceTree = "<group>"; };
-		87438B7D2485ADDF0007D1FC /* CameraMetricsControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMetricsControllerDelegate.swift; sourceTree = "<group>"; };
+		876FA84624CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTDemoMapsSDKUITests.swift; sourceTree = "<group>"; };
+		876FA84824CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTDemoMapsSDKTests.swift; sourceTree = "<group>"; };
+		87D4004424C24AB000D10382 /* VLTHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTHomeTableViewCell.swift; sourceTree = "<group>"; };
+		87D4004524C24AB000D10382 /* VLTHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VLTHomeTableViewCell.xib; sourceTree = "<group>"; };
+		87D4004624C24AB000D10382 /* VLTView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTView.swift; sourceTree = "<group>"; };
+		87D4005B24C2522C00D10382 /* ModesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
+		87D4005C24C2522C00D10382 /* Modes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Modes.storyboard; sourceTree = "<group>"; };
+		87D4005E24C2522C00D10382 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		87D4005F24C2522C00D10382 /* CameraMetricsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMetricsViewController.swift; sourceTree = "<group>"; };
+		87D4006024C2522C00D10382 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		87D4006224C2522C00D10382 /* ShapesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
+		87D4006324C2522C00D10382 /* ShapesViewController+MarkerExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+MarkerExamples.swift"; sourceTree = "<group>"; };
+		87D4006424C2522C00D10382 /* ShapesViewController+PolylineExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+PolylineExamples.swift"; sourceTree = "<group>"; };
+		87D4006524C2522C00D10382 /* ShapesViewController+CircleExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+CircleExamples.swift"; sourceTree = "<group>"; };
+		87D4006624C2522C00D10382 /* ShapesViewController+UserInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+UserInteraction.swift"; sourceTree = "<group>"; };
+		87D4006724C2522C00D10382 /* ShapesViewController+TrafficExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+TrafficExamples.swift"; sourceTree = "<group>"; };
+		87D4006924C2522C00D10382 /* Shapes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shapes.storyboard; sourceTree = "<group>"; };
+		87D4006A24C2522C00D10382 /* ShapesViewController+PolygonExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+PolygonExamples.swift"; sourceTree = "<group>"; };
+		87D4006C24C2522C00D10382 /* UserLocation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserLocation.storyboard; sourceTree = "<group>"; };
+		87D4006D24C2522C00D10382 /* UserLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationViewController.swift; sourceTree = "<group>"; };
+		87D4006E24C2522C00D10382 /* VLTMaps.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = VLTMaps.xcassets; sourceTree = "<group>"; };
+		87D4007024C2522C00D10382 /* VLTMapMode+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VLTMapMode+extensions.swift"; sourceTree = "<group>"; };
+		87D4007224C2522C00D10382 /* VisibleFeaturesControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibleFeaturesControllerDelegate.swift; sourceTree = "<group>"; };
+		87D4007324C2522C00D10382 /* CameraMetricsControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMetricsControllerDelegate.swift; sourceTree = "<group>"; };
+		87D4007524C2522C00D10382 /* CameraMetrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMetrics.swift; sourceTree = "<group>"; };
+		87D4007624C2522C00D10382 /* MapFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapFeature.swift; sourceTree = "<group>"; };
+		87D4007724C2522C00D10382 /* DemoFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoFeature.swift; sourceTree = "<group>"; };
+		87D4007824C2522C00D10382 /* VLTLiterals+VLTMaps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VLTLiterals+VLTMaps.swift"; sourceTree = "<group>"; };
 		D4FBCEB3EB0B9C42DBB4F657 /* Pods-VLTDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo.debug.xcconfig"; path = "Target Support Files/Pods-VLTDemo/Pods-VLTDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E45F244698A2F328AF98A335 /* Pods-VLTDemo-VLTDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo-VLTDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F9D7F79DAC61642321567F4C /* Pods_VLTDemo_VLTDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTDemo_VLTDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,9 +195,9 @@
 			isa = PBXGroup;
 			children = (
 				6A869C2E248EC6D4005A77E3 /* Double+Extensions.swift */,
+				6AD5D87E24EDCABE004AFCDD /* String+Extension.swift */,
 				6A869C3024913F15005A77E3 /* UIColor+Extensions.swift */,
 				6A540DFC249275CB002FF921 /* UIViewController+Extensions.swift */,
-				6A848166247EDC1F00D0E514 /* VLTMapMode+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -169,22 +205,43 @@
 		6A84816A247F0D0A00D0E514 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				6A84817124800B7300D0E514 /* CameraMetrics.swift */,
-				6A98AD752497E9C400FA2DBF /* DemoFeature.swift */,
-				6A84816B247F0D1F00D0E514 /* MapFeature.swift */,
+				6AD5D88024EDCACC004AFCDD /* ImageDownloadHelper.swift */,
 				6A630DA42497DBAA0043D272 /* VLTLiterals.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		6ACD74842476D1B8006F7B0E /* Views */ = {
+		6AD5D89524EDCC71004AFCDD /* GeoJSON */ = {
 			isa = PBXGroup;
 			children = (
-				6ACD74772476CC0C006F7B0E /* VLTHomeTableViewCell.swift */,
-				6ACD74782476CC0C006F7B0E /* VLTHomeTableViewCell.xib */,
-				6A186EBE247879C9006BF48A /* VLTView.swift */,
+				6AD5D8A624EDCCDF004AFCDD /* GeoJSON.storyboard */,
+				6AD5D8A224EDCCDF004AFCDD /* GeoJSONViewController.swift */,
+				6AD5D8A524EDCCDF004AFCDD /* GeoJSONViewController+MixedFeatures.swift */,
+				6AD5D8A724EDCCDF004AFCDD /* GeoJSONViewController+MultiPoints.swift */,
+				6AD5D8A424EDCCDF004AFCDD /* GeoJSONViewController+Polygons.swift */,
+				6AD5D8A324EDCCDF004AFCDD /* GeoJSONViewController+Polylines.swift */,
 			);
-			path = Views;
+			path = GeoJSON;
+			sourceTree = "<group>";
+		};
+		6AD5D8AE24EDCCF4004AFCDD /* Visible Features */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5D8B024EDCD13004AFCDD /* VisibleFeatures.storyboard */,
+				6AD5D8AF24EDCD13004AFCDD /* VisibleFeaturesViewController.swift */,
+			);
+			path = "Visible Features";
+			sourceTree = "<group>";
+		};
+		6AD5D8C424EDE0CB004AFCDD /* GeoJSON Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5D8C524EDE0EB004AFCDD /* MixedFeatureCollection.json */,
+				6AD5D8C624EDE0EB004AFCDD /* Points.json */,
+				6AD5D8C824EDE0EB004AFCDD /* Polygons.json */,
+				6AD5D8C724EDE0EB004AFCDD /* Polylines.json */,
+			);
+			path = "GeoJSON Files";
 			sourceTree = "<group>";
 		};
 		6AE7ECAB24745D1100821502 = {
@@ -218,13 +275,12 @@
 				6A84816A247F0D0A00D0E514 /* Helpers */,
 				6AE7ECC524745D1300821502 /* Info.plist */,
 				6AE7ECC224745D1300821502 /* LaunchScreen.storyboard */,
-				6AE7ECBD24745D1100821502 /* Main.storyboard */,
-				87438B7C2485ADBE0007D1FC /* Protocols */,
+				6AE7ECF624747EF000821502 /* FeatureListViewController.swift */,
+				6AE7ECBD24745D1100821502 /* FeatureList.storyboard */,
+				87D4005824C2522C00D10382 /* MapsSDK */,
 				6AE7ECB924745D1100821502 /* SceneDelegate.swift */,
-				87438B5924859F450007D1FC /* Storyboards */,
 				87438B6C2485A21F0007D1FC /* UIControls */,
-				6AE7ECE7247466DA00821502 /* View Controllers */,
-				6ACD74842476D1B8006F7B0E /* Views */,
+				87D4004324C24A4E00D10382 /* Views */,
 			);
 			path = VLTDemo;
 			sourceTree = "<group>";
@@ -233,7 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				6AE7ECD024745D1300821502 /* Info.plist */,
-				6A40C5892494146D00F3F1CA /* VLTDemoTests.swift */,
+				876FA84424CB9F3F0098AEAA /* MapsSDKTests */,
 			);
 			path = VLTDemoTests;
 			sourceTree = "<group>";
@@ -242,17 +298,9 @@
 			isa = PBXGroup;
 			children = (
 				6AE7ECDB24745D1300821502 /* Info.plist */,
-				6A40C58B249414AE00F3F1CA /* VLTDemoUITests.swift */,
+				876FA84524CB9F560098AEAA /* MapsSDKUITest */,
 			);
 			path = VLTDemoUITests;
-			sourceTree = "<group>";
-		};
-		6AE7ECE7247466DA00821502 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				6AE7ECF624747EF000821502 /* FeatureListViewController.swift */,
-			);
-			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		76CA83A911F0876E98EDC3E1 /* Frameworks */ = {
@@ -265,61 +313,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		87438B5924859F450007D1FC /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				87438B612485A0C80007D1FC /* Camera */,
-				87438B622485A1540007D1FC /* Modes */,
-				87438B5A24859FC50007D1FC /* Shapes */,
-				87438B632485A1680007D1FC /* User Location */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		87438B5A24859FC50007D1FC /* Shapes */ = {
-			isa = PBXGroup;
-			children = (
-				87438B5B2485A03C0007D1FC /* Shapes.storyboard */,
-				87438B5E2485A05E0007D1FC /* ShapesViewController.swift */,
-				6A98AD7924993B2100FA2DBF /* ShapesViewController+CircleExamples.swift */,
-				6A98AD7724993B0C00FA2DBF /* ShapesViewController+MarkerExamples.swift */,
-				6A98AD7D24993B5D00FA2DBF /* ShapesViewController+PolygonExamples.swift */,
-				6A98AD7B24993B3A00FA2DBF /* ShapesViewController+PolylineExamples.swift */,
-				6A98AD8124993F1C00FA2DBF /* ShapesViewController+TrafficExamples.swift */,
-				6A98AD7F24993B7C00FA2DBF /* ShapesViewController+UserInteraction.swift */,
-				8738C25C249161C500ACC309 /* VisibleFeaturesViewController.swift */,
-			);
-			path = Shapes;
-			sourceTree = "<group>";
-		};
-		87438B612485A0C80007D1FC /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				87438B6F2485A4430007D1FC /* Camera.storyboard */,
-				87438B6E2485A4430007D1FC /* CameraMetricsViewController.swift */,
-				87438B6D2485A4430007D1FC /* CameraViewController.swift */,
-			);
-			path = Camera;
-			sourceTree = "<group>";
-		};
-		87438B622485A1540007D1FC /* Modes */ = {
-			isa = PBXGroup;
-			children = (
-				87438B642485A2040007D1FC /* Modes.storyboard */,
-				87438B652485A2040007D1FC /* ModesViewController.swift */,
-			);
-			path = Modes;
-			sourceTree = "<group>";
-		};
-		87438B632485A1680007D1FC /* User Location */ = {
-			isa = PBXGroup;
-			children = (
-				87438B692485A2120007D1FC /* UserLocation.storyboard */,
-				87438B682485A2120007D1FC /* UserLocationViewController.swift */,
-			);
-			path = "User Location";
-			sourceTree = "<group>";
-		};
 		87438B6C2485A21F0007D1FC /* UIControls */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,13 +323,129 @@
 			path = UIControls;
 			sourceTree = "<group>";
 		};
-		87438B7C2485ADBE0007D1FC /* Protocols */ = {
+		876FA84424CB9F3F0098AEAA /* MapsSDKTests */ = {
 			isa = PBXGroup;
 			children = (
-				87438B7D2485ADDF0007D1FC /* CameraMetricsControllerDelegate.swift */,
-				8738C25A2491615A00ACC309 /* VisibleFeaturesControllerDelegate.swift */,
+				876FA84824CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift */,
+			);
+			path = MapsSDKTests;
+			sourceTree = "<group>";
+		};
+		876FA84524CB9F560098AEAA /* MapsSDKUITest */ = {
+			isa = PBXGroup;
+			children = (
+				876FA84624CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift */,
+			);
+			path = MapsSDKUITest;
+			sourceTree = "<group>";
+		};
+		87D4004324C24A4E00D10382 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87D4004424C24AB000D10382 /* VLTHomeTableViewCell.swift */,
+				87D4004524C24AB000D10382 /* VLTHomeTableViewCell.xib */,
+				87D4004624C24AB000D10382 /* VLTView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		87D4005824C2522C00D10382 /* MapsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5D8B724EDD132004AFCDD /* Contents.json */,
+				87D4006F24C2522C00D10382 /* Extensions */,
+				6AD5D8C424EDE0CB004AFCDD /* GeoJSON Files */,
+				87D4007424C2522C00D10382 /* Helpers */,
+				87D4007124C2522C00D10382 /* Protocols */,
+				87D4005924C2522C00D10382 /* Storyboards */,
+				87D4006E24C2522C00D10382 /* VLTMaps.xcassets */,
+			);
+			path = MapsSDK;
+			sourceTree = "<group>";
+		};
+		87D4005924C2522C00D10382 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				87D4005D24C2522C00D10382 /* Camera */,
+				6AD5D89524EDCC71004AFCDD /* GeoJSON */,
+				87D4005A24C2522C00D10382 /* Modes */,
+				87D4006124C2522C00D10382 /* Shapes */,
+				87D4006B24C2522C00D10382 /* User Location */,
+				6AD5D8AE24EDCCF4004AFCDD /* Visible Features */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		87D4005A24C2522C00D10382 /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+				87D4005C24C2522C00D10382 /* Modes.storyboard */,
+				87D4005B24C2522C00D10382 /* ModesViewController.swift */,
+			);
+			path = Modes;
+			sourceTree = "<group>";
+		};
+		87D4005D24C2522C00D10382 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				87D4006024C2522C00D10382 /* Camera.storyboard */,
+				87D4005F24C2522C00D10382 /* CameraMetricsViewController.swift */,
+				87D4005E24C2522C00D10382 /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		87D4006124C2522C00D10382 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				87D4006924C2522C00D10382 /* Shapes.storyboard */,
+				87D4006224C2522C00D10382 /* ShapesViewController.swift */,
+				87D4006524C2522C00D10382 /* ShapesViewController+CircleExamples.swift */,
+				87D4006324C2522C00D10382 /* ShapesViewController+MarkerExamples.swift */,
+				87D4006A24C2522C00D10382 /* ShapesViewController+PolygonExamples.swift */,
+				87D4006424C2522C00D10382 /* ShapesViewController+PolylineExamples.swift */,
+				87D4006724C2522C00D10382 /* ShapesViewController+TrafficExamples.swift */,
+				87D4006624C2522C00D10382 /* ShapesViewController+UserInteraction.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		87D4006B24C2522C00D10382 /* User Location */ = {
+			isa = PBXGroup;
+			children = (
+				87D4006C24C2522C00D10382 /* UserLocation.storyboard */,
+				87D4006D24C2522C00D10382 /* UserLocationViewController.swift */,
+			);
+			path = "User Location";
+			sourceTree = "<group>";
+		};
+		87D4006F24C2522C00D10382 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5D8B324EDCDAC004AFCDD /* Data+Extensions.swift */,
+				87D4007024C2522C00D10382 /* VLTMapMode+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87D4007124C2522C00D10382 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				87D4007324C2522C00D10382 /* CameraMetricsControllerDelegate.swift */,
+				87D4007224C2522C00D10382 /* VisibleFeaturesControllerDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		87D4007424C2522C00D10382 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				87D4007524C2522C00D10382 /* CameraMetrics.swift */,
+				87D4007724C2522C00D10382 /* DemoFeature.swift */,
+				87D4007624C2522C00D10382 /* MapFeature.swift */,
+				87D4007824C2522C00D10382 /* VLTLiterals+VLTMaps.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		EC17C61B1364ECCF41E38DB1 /* Pods */ = {
@@ -360,6 +469,7 @@
 			buildConfigurationList = 6AE7ECDE24745D1300821502 /* Build configuration list for PBXNativeTarget "VLTDemo" */;
 			buildPhases = (
 				65CD52A486359FA2F0142DFE /* [CP] Check Pods Manifest.lock */,
+				E9C351ED823325E55C81DF48 /* [CP] Prepare Artifacts */,
 				6AE7ECB024745D1100821502 /* Sources */,
 				6AE7ECB124745D1100821502 /* Frameworks */,
 				6AE7ECB224745D1100821502 /* Resources */,
@@ -398,6 +508,7 @@
 			buildConfigurationList = 6AE7ECE424745D1300821502 /* Build configuration list for PBXNativeTarget "VLTDemoUITests" */;
 			buildPhases = (
 				F696DE5E1936EC00D9A9CD05 /* [CP] Check Pods Manifest.lock */,
+				1DBB6555BB6FAC8A69021B1F /* [CP] Prepare Artifacts */,
 				6AE7ECD124745D1300821502 /* Sources */,
 				6AE7ECD224745D1300821502 /* Frameworks */,
 				6AE7ECD324745D1300821502 /* Resources */,
@@ -428,12 +539,12 @@
 					};
 					6AE7ECC924745D1300821502 = {
 						CreatedOnToolsVersion = 11.4.1;
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1160;
 						TestTargetID = 6AE7ECB324745D1100821502;
 					};
 					6AE7ECD424745D1300821502 = {
 						CreatedOnToolsVersion = 11.4.1;
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1160;
 						TestTargetID = 6AE7ECB324745D1100821502;
 					};
 				};
@@ -463,14 +574,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87438B722485A4430007D1FC /* Camera.storyboard in Resources */,
-				87438B5C2485A03C0007D1FC /* Shapes.storyboard in Resources */,
+				6AD5D8CC24EDE0EC004AFCDD /* Polygons.json in Resources */,
+				6AD5D8B224EDCD13004AFCDD /* VisibleFeatures.storyboard in Resources */,
+				87D4007A24C2522C00D10382 /* Modes.storyboard in Resources */,
+				87D4007D24C2522C00D10382 /* Camera.storyboard in Resources */,
+				6AD5D8AC24EDCCDF004AFCDD /* GeoJSON.storyboard in Resources */,
+				6AD5D8CA24EDE0EC004AFCDD /* Points.json in Resources */,
 				6AE7ECC424745D1300821502 /* LaunchScreen.storyboard in Resources */,
+				87D4008524C2522C00D10382 /* Shapes.storyboard in Resources */,
+				6AD5D8CB24EDE0EC004AFCDD /* Polylines.json in Resources */,
+				6AD5D8B924EDD132004AFCDD /* Contents.json in Resources */,
 				6AE7ECC124745D1300821502 /* Assets.xcassets in Resources */,
-				87438B662485A2040007D1FC /* Modes.storyboard in Resources */,
-				6AE7ECBF24745D1100821502 /* Main.storyboard in Resources */,
-				6ACD747A2476CC0C006F7B0E /* VLTHomeTableViewCell.xib in Resources */,
-				87438B6B2485A2120007D1FC /* UserLocation.storyboard in Resources */,
+				6AD5D8C924EDE0EB004AFCDD /* MixedFeatureCollection.json in Resources */,
+				6AE7ECBF24745D1100821502 /* FeatureList.storyboard in Resources */,
+				87D4008924C2522C00D10382 /* VLTMaps.xcassets in Resources */,
+				87D4008724C2522C00D10382 /* UserLocation.storyboard in Resources */,
+				87D4004824C24AB000D10382 /* VLTHomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +630,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DBB6555BB6FAC8A69021B1F /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests-artifacts.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		408801777FF18771C542192B /* [CP] Embed Pods Frameworks */ = {
@@ -565,6 +699,21 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLTDemo/Pods-VLTDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E9C351ED823325E55C81DF48 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLTDemo/Pods-VLTDemo-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F696DE5E1936EC00D9A9CD05 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -594,36 +743,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD5D8A924EDCCDF004AFCDD /* GeoJSONViewController+Polylines.swift in Sources */,
+				6AD5D8A824EDCCDF004AFCDD /* GeoJSONViewController.swift in Sources */,
+				87D4007C24C2522C00D10382 /* CameraMetricsViewController.swift in Sources */,
+				6AD5D88124EDCACC004AFCDD /* ImageDownloadHelper.swift in Sources */,
 				6AE7ECB824745D1100821502 /* AppDelegate.swift in Sources */,
 				6A540DFD249275CB002FF921 /* UIViewController+Extensions.swift in Sources */,
-				6A98AD7E24993B5D00FA2DBF /* ShapesViewController+PolygonExamples.swift in Sources */,
-				6A98AD8224993F1C00FA2DBF /* ShapesViewController+TrafficExamples.swift in Sources */,
-				87438B7F2485ADDF0007D1FC /* CameraMetricsControllerDelegate.swift in Sources */,
+				87D4008C24C2522C00D10382 /* CameraMetricsControllerDelegate.swift in Sources */,
+				87D4008324C2522C00D10382 /* ShapesViewController+TrafficExamples.swift in Sources */,
 				6AE7ECBA24745D1100821502 /* SceneDelegate.swift in Sources */,
-				6A848167247EDC1F00D0E514 /* VLTMapMode+extensions.swift in Sources */,
-				87438B702485A4430007D1FC /* CameraViewController.swift in Sources */,
-				6A98AD762497E9C400FA2DBF /* DemoFeature.swift in Sources */,
-				6A98AD7A24993B2100FA2DBF /* ShapesViewController+CircleExamples.swift in Sources */,
-				6A98AD7824993B0C00FA2DBF /* ShapesViewController+MarkerExamples.swift in Sources */,
+				87D4008D24C2522C00D10382 /* CameraMetrics.swift in Sources */,
+				87D4008F24C2522C00D10382 /* DemoFeature.swift in Sources */,
 				87438B752485A45C0007D1FC /* VLTButton.swift in Sources */,
-				6A84816C247F0D1F00D0E514 /* MapFeature.swift in Sources */,
-				6A98AD8024993B7C00FA2DBF /* ShapesViewController+UserInteraction.swift in Sources */,
-				87438B6A2485A2120007D1FC /* UserLocationViewController.swift in Sources */,
+				87D4009024C2522C00D10382 /* VLTLiterals+VLTMaps.swift in Sources */,
+				6AD5D8AB24EDCCDF004AFCDD /* GeoJSONViewController+MixedFeatures.swift in Sources */,
+				6AD5D8B124EDCD13004AFCDD /* VisibleFeaturesViewController.swift in Sources */,
+				87D4008624C2522C00D10382 /* ShapesViewController+PolygonExamples.swift in Sources */,
+				87D4004724C24AB000D10382 /* VLTHomeTableViewCell.swift in Sources */,
+				87D4008E24C2522C00D10382 /* MapFeature.swift in Sources */,
+				87D4008B24C2522C00D10382 /* VisibleFeaturesControllerDelegate.swift in Sources */,
+				87D4008224C2522C00D10382 /* ShapesViewController+UserInteraction.swift in Sources */,
+				6AD5D87F24EDCABF004AFCDD /* String+Extension.swift in Sources */,
 				6A540DFB2491926A002FF921 /* VLTLabel.swift in Sources */,
-				87438B672485A2040007D1FC /* ModesViewController.swift in Sources */,
-				6A186EBF247879C9006BF48A /* VLTView.swift in Sources */,
+				6AD5D8AA24EDCCDF004AFCDD /* GeoJSONViewController+Polygons.swift in Sources */,
+				87D4008124C2522C00D10382 /* ShapesViewController+CircleExamples.swift in Sources */,
+				87D4007924C2522C00D10382 /* ModesViewController.swift in Sources */,
+				87D4007F24C2522C00D10382 /* ShapesViewController+MarkerExamples.swift in Sources */,
+				87D4007E24C2522C00D10382 /* ShapesViewController.swift in Sources */,
 				6A630DA52497DBAA0043D272 /* VLTLiterals.swift in Sources */,
-				87438B712485A4430007D1FC /* CameraMetricsViewController.swift in Sources */,
+				6AD5D8B424EDCDAC004AFCDD /* Data+Extensions.swift in Sources */,
 				6A869C2F248EC6D4005A77E3 /* Double+Extensions.swift in Sources */,
 				6AE7ECF724747EF000821502 /* FeatureListViewController.swift in Sources */,
 				6A869C3124913F15005A77E3 /* UIColor+Extensions.swift in Sources */,
+				87D4007B24C2522C00D10382 /* CameraViewController.swift in Sources */,
+				87D4008824C2522C00D10382 /* UserLocationViewController.swift in Sources */,
+				6AD5D8AD24EDCCDF004AFCDD /* GeoJSONViewController+MultiPoints.swift in Sources */,
+				87D4008A24C2522C00D10382 /* VLTMapMode+extensions.swift in Sources */,
 				87438B762485A45C0007D1FC /* VLTTextField.swift in Sources */,
-				6A84817224800B7300D0E514 /* CameraMetrics.swift in Sources */,
-				8738C25D249161C500ACC309 /* VisibleFeaturesViewController.swift in Sources */,
-				8738C25B2491615A00ACC309 /* VisibleFeaturesControllerDelegate.swift in Sources */,
-				87438B602485A05E0007D1FC /* ShapesViewController.swift in Sources */,
-				6ACD74792476CC0C006F7B0E /* VLTHomeTableViewCell.swift in Sources */,
-				6A98AD7C24993B3A00FA2DBF /* ShapesViewController+PolylineExamples.swift in Sources */,
+				87D4004924C24AB000D10382 /* VLTView.swift in Sources */,
+				87D4008024C2522C00D10382 /* ShapesViewController+PolylineExamples.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,7 +789,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A40C58A2494146D00F3F1CA /* VLTDemoTests.swift in Sources */,
+				876FA84924CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,7 +797,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A40C58C249414AE00F3F1CA /* VLTDemoUITests.swift in Sources */,
+				874080E924F47F910085DC6E /* VLTLiterals.swift in Sources */,
+				874080E824F47F0D0085DC6E /* VLTLiterals+VLTMaps.swift in Sources */,
+				876FA84724CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,12 +819,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6AE7ECBD24745D1100821502 /* Main.storyboard */ = {
+		6AE7ECBD24745D1100821502 /* FeatureList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6AE7ECBE24745D1100821502 /* Base */,
 			);
-			name = Main.storyboard;
+			name = FeatureList.storyboard;
 			sourceTree = "<group>";
 		};
 		6AE7ECC224745D1300821502 /* LaunchScreen.storyboard */ = {
@@ -797,7 +957,8 @@
 			baseConfigurationReference = D4FBCEB3EB0B9C42DBB4F657 /* Pods-VLTDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J2244V2577;
 				ENABLE_BITCODE = NO;
@@ -807,9 +968,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemo;
 				PRODUCT_NAME = VLTDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.Verizon.Location.Technology.VLTDemo";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -820,7 +982,8 @@
 			baseConfigurationReference = 3463E94B447EF31AEE501274 /* Pods-VLTDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J2244V2577;
 				ENABLE_BITCODE = NO;
@@ -830,9 +993,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemo;
 				PRODUCT_NAME = VLTDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.Verizon.Location.Technology.VLTDemo";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
