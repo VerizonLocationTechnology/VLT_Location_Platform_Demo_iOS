@@ -8,7 +8,7 @@ target 'VLTDemo' do
   use_frameworks!
 
   # Pods for VLTDemo
-  pod 'VLTMaps_HM', '~> 1.2.0'
+  pod 'VLTMaps_HM'
   
   target 'VLTDemoTests' do
     inherit! :search_paths
