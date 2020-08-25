@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l5f-mw-aiO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="dJQ-3U-z5Q">
+            <objects>
+                <navigationController storyboardIdentifier="GeoJsonNavigationController" id="lLq-GP-dXo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Py2-zc-SRa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="l5f-mw-aiO" kind="relationship" relationship="rootViewController" id="qIx-EF-gd5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98W-Et-zV8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-906" y="181"/>
+        </scene>
+        <!--VisibleFeatures-->
+        <scene sceneID="ckU-MD-I7q">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="V" storyboardName="VisibleFeatures" id="OnD-VJ-s79" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="05r-ry-wlw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rif-aM-pGq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="181"/>
+        </scene>
+        <!--GeoJSON-->
+        <scene sceneID="Fhv-dG-BhU">
+            <objects>
+                <viewController id="l5f-mw-aiO" customClass="GeoJSONViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U20-A7-bz6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="id5-bA-rBW" customClass="VLTMapView" customModule="VLTMaps">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Agr-XE-osf" userLabel="Status View" customClass="VLTView" customModule="VLTDemo" customModuleProvider="target">
+                                <rect key="frame" x="334" y="96" width="68" height="114"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ELk-aY-YiB">
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="114"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Markers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcN-lP-5Tr" userLabel="Marker Label" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="22.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polylines" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-xx-Tcj" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="22.5" width="68" height="22.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polygons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvY-xy-MbH" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="45" width="68" height="22.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdO-fY-Lhi" userLabel="Mix Label" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="67.5" width="68" height="22.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuO-pw-fAS" customClass="VLTButton" customModule="VLTDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="90" width="68" height="24"/>
+                                                <color key="backgroundColor" name="Secondary"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Z6m-mw-XiY"/>
+                                                    <constraint firstAttribute="height" constant="24" id="ca1-Um-ICa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                                <state key="normal" title="Redraw">
+                                                    <color key="titleColor" name="Primary"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="updateButtonTapped" destination="l5f-mw-aiO" eventType="touchUpInside" id="l80-tR-EmY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="YuO-pw-fAS" firstAttribute="leading" secondItem="ELk-aY-YiB" secondAttribute="leading" id="U4f-vY-4Mc"/>
+                                            <constraint firstAttribute="trailing" secondItem="YuO-pw-fAS" secondAttribute="trailing" id="eYh-ag-SXB"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="mWu-vx-kGK" appends="YES" id="iK0-Sm-Cjk"/>
+                                        </connections>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="TranslucentPrimary"/>
+                                <constraints>
+                                    <constraint firstItem="ELk-aY-YiB" firstAttribute="top" secondItem="Agr-XE-osf" secondAttribute="top" id="Fwp-JO-Dz3"/>
+                                    <constraint firstAttribute="bottom" secondItem="ELk-aY-YiB" secondAttribute="bottom" id="gXS-eP-37H"/>
+                                    <constraint firstItem="ELk-aY-YiB" firstAttribute="leading" secondItem="Agr-XE-osf" secondAttribute="leading" id="iJy-5f-LQQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ELk-aY-YiB" secondAttribute="trailing" id="oK7-93-8nF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="id5-bA-rBW" firstAttribute="top" secondItem="grr-Fj-Tip" secondAttribute="top" id="53P-cY-vmV"/>
+                            <constraint firstItem="Agr-XE-osf" firstAttribute="trailing" secondItem="id5-bA-rBW" secondAttribute="trailing" constant="-12" id="5hv-ZZ-jMC"/>
+                            <constraint firstItem="id5-bA-rBW" firstAttribute="leading" secondItem="grr-Fj-Tip" secondAttribute="leading" id="8W0-vQ-FZL"/>
+                            <constraint firstItem="id5-bA-rBW" firstAttribute="leading" secondItem="grr-Fj-Tip" secondAttribute="leading" id="BGc-XU-3ZK"/>
+                            <constraint firstAttribute="bottom" secondItem="id5-bA-rBW" secondAttribute="bottom" id="NZW-ls-taW"/>
+                            <constraint firstItem="id5-bA-rBW" firstAttribute="trailing" secondItem="grr-Fj-Tip" secondAttribute="trailing" id="n7b-sp-htk"/>
+                            <constraint firstItem="id5-bA-rBW" firstAttribute="top" secondItem="grr-Fj-Tip" secondAttribute="top" id="o6r-PY-IZ7"/>
+                            <constraint firstItem="Agr-XE-osf" firstAttribute="top" secondItem="id5-bA-rBW" secondAttribute="top" constant="8" id="xxh-ns-VhZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="grr-Fj-Tip"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GeoJSON" id="IDq-dJ-Ffr">
+                        <barButtonItem key="rightBarButtonItem" image="list.bullet" catalog="system" id="Sg2-kl-7f4" userLabel="List Button">
+                            <connections>
+                                <action selector="optionsButtonTapped:" destination="l5f-mw-aiO" id="l2K-ee-UHc"/>
+                                <segue destination="OnD-VJ-s79" kind="show" identifier="GeoJSONToVisibleFeaturesSegue" id="G4K-YQ-sCq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="id5-bA-rBW" id="Fmh-My-EIR"/>
+                        <outlet property="markerLabel" destination="NcN-lP-5Tr" id="pZd-Ow-AVW"/>
+                        <outlet property="mixLabel" destination="OdO-fY-Lhi" id="ewo-Br-9Wm"/>
+                        <outlet property="polygonLabel" destination="wvY-xy-MbH" id="Vgq-5T-enO"/>
+                        <outlet property="polylineLabel" destination="Zyx-xx-Tcj" id="VUm-je-qdD"/>
+                        <outlet property="redrawButton" destination="YuO-pw-fAS" id="L0N-dP-OTw"/>
+                        <outlet property="statusView" destination="Agr-XE-osf" id="vaE-SA-x7h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UB9-XZ-jkj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mWu-vx-kGK">
+                    <connections>
+                        <segue destination="OnD-VJ-s79" kind="show" identifier="GeoJSONToVisibleFeaturesTapSegue" id="6Ol-rt-Ea1"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="9" y="181"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="G4K-YQ-sCq"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <namedColor name="Primary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secondary">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TranslucentPrimary">
+            <color red="1" green="1" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
