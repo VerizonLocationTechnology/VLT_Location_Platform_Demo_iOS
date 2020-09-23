@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a5N-FL-04o">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Xbd-Bf-36p">
+            <objects>
+                <navigationController storyboardIdentifier="RelativePositioningNavViewController" id="W6N-Yw-V2g" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rsI-Oo-L4b">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="a5N-FL-04o" kind="relationship" relationship="rootViewController" id="uuz-8z-td4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qau-xg-lWC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-783" y="137"/>
+        </scene>
+        <!--Relative Layering-->
+        <scene sceneID="8GU-wA-y98">
+            <objects>
+                <viewController id="a5N-FL-04o" customClass="RelativePositioningViewController" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xng-kq-SbL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZb-0y-hqg" customClass="VLTMapView" customModule="VLTMaps">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gfR-zS-Ebk" firstAttribute="bottom" secondItem="LZb-0y-hqg" secondAttribute="bottom" id="7p8-FA-PoW"/>
+                            <constraint firstItem="LZb-0y-hqg" firstAttribute="leading" secondItem="gfR-zS-Ebk" secondAttribute="leading" id="OOI-AD-AZE"/>
+                            <constraint firstItem="LZb-0y-hqg" firstAttribute="top" secondItem="gfR-zS-Ebk" secondAttribute="top" id="ObQ-i3-fUz"/>
+                            <constraint firstItem="gfR-zS-Ebk" firstAttribute="trailing" secondItem="LZb-0y-hqg" secondAttribute="trailing" id="gMT-lB-6uz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gfR-zS-Ebk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Relative Layering" id="CN9-Pv-xBV">
+                        <barButtonItem key="backBarButtonItem" title="Map" id="IMx-wQ-AAt"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="list.bullet" catalog="system" id="f1v-bX-7NG">
+                            <connections>
+                                <segue destination="NSB-go-eHD" kind="show" identifier="" id="FUg-hJ-j8N"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="LZb-0y-hqg" id="CW4-9l-4K9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0c-1b-4R5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="137"/>
+        </scene>
+        <!--Relative Layering-->
+        <scene sceneID="3qx-ef-MSs">
+            <objects>
+                <viewController id="NSB-go-eHD" customClass="RelativePositioningTableVC" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SB9-In-AOo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t7N-Hp-AXG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="separatorColor" name="MediumAccentGray"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="to2-wn-luZ">
+                                    <rect key="frame" x="0.0" y="96" width="414" height="0.5"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" name="MediumAccentGray"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="40" id="g0H-2y-34P">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g0H-2y-34P" id="QET-Nz-8J8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="t7N-Hp-AXG" firstAttribute="leading" secondItem="bPO-yr-L2E" secondAttribute="leading" id="6aD-YQ-hNB"/>
+                            <constraint firstItem="bPO-yr-L2E" firstAttribute="bottom" secondItem="t7N-Hp-AXG" secondAttribute="bottom" id="kNc-EM-jSt"/>
+                            <constraint firstItem="bPO-yr-L2E" firstAttribute="trailing" secondItem="t7N-Hp-AXG" secondAttribute="trailing" id="kzK-Wf-cSJ"/>
+                            <constraint firstItem="t7N-Hp-AXG" firstAttribute="top" secondItem="bPO-yr-L2E" secondAttribute="top" id="ti1-74-JP1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bPO-yr-L2E"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Relative Layering" id="spf-ad-gGY"/>
+                    <connections>
+                        <outlet property="tableView" destination="t7N-Hp-AXG" id="Bqk-qc-f9C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcS-Lm-yLH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753.62318840579712" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <namedColor name="MediumAccentGray">
+            <color red="0.84705882352941175" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

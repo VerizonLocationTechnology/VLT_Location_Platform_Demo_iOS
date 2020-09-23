@@ -2,8 +2,8 @@
 //  ImageDownloadHelper.swift
 //  VLTDemo
 //
-//  Created by Verizon Location Technology
-//  Copyright © 2018 Verizon Location Technology. All rights reserved.
+//  Created by amudubagilu on 12/4/18.
+//  Copyright © 2018 VLT. All rights reserved.
 //
 
 import Foundation

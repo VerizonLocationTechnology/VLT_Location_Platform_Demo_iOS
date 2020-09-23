@@ -16,10 +16,11 @@ class ShapesViewController: UIViewController {
 
     // MARK: - Public members
     typealias literals = VLTLiterals.ShapesVCLiterals
+    typealias constants = VLTConstants.ShapesVCConstants
     /// The current features that can be shown on the map and their visibility
     @Published var featureVisibility: MapFeatureVisiblity = MapFeature.initialFeatureVisiblity
 
-    /// ShapesViewController can run in two modes `Shape & Markers` and `Listerners`.  This is the switch.
+    /// ShapesViewController can run in two modes `Shape & Markers` and `Listeners`.  This is the switch.
     var runListeners = false
 
     var markers = [VLTMapMarker]()
@@ -29,23 +30,9 @@ class ShapesViewController: UIViewController {
     var vltCustomImage: VLTImage?
 
     /// The list of coordinates that the polyline will consist of
-    let polylineCoordinates = [
-        CLLocationCoordinate2D(latitude: 42.3637, longitude: -71.053604),
-        CLLocationCoordinate2D(latitude: 42.362061, longitude: -71.05491),
-        CLLocationCoordinate2D(latitude: 42.362554, longitude: -71.055778),
-        CLLocationCoordinate2D(latitude: 42.361543, longitude: -71.057602),
-        CLLocationCoordinate2D(latitude: 42.35887, longitude: -71.056763),
-        CLLocationCoordinate2D(latitude: 42.358851, longitude: -71.05748)
-    ]
+    let polylineCoordinates = constants.polylineCoordinates
     /// List of coordinates that the polygon will encompass
-    let polygonCoordinates = [
-        CLLocationCoordinate2D(latitude: 42.363808, longitude: -71.053601),
-        CLLocationCoordinate2D(latitude: 42.363667, longitude: -71.053667),
-        CLLocationCoordinate2D(latitude: 42.363688, longitude: -71.053727),
-        CLLocationCoordinate2D(latitude: 42.363716, longitude: -71.053717),
-        CLLocationCoordinate2D(latitude: 42.363750, longitude: -71.053765),
-        CLLocationCoordinate2D(latitude: 42.363788, longitude: -71.053742)
-    ]
+    let polygonCoordinates = constants.polygonCoordinates
 
     /// Subscriber that listens for changes in the featureVisibility object and updates the circle label
     var circleSubscriber: AnyCancellable?

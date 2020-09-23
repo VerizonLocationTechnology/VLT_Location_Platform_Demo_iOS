@@ -13,6 +13,17 @@
 		6A630DA52497DBAA0043D272 /* VLTLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A630DA42497DBAA0043D272 /* VLTLiterals.swift */; };
 		6A869C2F248EC6D4005A77E3 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A869C2E248EC6D4005A77E3 /* Double+Extensions.swift */; };
 		6A869C3124913F15005A77E3 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A869C3024913F15005A77E3 /* UIColor+Extensions.swift */; };
+		6AC10056251419390084EB48 /* RelativePositioningTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC10051251419390084EB48 /* RelativePositioningTableVC.swift */; };
+		6AC10057251419390084EB48 /* RelativePositioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC10052251419390084EB48 /* RelativePositioningViewController.swift */; };
+		6AC10058251419390084EB48 /* GeoJSON-SectionB.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AC10053251419390084EB48 /* GeoJSON-SectionB.json */; };
+		6AC10059251419390084EB48 /* RelativePositioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC10054251419390084EB48 /* RelativePositioning.storyboard */; };
+		6AC1005A251419390084EB48 /* GeoJSON-SectionA.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AC10055251419390084EB48 /* GeoJSON-SectionA.json */; };
+		6AC1005E2514194B0084EB48 /* BoundingBox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1005B2514194A0084EB48 /* BoundingBox.storyboard */; };
+		6AC1005F2514194B0084EB48 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1005C2514194A0084EB48 /* BoundingBox.swift */; };
+		6AC100602514194B0084EB48 /* BoundingBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1005D2514194A0084EB48 /* BoundingBoxViewController.swift */; };
+		6AC1006225141E780084EB48 /* VLTToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1006125141E770084EB48 /* VLTToggleButton.swift */; };
+		6AC1006425153F350084EB48 /* VLTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1006325153F350084EB48 /* VLTConstants.swift */; };
+		6AC1006625153F910084EB48 /* VLTConstants+VLTMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1006525153F910084EB48 /* VLTConstants+VLTMaps.swift */; };
 		6AD5D87F24EDCABF004AFCDD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D87E24EDCABE004AFCDD /* String+Extension.swift */; };
 		6AD5D88124EDCACC004AFCDD /* ImageDownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D88024EDCACC004AFCDD /* ImageDownloadHelper.swift */; };
 		6AD5D8A824EDCCDF004AFCDD /* GeoJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A224EDCCDF004AFCDD /* GeoJSONViewController.swift */; };
@@ -98,6 +109,17 @@
 		6A630DA42497DBAA0043D272 /* VLTLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTLiterals.swift; sourceTree = "<group>"; };
 		6A869C2E248EC6D4005A77E3 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		6A869C3024913F15005A77E3 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		6AC10051251419390084EB48 /* RelativePositioningTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativePositioningTableVC.swift; sourceTree = "<group>"; };
+		6AC10052251419390084EB48 /* RelativePositioningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativePositioningViewController.swift; sourceTree = "<group>"; };
+		6AC10053251419390084EB48 /* GeoJSON-SectionB.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "GeoJSON-SectionB.json"; sourceTree = "<group>"; };
+		6AC10054251419390084EB48 /* RelativePositioning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelativePositioning.storyboard; sourceTree = "<group>"; };
+		6AC10055251419390084EB48 /* GeoJSON-SectionA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "GeoJSON-SectionA.json"; sourceTree = "<group>"; };
+		6AC1005B2514194A0084EB48 /* BoundingBox.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BoundingBox.storyboard; sourceTree = "<group>"; };
+		6AC1005C2514194A0084EB48 /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		6AC1005D2514194A0084EB48 /* BoundingBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBoxViewController.swift; sourceTree = "<group>"; };
+		6AC1006125141E770084EB48 /* VLTToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTToggleButton.swift; sourceTree = "<group>"; };
+		6AC1006325153F350084EB48 /* VLTConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTConstants.swift; sourceTree = "<group>"; };
+		6AC1006525153F910084EB48 /* VLTConstants+VLTMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VLTConstants+VLTMaps.swift"; sourceTree = "<group>"; };
 		6AD5D87E24EDCABE004AFCDD /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		6AD5D88024EDCACC004AFCDD /* ImageDownloadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadHelper.swift; sourceTree = "<group>"; };
 		6AD5D8A224EDCCDF004AFCDD /* GeoJSONViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONViewController.swift; sourceTree = "<group>"; };
@@ -207,8 +229,31 @@
 			children = (
 				6AD5D88024EDCACC004AFCDD /* ImageDownloadHelper.swift */,
 				6A630DA42497DBAA0043D272 /* VLTLiterals.swift */,
+				6AC1006325153F350084EB48 /* VLTConstants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6AC1004F251418D50084EB48 /* Bounding Box */ = {
+			isa = PBXGroup;
+			children = (
+				6AC1005B2514194A0084EB48 /* BoundingBox.storyboard */,
+				6AC1005C2514194A0084EB48 /* BoundingBox.swift */,
+				6AC1005D2514194A0084EB48 /* BoundingBoxViewController.swift */,
+			);
+			path = "Bounding Box";
+			sourceTree = "<group>";
+		};
+		6AC10050251418F30084EB48 /* Relative Positioning */ = {
+			isa = PBXGroup;
+			children = (
+				6AC10055251419390084EB48 /* GeoJSON-SectionA.json */,
+				6AC10053251419390084EB48 /* GeoJSON-SectionB.json */,
+				6AC10054251419390084EB48 /* RelativePositioning.storyboard */,
+				6AC10051251419390084EB48 /* RelativePositioningTableVC.swift */,
+				6AC10052251419390084EB48 /* RelativePositioningViewController.swift */,
+			);
+			path = "Relative Positioning";
 			sourceTree = "<group>";
 		};
 		6AD5D89524EDCC71004AFCDD /* GeoJSON */ = {
@@ -342,6 +387,7 @@
 		87D4004324C24A4E00D10382 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6AC1006125141E770084EB48 /* VLTToggleButton.swift */,
 				87D4004424C24AB000D10382 /* VLTHomeTableViewCell.swift */,
 				87D4004524C24AB000D10382 /* VLTHomeTableViewCell.xib */,
 				87D4004624C24AB000D10382 /* VLTView.swift */,
@@ -366,9 +412,11 @@
 		87D4005924C2522C00D10382 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				6AC1004F251418D50084EB48 /* Bounding Box */,
 				87D4005D24C2522C00D10382 /* Camera */,
 				6AD5D89524EDCC71004AFCDD /* GeoJSON */,
 				87D4005A24C2522C00D10382 /* Modes */,
+				6AC10050251418F30084EB48 /* Relative Positioning */,
 				87D4006124C2522C00D10382 /* Shapes */,
 				87D4006B24C2522C00D10382 /* User Location */,
 				6AD5D8AE24EDCCF4004AFCDD /* Visible Features */,
@@ -444,6 +492,7 @@
 				87D4007724C2522C00D10382 /* DemoFeature.swift */,
 				87D4007624C2522C00D10382 /* MapFeature.swift */,
 				87D4007824C2522C00D10382 /* VLTLiterals+VLTMaps.swift */,
+				6AC1006525153F910084EB48 /* VLTConstants+VLTMaps.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -575,8 +624,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AD5D8CC24EDE0EC004AFCDD /* Polygons.json in Resources */,
+				6AC10058251419390084EB48 /* GeoJSON-SectionB.json in Resources */,
 				6AD5D8B224EDCD13004AFCDD /* VisibleFeatures.storyboard in Resources */,
 				87D4007A24C2522C00D10382 /* Modes.storyboard in Resources */,
+				6AC1005E2514194B0084EB48 /* BoundingBox.storyboard in Resources */,
 				87D4007D24C2522C00D10382 /* Camera.storyboard in Resources */,
 				6AD5D8AC24EDCCDF004AFCDD /* GeoJSON.storyboard in Resources */,
 				6AD5D8CA24EDE0EC004AFCDD /* Points.json in Resources */,
@@ -588,7 +639,9 @@
 				6AD5D8C924EDE0EB004AFCDD /* MixedFeatureCollection.json in Resources */,
 				6AE7ECBF24745D1100821502 /* FeatureList.storyboard in Resources */,
 				87D4008924C2522C00D10382 /* VLTMaps.xcassets in Resources */,
+				6AC1005A251419390084EB48 /* GeoJSON-SectionA.json in Resources */,
 				87D4008724C2522C00D10382 /* UserLocation.storyboard in Resources */,
+				6AC10059251419390084EB48 /* RelativePositioning.storyboard in Resources */,
 				87D4004824C24AB000D10382 /* VLTHomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -744,19 +797,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AD5D8A924EDCCDF004AFCDD /* GeoJSONViewController+Polylines.swift in Sources */,
+				6AC1006425153F350084EB48 /* VLTConstants.swift in Sources */,
 				6AD5D8A824EDCCDF004AFCDD /* GeoJSONViewController.swift in Sources */,
 				87D4007C24C2522C00D10382 /* CameraMetricsViewController.swift in Sources */,
 				6AD5D88124EDCACC004AFCDD /* ImageDownloadHelper.swift in Sources */,
+				6AC1006225141E780084EB48 /* VLTToggleButton.swift in Sources */,
 				6AE7ECB824745D1100821502 /* AppDelegate.swift in Sources */,
 				6A540DFD249275CB002FF921 /* UIViewController+Extensions.swift in Sources */,
 				87D4008C24C2522C00D10382 /* CameraMetricsControllerDelegate.swift in Sources */,
 				87D4008324C2522C00D10382 /* ShapesViewController+TrafficExamples.swift in Sources */,
 				6AE7ECBA24745D1100821502 /* SceneDelegate.swift in Sources */,
+				6AC1005F2514194B0084EB48 /* BoundingBox.swift in Sources */,
 				87D4008D24C2522C00D10382 /* CameraMetrics.swift in Sources */,
 				87D4008F24C2522C00D10382 /* DemoFeature.swift in Sources */,
 				87438B752485A45C0007D1FC /* VLTButton.swift in Sources */,
 				87D4009024C2522C00D10382 /* VLTLiterals+VLTMaps.swift in Sources */,
 				6AD5D8AB24EDCCDF004AFCDD /* GeoJSONViewController+MixedFeatures.swift in Sources */,
+				6AC10056251419390084EB48 /* RelativePositioningTableVC.swift in Sources */,
 				6AD5D8B124EDCD13004AFCDD /* VisibleFeaturesViewController.swift in Sources */,
 				87D4008624C2522C00D10382 /* ShapesViewController+PolygonExamples.swift in Sources */,
 				87D4004724C24AB000D10382 /* VLTHomeTableViewCell.swift in Sources */,
@@ -771,11 +828,14 @@
 				87D4007F24C2522C00D10382 /* ShapesViewController+MarkerExamples.swift in Sources */,
 				87D4007E24C2522C00D10382 /* ShapesViewController.swift in Sources */,
 				6A630DA52497DBAA0043D272 /* VLTLiterals.swift in Sources */,
+				6AC1006625153F910084EB48 /* VLTConstants+VLTMaps.swift in Sources */,
 				6AD5D8B424EDCDAC004AFCDD /* Data+Extensions.swift in Sources */,
 				6A869C2F248EC6D4005A77E3 /* Double+Extensions.swift in Sources */,
 				6AE7ECF724747EF000821502 /* FeatureListViewController.swift in Sources */,
+				6AC100602514194B0084EB48 /* BoundingBoxViewController.swift in Sources */,
 				6A869C3124913F15005A77E3 /* UIColor+Extensions.swift in Sources */,
 				87D4007B24C2522C00D10382 /* CameraViewController.swift in Sources */,
+				6AC10057251419390084EB48 /* RelativePositioningViewController.swift in Sources */,
 				87D4008824C2522C00D10382 /* UserLocationViewController.swift in Sources */,
 				6AD5D8AD24EDCCDF004AFCDD /* GeoJSONViewController+MultiPoints.swift in Sources */,
 				87D4008A24C2522C00D10382 /* VLTMapMode+extensions.swift in Sources */,
@@ -959,7 +1019,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = J2244V2577;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = VLTDemo/Info.plist;
@@ -968,7 +1028,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemo;
 				PRODUCT_NAME = VLTDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.Verizon.Location.Technology.VLTDemo";
@@ -984,7 +1044,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = J2244V2577;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = VLTDemo/Info.plist;
@@ -993,7 +1053,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemo;
 				PRODUCT_NAME = VLTDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.Verizon.Location.Technology.VLTDemo";

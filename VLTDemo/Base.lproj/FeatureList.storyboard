@@ -54,6 +54,8 @@
                         <segue destination="Hd8-pv-nyb" kind="show" identifier="FeatureListToUserLocationSegue" id="09z-da-hxA"/>
                         <segue destination="Wkt-Nx-3f3" kind="show" identifier="FeatureListToShapesSegue_Listener" id="jMY-9r-GGf"/>
                         <segue destination="ory-j9-Txl" kind="show" identifier="FeatureListToGeoJsonSegue" id="o3M-F0-6ab"/>
+                        <segue destination="L5R-nO-JcC" kind="show" identifier="FeatureListToRelativePositioningSegue" id="BgV-OY-edo"/>
+                        <segue destination="WKX-Ro-5N3" kind="show" identifier="FeatureListToBoundingBoxSegue" id="Yf3-1T-DPz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -123,6 +125,26 @@
             </objects>
             <point key="canvasLocation" x="1433" y="578"/>
         </scene>
+        <!--RelativePositioning-->
+        <scene sceneID="6p4-2c-MBI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RelativePositioning" id="L5R-nO-JcC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vxM-a3-Hpg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRr-mg-p0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="669"/>
+        </scene>
+        <!--BoundingBox-->
+        <scene sceneID="fEX-O9-SGq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BoundingBox" id="WKX-Ro-5N3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ib2-By-rJn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mAG-Fc-7r5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187" y="669"/>
+        </scene>
         <!--GeoJSON-->
         <scene sceneID="H2H-0z-EAj">
             <objects>
@@ -131,7 +153,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIB-2m-czp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="578"/>
+            <point key="canvasLocation" x="642" y="669"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

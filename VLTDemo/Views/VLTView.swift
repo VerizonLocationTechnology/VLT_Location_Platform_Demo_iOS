@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class VLTView: UIView {
     @IBInspectable
     var cornerRadius: CGFloat = 0 {

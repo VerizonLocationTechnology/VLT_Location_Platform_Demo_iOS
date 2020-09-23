@@ -37,7 +37,7 @@
         <!--GeoJSON-->
         <scene sceneID="Fhv-dG-BhU">
             <objects>
-                <viewController id="l5f-mw-aiO" customClass="GeoJSONViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="l5f-mw-aiO" customClass="GeoJSONViewController" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U20-A7-bz6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,13 +45,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="id5-bA-rBW" customClass="VLTMapView" customModule="VLTMaps">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Agr-XE-osf" userLabel="Status View" customClass="VLTView" customModule="VLTDemo" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Agr-XE-osf" userLabel="Status View" customClass="VLTView" customModule="VLTMapsSDK" customModuleProvider="target">
                                 <rect key="frame" x="334" y="96" width="68" height="114"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ELk-aY-YiB">
                                         <rect key="frame" x="0.0" y="0.0" width="68" height="114"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Markers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcN-lP-5Tr" userLabel="Marker Label" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Markers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcN-lP-5Tr" userLabel="Marker Label" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="68" height="22.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
@@ -71,7 +71,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polylines" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-xx-Tcj" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polylines" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-xx-Tcj" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="22.5" width="68" height="22.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
@@ -91,7 +91,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polygons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvY-xy-MbH" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polygons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvY-xy-MbH" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="45" width="68" height="22.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
@@ -111,7 +111,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdO-fY-Lhi" userLabel="Mix Label" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdO-fY-Lhi" userLabel="Mix Label" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="67.5" width="68" height="22.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
@@ -131,7 +131,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuO-pw-fAS" customClass="VLTButton" customModule="VLTDemo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuO-pw-fAS" customClass="VLTButton" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="90" width="68" height="24"/>
                                                 <color key="backgroundColor" name="Secondary"/>
                                                 <constraints>
