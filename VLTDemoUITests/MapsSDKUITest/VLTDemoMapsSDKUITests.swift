@@ -7,23 +7,22 @@
 //
 
 import XCTest
-@testable import VLTDemo
 
 let app = XCUIApplication()
 let tablesQuery = app.tables
 
 class VLTDemoMapsSDKUITests: XCTestCase {
-    
+
     override func setUp() {
         super.setUp()
-        
+
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        
+
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         app.launch()
     }
-    
+
     func testHomeScreenElements() {
         XCTAssert(app.staticTexts[VLTLiterals.DemoFeatureLiterals.welcomeTitle].exists)
         XCTAssert(app.staticTexts[VLTLiterals.DemoFeatureLiterals.cameraTitle].exists)
@@ -32,7 +31,7 @@ class VLTDemoMapsSDKUITests: XCTestCase {
         XCTAssert(app.staticTexts[VLTLiterals.DemoFeatureLiterals.shapesTitle].exists)
         XCTAssert(app.staticTexts[VLTLiterals.DemoFeatureLiterals.listenersTitle].exists)
     }
-    
+
     func testCamera() {
         XCTAssert(app.staticTexts[VLTLiterals.DemoFeatureLiterals.cameraTitle].exists)
         app.staticTexts[VLTLiterals.DemoFeatureLiterals.cameraTitle].tap()
@@ -45,7 +44,7 @@ class VLTDemoMapsSDKUITests: XCTestCase {
         XCTAssert(app.staticTexts["Tilt"].exists)
         app.staticTexts["Update"].tap()
     }
-    
+
     func testModes() {
         XCTAssert(app.staticTexts[VLTLiterals.DemoFeatureLiterals.modesTitle].exists)
         app.staticTexts[VLTLiterals.DemoFeatureLiterals.modesTitle].tap()
@@ -62,14 +61,14 @@ class VLTDemoMapsSDKUITests: XCTestCase {
         XCTAssert(app.buttons["Day"].isSelected == false)
         XCTAssert(app.buttons["Dark"].isSelected == false)
     }
-    
+
     func testUserLocation() {
         XCTAssert(app.staticTexts[VLTLiterals.DemoFeatureLiterals.userLocationTitle].exists)
         app.staticTexts[VLTLiterals.DemoFeatureLiterals.userLocationTitle].tap()
         XCTAssert(app.staticTexts[VLTLiterals.DemoFeatureLiterals.userLocationTitle].exists)
-        
+
     }
-    
+
     func testShapes() {
         XCTAssert(app.staticTexts[VLTLiterals.DemoFeatureLiterals.shapesTitle].exists)
         app.staticTexts[VLTLiterals.DemoFeatureLiterals.shapesTitle].tap()
@@ -85,9 +84,9 @@ class VLTDemoMapsSDKUITests: XCTestCase {
         XCTAssert(app.staticTexts["Marker"].exists)
         XCTAssert(app.staticTexts["Polyline"].exists)
         XCTAssert(app.staticTexts["Polygon"].exists)
-        
+
     }
-    
+
     func testListeners() {
         XCTAssert(app.staticTexts[VLTLiterals.DemoFeatureLiterals.listenersTitle].exists)
         app.staticTexts[VLTLiterals.DemoFeatureLiterals.listenersTitle].tap()

@@ -13,7 +13,7 @@ enum DemoFeature: CaseIterable {
     /// Typealias pointing to string literals for this enum
     private typealias literals = VLTLiterals.DemoFeatureLiterals
 
-    case welcome, camera, modes, userLocation, shapes, geoJson, listeners
+    case welcome, camera, modes, userLocation, shapes, geoJson, listeners, relativePositioning, boundingBox
 
     /// Overarching label for each feature to be demoed
     var title: String {
@@ -32,6 +32,10 @@ enum DemoFeature: CaseIterable {
             return literals.geoJsonTitle
         case .listeners:
             return literals.listenersTitle
+        case .relativePositioning:
+            return literals.relativePositioningTitle
+        case .boundingBox:
+            return literals.boundingBoxTitle
         }
     }
 
@@ -52,6 +56,10 @@ enum DemoFeature: CaseIterable {
             return literals.geoJsonContent
         case .listeners:
             return literals.listenersContent
+        case .relativePositioning:
+            return literals.relativePositioningContent
+        case .boundingBox:
+            return literals.boundingBoxContent
         }
     }
 
@@ -72,6 +80,10 @@ enum DemoFeature: CaseIterable {
             return literals.geoJsonSegue
         case .listeners:
             return literals.listenersSegue
+        case .relativePositioning:
+            return literals.relativePositioningSegue
+        case .boundingBox:
+            return literals.boundingBoxSegue
         }
     }
 }
