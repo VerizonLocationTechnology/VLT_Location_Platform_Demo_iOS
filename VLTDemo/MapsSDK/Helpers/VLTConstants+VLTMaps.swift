@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 
 extension VLTConstants {
-    
+
     // Constants for the ShapesViewController Class
     class ShapesVCConstants {
         // Coordinates for the VLTPolygon object
@@ -32,7 +32,7 @@ extension VLTConstants {
             CLLocationCoordinate2D(latitude: 42.358851, longitude: -71.05748)
         ]
     }
-    
+
     // Constants for the RelativePositioningViewController Class
     class RelativePositioningVCConstants {
         // Coordinates for objects on layer C

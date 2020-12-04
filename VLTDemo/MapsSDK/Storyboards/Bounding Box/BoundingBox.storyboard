@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mSe-dE-hG6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mSe-dE-hG6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,7 +36,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Py-Qn-cWf" customClass="VLTMapView" customModule="VLTMaps">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULJ-a9-jKj" customClass="VLTView" customModule="VLTMapsSDK" customModuleProvider="target">
                                 <rect key="frame" x="326" y="104" width="80" height="32"/>
@@ -42,7 +44,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mHA-AU-eSa">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xso-Tg-aT7" customClass="VLTToggleButton" customModule="VLTMapsSDK" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xso-Tg-aT7" customClass="VLTToggleButton" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
                                                 <color key="backgroundColor" name="SelectionIndicator"/>
                                                 <constraints>
@@ -60,18 +62,12 @@
                                                         <color key="value" name="NonSelectedIndicator"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showSelected" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
-                                                        <color key="value" name="Secondary"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedTextColor">
-                                                        <color key="value" name="Secondary"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="locationButtonTapped:" destination="mSe-dE-hG6" eventType="touchUpInside" id="oe6-0A-yEz"/>
                                                 </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eA-Vc-Nji" customClass="VLTToggleButton" customModule="VLTMapsSDK" customModuleProvider="target">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eA-Vc-Nji" customClass="VLTToggleButton" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="34.5"/>
                                                 <color key="backgroundColor" name="NonSelectedIndicator"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
@@ -86,18 +82,12 @@
                                                         <color key="value" name="NonSelectedIndicator"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showSelected" value="NO"/>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedTextColor">
-                                                        <color key="value" name="Secondary"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
-                                                        <color key="value" name="Secondary"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="locationButtonTapped:" destination="mSe-dE-hG6" eventType="touchUpInside" id="pP0-KC-e2n"/>
                                                 </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofE-ek-QxO" customClass="VLTToggleButton" customModule="VLTMapsSDK" customModuleProvider="target">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofE-ek-QxO" customClass="VLTToggleButton" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="34.5"/>
                                                 <color key="backgroundColor" name="NonSelectedIndicator"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
@@ -112,18 +102,12 @@
                                                         <color key="value" name="NonSelectedIndicator"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showSelected" value="NO"/>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedTextColor">
-                                                        <color key="value" name="Secondary"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
-                                                        <color key="value" name="Secondary"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="locationButtonTapped:" destination="mSe-dE-hG6" eventType="touchUpInside" id="oeJ-93-pjY"/>
                                                 </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xV-eA-lJ5" customClass="VLTToggleButton" customModule="VLTMapsSDK" customModuleProvider="target">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xV-eA-lJ5" customClass="VLTToggleButton" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="34.5"/>
                                                 <color key="backgroundColor" name="NonSelectedIndicator"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
@@ -138,12 +122,6 @@
                                                         <color key="value" name="NonSelectedIndicator"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showSelected" value="NO"/>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedTextColor">
-                                                        <color key="value" name="Secondary"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
-                                                        <color key="value" name="Secondary"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="locationButtonTapped:" destination="mSe-dE-hG6" eventType="touchUpInside" id="rTe-pp-DRH"/>
@@ -172,7 +150,8 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="CwB-PX-Jls"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CwB-PX-Jls" firstAttribute="trailing" secondItem="ULJ-a9-jKj" secondAttribute="trailing" constant="8" id="22i-we-XBM"/>
                             <constraint firstItem="CwB-PX-Jls" firstAttribute="bottom" secondItem="4Py-Qn-cWf" secondAttribute="bottom" id="Eps-tQ-tHU"/>
@@ -181,7 +160,6 @@
                             <constraint firstItem="4Py-Qn-cWf" firstAttribute="leading" secondItem="CwB-PX-Jls" secondAttribute="leading" id="kV1-2x-tNo"/>
                             <constraint firstItem="ULJ-a9-jKj" firstAttribute="top" secondItem="CwB-PX-Jls" secondAttribute="top" constant="16" id="nRe-Em-LQa"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="CwB-PX-Jls"/>
                     </view>
                     <navigationItem key="navigationItem" title="Bounding Box" id="ILD-pf-qc9"/>
                     <connections>
@@ -210,5 +188,8 @@
         <namedColor name="SelectionIndicator">
             <color red="0.84705882352941175" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

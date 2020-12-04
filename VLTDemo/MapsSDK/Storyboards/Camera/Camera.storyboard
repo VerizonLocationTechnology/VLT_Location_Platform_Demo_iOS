@@ -11,7 +11,7 @@
         <!--Camera-->
         <scene sceneID="PKm-ix-iUF">
             <objects>
-                <viewController id="5e2-Nw-qta" customClass="CameraViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5e2-Nw-qta" customClass="CameraViewController" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J8j-oa-YmL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ih-ZM-fQ6" customClass="VLTMapView" customModule="VLTMaps">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </view>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sju-Vq-Ln9" userLabel="Status View" customClass="VLTView" customModule="VLTDemo" customModuleProvider="target">
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sju-Vq-Ln9" userLabel="Status View" customClass="VLTView" customModule="VLTMapsSDK" customModuleProvider="target">
                                 <rect key="frame" x="276" y="100" width="122" height="75.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yq6-7y-Xp2">
@@ -96,7 +96,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lf-vD-mVB" userLabel="Zoom Control View" customClass="VLTView" customModule="VLTDemo" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lf-vD-mVB" userLabel="Zoom Control View" customClass="VLTView" customModule="VLTMapsSDK" customModuleProvider="target">
                                 <rect key="frame" x="360" y="736" width="42" height="88"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dw5-bz-U7U">
@@ -221,7 +221,7 @@
         <!--Metrics-->
         <scene sceneID="edd-uZ-IJ2">
             <objects>
-                <viewController id="2W1-OF-oOS" customClass="CameraMetricsViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2W1-OF-oOS" customClass="CameraMetricsViewController" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g7P-PQ-V6q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,7 +241,7 @@
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="15.31" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMG-4M-0Ei" customClass="VLTTextField" customModule="VLTDemo" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="15.31" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMG-4M-0Ei" customClass="VLTTextField" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="25" width="382" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="X38-o1-Y0p"/>
@@ -275,7 +275,7 @@
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="270.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLK-5o-lw3" customClass="VLTTextField" customModule="VLTDemo" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="270.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLK-5o-lw3" customClass="VLTTextField" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="25" width="382" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="QU1-Rf-3yo"/>
@@ -309,7 +309,7 @@
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="45.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IZW-By-BTO" customClass="VLTTextField" customModule="VLTDemo" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="45.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IZW-By-BTO" customClass="VLTTextField" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="25" width="382" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="1wj-3b-ZuN"/>
@@ -334,7 +334,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iC6-Zm-FXn">
                                         <rect key="frame" x="0.0" y="279" width="382" height="44"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qp5-Ly-5CT" customClass="VLTButton" customModule="VLTDemo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qp5-Ly-5CT" customClass="VLTButton" customModule="VLTMapsSDK" customModuleProvider="target">
                                                 <rect key="frame" x="119" y="0.0" width="144" height="44"/>
                                                 <color key="backgroundColor" name="Secondary"/>
                                                 <constraints>

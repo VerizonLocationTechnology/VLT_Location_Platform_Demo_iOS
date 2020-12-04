@@ -72,13 +72,15 @@ class GeoJSONViewController: UIViewController, VLTMapViewDelegate, VisibleFeatur
         /// Get the map mode that matches the device's current interface style
         let mode = VLTMapMode.mapMode(forUserInterfaceStyle: traitCollection.userInterfaceStyle)
 
-        /// Configure the map with the initial mode, any built-in features that should be hidden, and the initial center for the camera
+        /// Configure the map with the initial mode, any built-in features that should be hidden, and the initial bounded area for the camera
         let mapConfiguration = MapConfiguration(mode: mode,
                                                 hiddenFeatures: [.traffic],
                                                 cameraCenter: CLLocationCoordinate2D(latitude: 42.3637, longitude: -71.053604))
 
         /// Load the map using your given API key
         mapView.loadMap(apiKey: apiKey, configuration: mapConfiguration)
+
+        /// Set this view controller as the VLTMapViewDelegate for the mapView
         mapView.delegate = self
 
         initializeProcessing()

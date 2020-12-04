@@ -27,7 +27,7 @@
         <!--Visible Features-->
         <scene sceneID="7FQ-3O-JsM">
             <objects>
-                <viewController id="ho3-zV-u52" customClass="VisibleFeaturesViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ho3-zV-u52" customClass="VisibleFeaturesViewController" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z55-1j-O6s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

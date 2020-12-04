@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fsl-Xc-YPx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fsl-Xc-YPx">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FeatureListViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FeatureListViewController" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,14 +38,14 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eEb-MU-zo6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IpP-Rv-jlx"/>
                             <constraint firstAttribute="bottom" secondItem="eEb-MU-zo6" secondAttribute="bottom" id="Kro-Xx-eKQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eEb-MU-zo6" secondAttribute="trailing" id="l1z-sp-fh4"/>
                             <constraint firstItem="eEb-MU-zo6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ln8-oB-iNi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="4lT-A6-tqQ"/>
                     <connections>
@@ -56,6 +58,7 @@
                         <segue destination="ory-j9-Txl" kind="show" identifier="FeatureListToGeoJsonSegue" id="o3M-F0-6ab"/>
                         <segue destination="L5R-nO-JcC" kind="show" identifier="FeatureListToRelativePositioningSegue" id="BgV-OY-edo"/>
                         <segue destination="WKX-Ro-5N3" kind="show" identifier="FeatureListToBoundingBoxSegue" id="Yf3-1T-DPz"/>
+                        <segue destination="8G9-GU-scE" kind="show" identifier="FeatureListToMapboxSegue" id="3xk-1t-pt4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -125,6 +128,16 @@
             </objects>
             <point key="canvasLocation" x="1433" y="578"/>
         </scene>
+        <!--Mapbox-->
+        <scene sceneID="1Hq-mL-oEB">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Mapbox" storyboardName="Mapbox" id="8G9-GU-scE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="a8I-5u-u2p"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qWR-3i-sPS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1470" y="669"/>
+        </scene>
         <!--RelativePositioning-->
         <scene sceneID="6p4-2c-MBI">
             <objects>
@@ -169,5 +182,8 @@
         <namedColor name="Secondary">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

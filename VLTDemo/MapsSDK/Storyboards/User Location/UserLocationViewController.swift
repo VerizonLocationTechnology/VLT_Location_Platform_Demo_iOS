@@ -48,6 +48,8 @@ class UserLocationViewController: UIViewController {
 
         /// Load the map using your given API key
         mapView.loadMap(apiKey: apiKey, configuration: mapConfiguration)
+
+        /// Set this view controller as the VLTMapViewDelegate for the mapView
         mapView.delegate = self
 
         /// Allow the location manager to interact with this UIViewController instance
@@ -104,7 +106,6 @@ extension UserLocationViewController: CLLocationManagerDelegate {
 // MARK: - VLTMapViewDelegate
 extension UserLocationViewController: VLTMapViewDelegate {
     func tappedOnCallout(mapView: VLTMapView, object: VLTMapObject) {
-       /// Handle the callout being tapped for the given object
     }
 
     /// If the map succeeds in loading, attempt to show the user's current location

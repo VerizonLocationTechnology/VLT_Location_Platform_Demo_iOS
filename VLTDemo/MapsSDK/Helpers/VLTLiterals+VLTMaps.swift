@@ -231,6 +231,18 @@ extension VLTLiterals {
         static let cameraUpdateErrorMessage = "Failed to update camera"
     }
 
+    /// String literals for MapboxIntegrationViewController
+    class MapboxIntegrationVCLiterals {
+        /// Title for MapboxIntegrationViewController
+        static let title = "Mapbox Integration"
+
+        /// Error message displayed when an error occurs while updating the camera
+        static let cameraUpdateErrorMessage = "Failed to update camera"
+
+        /// Error message displayed when an error occurs while adding markers to the map
+        static let addMarkersErrorMessage = "Failed to add markers"
+    }
+
     /// String literals for DemoFeatures enum
     class DemoFeatureLiterals {
         /// Demo Feature Titles
@@ -243,6 +255,7 @@ extension VLTLiterals {
         static let listenersTitle = "Listeners"
         static let relativePositioningTitle = "Relative Positioning"
         static let boundingBoxTitle = "Bounding Box"
+        static let mapboxTitle = "Mapbox Integration"
 
         /// Demo Feature Content
         static let welcomeContent = "Welcome to the VLT Demo Application, view our supported functionality below."
@@ -254,6 +267,7 @@ extension VLTLiterals {
         static let listenersContent = "Understand user interactions with the map, using our gesturelisteners and callbacks."
         static let relativePositioningContent = "Easily group objects together, place and layer them on the map relative to other objects."
         static let boundingBoxContent = "Set camera position using latitude and longitude bounds."
+        static let mapboxContent = "Integrate with Mapbox alongside VLTMaps to expand functionality"
 
         /// Storyboard Segues
         static let cameraSegue = "FeatureListToCameraSegue"
@@ -264,6 +278,7 @@ extension VLTLiterals {
         static let listenersSegue = "FeatureListToShapesSegue_Listener"
         static let relativePositioningSegue = "FeatureListToRelativePositioningSegue"
         static let boundingBoxSegue = "FeatureListToBoundingBoxSegue"
+        static let mapboxSegue = "FeatureListToMapboxSegue"
     }
 
     /// String literals for alerts and errors

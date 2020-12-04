@@ -40,6 +40,9 @@
 		6AD5D8CA24EDE0EC004AFCDD /* Points.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C624EDE0EB004AFCDD /* Points.json */; };
 		6AD5D8CB24EDE0EC004AFCDD /* Polylines.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C724EDE0EB004AFCDD /* Polylines.json */; };
 		6AD5D8CC24EDE0EC004AFCDD /* Polygons.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C824EDE0EB004AFCDD /* Polygons.json */; };
+		6AE56ECC2579AD80003B2EBA /* Mapbox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE56ECA2579AD7F003B2EBA /* Mapbox.storyboard */; };
+		6AE56ECD2579AD80003B2EBA /* MapboxIntegrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE56ECB2579AD7F003B2EBA /* MapboxIntegrationViewController.swift */; };
+		6AE56EE8257AA40D003B2EBA /* CustomMglAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE56EE7257AA40D003B2EBA /* CustomMglAnnotationView.swift */; };
 		6AE7ECB824745D1100821502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7ECB724745D1100821502 /* AppDelegate.swift */; };
 		6AE7ECBA24745D1100821502 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7ECB924745D1100821502 /* SceneDelegate.swift */; };
 		6AE7ECBF24745D1100821502 /* FeatureList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7ECBD24745D1100821502 /* FeatureList.storyboard */; };
@@ -136,6 +139,9 @@
 		6AD5D8C624EDE0EB004AFCDD /* Points.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Points.json; sourceTree = "<group>"; };
 		6AD5D8C724EDE0EB004AFCDD /* Polylines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Polylines.json; sourceTree = "<group>"; };
 		6AD5D8C824EDE0EB004AFCDD /* Polygons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Polygons.json; sourceTree = "<group>"; };
+		6AE56ECA2579AD7F003B2EBA /* Mapbox.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mapbox.storyboard; sourceTree = "<group>"; };
+		6AE56ECB2579AD7F003B2EBA /* MapboxIntegrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxIntegrationViewController.swift; sourceTree = "<group>"; };
+		6AE56EE7257AA40D003B2EBA /* CustomMglAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMglAnnotationView.swift; sourceTree = "<group>"; };
 		6AE7ECB424745D1100821502 /* VLTDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VLTDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE7ECB724745D1100821502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AE7ECB924745D1100821502 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -289,6 +295,15 @@
 			path = "GeoJSON Files";
 			sourceTree = "<group>";
 		};
+		6AE56EC92579AD12003B2EBA /* Mapbox Integration */ = {
+			isa = PBXGroup;
+			children = (
+				6AE56ECA2579AD7F003B2EBA /* Mapbox.storyboard */,
+				6AE56ECB2579AD7F003B2EBA /* MapboxIntegrationViewController.swift */,
+			);
+			path = "Mapbox Integration";
+			sourceTree = "<group>";
+		};
 		6AE7ECAB24745D1100821502 = {
 			isa = PBXGroup;
 			children = (
@@ -415,6 +430,7 @@
 				6AC1004F251418D50084EB48 /* Bounding Box */,
 				87D4005D24C2522C00D10382 /* Camera */,
 				6AD5D89524EDCC71004AFCDD /* GeoJSON */,
+				6AE56EC92579AD12003B2EBA /* Mapbox Integration */,
 				87D4005A24C2522C00D10382 /* Modes */,
 				6AC10050251418F30084EB48 /* Relative Positioning */,
 				87D4006124C2522C00D10382 /* Shapes */,
@@ -488,6 +504,7 @@
 		87D4007424C2522C00D10382 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				6AE56EE7257AA40D003B2EBA /* CustomMglAnnotationView.swift */,
 				87D4007524C2522C00D10382 /* CameraMetrics.swift */,
 				87D4007724C2522C00D10382 /* DemoFeature.swift */,
 				87D4007624C2522C00D10382 /* MapFeature.swift */,
@@ -643,6 +660,7 @@
 				87D4008724C2522C00D10382 /* UserLocation.storyboard in Resources */,
 				6AC10059251419390084EB48 /* RelativePositioning.storyboard in Resources */,
 				87D4004824C24AB000D10382 /* VLTHomeTableViewCell.xib in Resources */,
+				6AE56ECC2579AD80003B2EBA /* Mapbox.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,6 +823,7 @@
 				6AE7ECB824745D1100821502 /* AppDelegate.swift in Sources */,
 				6A540DFD249275CB002FF921 /* UIViewController+Extensions.swift in Sources */,
 				87D4008C24C2522C00D10382 /* CameraMetricsControllerDelegate.swift in Sources */,
+				6AE56EE8257AA40D003B2EBA /* CustomMglAnnotationView.swift in Sources */,
 				87D4008324C2522C00D10382 /* ShapesViewController+TrafficExamples.swift in Sources */,
 				6AE7ECBA24745D1100821502 /* SceneDelegate.swift in Sources */,
 				6AC1005F2514194B0084EB48 /* BoundingBox.swift in Sources */,
@@ -828,6 +847,7 @@
 				87D4007F24C2522C00D10382 /* ShapesViewController+MarkerExamples.swift in Sources */,
 				87D4007E24C2522C00D10382 /* ShapesViewController.swift in Sources */,
 				6A630DA52497DBAA0043D272 /* VLTLiterals.swift in Sources */,
+				6AE56ECD2579AD80003B2EBA /* MapboxIntegrationViewController.swift in Sources */,
 				6AC1006625153F910084EB48 /* VLTConstants+VLTMaps.swift in Sources */,
 				6AD5D8B424EDCDAC004AFCDD /* Data+Extensions.swift in Sources */,
 				6A869C2F248EC6D4005A77E3 /* Double+Extensions.swift in Sources */,
@@ -1028,7 +1048,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemo;
 				PRODUCT_NAME = VLTDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.Verizon.Location.Technology.VLTDemo";
@@ -1053,7 +1073,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemo;
 				PRODUCT_NAME = VLTDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.Verizon.Location.Technology.VLTDemo";
