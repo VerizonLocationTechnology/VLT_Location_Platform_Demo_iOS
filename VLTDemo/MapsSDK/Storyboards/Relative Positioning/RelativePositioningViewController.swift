@@ -76,13 +76,14 @@ class RelativePositioningViewController: UIViewController, VLTMapViewDelegate, R
                                                 northeastCoordinate: initialNortheastCoordinate,
                                                 boundaryPadding: configurationPadding)
 
-        /// Set the map's delegate
-        mapView.delegate = self
-        /// Initialize Objects for the map
-        initializeLayers()
-
         /// Load the map using your given API key
         mapView.loadMap(apiKey: apiKey, configuration: mapConfiguration)
+
+        /// Set this view controller as the VLTMapViewDelegate for the mapView
+        mapView.delegate = self
+
+        /// Initialize Objects for the map
+        initializeLayers()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

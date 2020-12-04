@@ -21,7 +21,7 @@ class BoundingBoxViewController: UIViewController, VLTMapViewDelegate {
     // MARK: - IBOutlets
     /// The mapView object that displays map data
     @IBOutlet weak var mapView: VLTMapView!
-    
+
     @IBOutlet weak var coloradoButton: VLTToggleButton!
     @IBOutlet weak var texasButton: VLTToggleButton!
     @IBOutlet weak var newYorkButton: VLTToggleButton!
@@ -55,11 +55,11 @@ class BoundingBoxViewController: UIViewController, VLTMapViewDelegate {
                                                 northeastCoordinate: BoundingBox.colorado.ne,
                                                 boundaryPadding: initialPadding)
 
-        /// Set the delegate for the mapView
-        mapView.delegate = self
-
         /// Load the map using your given API Key
         mapView.loadMap(apiKey: apiKey, configuration: mapConfiguration)
+
+        /// Set this view controller as the VLTMapViewDelegate for the mapView
+        mapView.delegate = self
     }
 
     @IBAction func locationButtonTapped(_ sender: VLTToggleButton) {

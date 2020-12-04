@@ -17,7 +17,7 @@ class BoundingBox {
     var ne: CLLocationCoordinate2D
     /// Insets around resultant bounding box that should be visible
     var insets: UIEdgeInsets
-    
+
     // MARK: Initializers
     /// Generates a new BoundingBox object
     /// - Parameters:
@@ -29,7 +29,7 @@ class BoundingBox {
         self.ne = ne
         self.insets = insets
     }
-    
+
     // MARK: - Static Members
     /// Bounding box for the state of Colorado
     static var colorado = BoundingBox(sw: CLLocationCoordinate2DMake(36.9720344465142, -109.05069704261744),

@@ -27,7 +27,7 @@
         <!--User Location-->
         <scene sceneID="Uy6-u0-y7K">
             <objects>
-                <viewController id="5XR-X9-Uqx" customClass="UserLocationViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5XR-X9-Uqx" customClass="UserLocationViewController" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ckn-VU-Ysq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,7 +35,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tr-Fh-sUX" customClass="VLTMapView" customModule="VLTMaps">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fX-4h-hwn" customClass="VLTButton" customModule="VLTDemo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fX-4h-hwn" customClass="VLTButton" customModule="VLTMapsSDK" customModuleProvider="target">
                                 <rect key="frame" x="358" y="770" width="44" height="48"/>
                                 <color key="backgroundColor" name="Primary"/>
                                 <constraints>

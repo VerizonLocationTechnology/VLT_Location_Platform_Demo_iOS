@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UDD-dH-Hip">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="iuV-Iv-Y6L">
+            <objects>
+                <navigationController storyboardIdentifier="MapboxIntegrationNavigationController" id="MAu-2I-37p" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1cB-Xs-hgY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UDD-dH-Hip" kind="relationship" relationship="rootViewController" id="nzW-YE-qAA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jaH-a1-FvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-929" y="151"/>
+        </scene>
+        <!--Mapbox Integration-->
+        <scene sceneID="O83-xQ-sQ1">
+            <objects>
+                <viewController id="UDD-dH-Hip" customClass="MapboxIntegrationViewController" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B3w-7s-lPd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cgg-BC-yEb" customClass="VLTMapView" customModule="VLTMaps">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ah7-qA-9YM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cgg-BC-yEb" firstAttribute="top" secondItem="ah7-qA-9YM" secondAttribute="top" id="6ZD-ak-vPd"/>
+                            <constraint firstItem="ah7-qA-9YM" firstAttribute="trailing" secondItem="Cgg-BC-yEb" secondAttribute="trailing" id="7hf-py-kMD"/>
+                            <constraint firstItem="Cgg-BC-yEb" firstAttribute="leading" secondItem="ah7-qA-9YM" secondAttribute="leading" id="Can-Rb-vJC"/>
+                            <constraint firstItem="ah7-qA-9YM" firstAttribute="bottom" secondItem="Cgg-BC-yEb" secondAttribute="bottom" id="yhO-DP-veh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mapbox Integration" id="B5e-4p-VEa"/>
+                    <connections>
+                        <outlet property="mapView" destination="Cgg-BC-yEb" id="yqy-HC-OZJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNh-aW-JZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="151"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l5f-mw-aiO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l5f-mw-aiO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -46,13 +48,13 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Agr-XE-osf" userLabel="Status View" customClass="VLTView" customModule="VLTMapsSDK" customModuleProvider="target">
-                                <rect key="frame" x="334" y="96" width="68" height="114"/>
+                                <rect key="frame" x="342" y="96" width="60" height="82"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ELk-aY-YiB">
-                                        <rect key="frame" x="0.0" y="0.0" width="68" height="114"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="82"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Markers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcN-lP-5Tr" userLabel="Marker Label" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="68" height="22.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
@@ -72,7 +74,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polylines" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-xx-Tcj" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="22.5" width="68" height="22.5"/>
+                                                <rect key="frame" x="0.0" y="14.5" width="60" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
@@ -92,7 +94,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polygons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvY-xy-MbH" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="45" width="68" height="22.5"/>
+                                                <rect key="frame" x="0.0" y="29" width="60" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
@@ -112,7 +114,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdO-fY-Lhi" userLabel="Mix Label" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="67.5" width="68" height="22.5"/>
+                                                <rect key="frame" x="0.0" y="43.5" width="60" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
@@ -131,8 +133,8 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuO-pw-fAS" customClass="VLTButton" customModule="VLTMapsSDK" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="90" width="68" height="24"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuO-pw-fAS" customClass="VLTButton" customModule="VLTMapsSDK" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="58" width="60" height="24"/>
                                                 <color key="backgroundColor" name="Secondary"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Z6m-mw-XiY"/>
@@ -177,7 +179,8 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="grr-Fj-Tip"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="id5-bA-rBW" firstAttribute="top" secondItem="grr-Fj-Tip" secondAttribute="top" id="53P-cY-vmV"/>
                             <constraint firstItem="Agr-XE-osf" firstAttribute="trailing" secondItem="id5-bA-rBW" secondAttribute="trailing" constant="-12" id="5hv-ZZ-jMC"/>
@@ -188,7 +191,6 @@
                             <constraint firstItem="id5-bA-rBW" firstAttribute="top" secondItem="grr-Fj-Tip" secondAttribute="top" id="o6r-PY-IZ7"/>
                             <constraint firstItem="Agr-XE-osf" firstAttribute="top" secondItem="id5-bA-rBW" secondAttribute="top" constant="8" id="xxh-ns-VhZ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="grr-Fj-Tip"/>
                     </view>
                     <navigationItem key="navigationItem" title="GeoJSON" id="IDq-dJ-Ffr">
                         <barButtonItem key="rightBarButtonItem" image="list.bullet" catalog="system" id="Sg2-kl-7f4" userLabel="List Button">
@@ -218,6 +220,23 @@
             <point key="canvasLocation" x="9" y="181"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="NcN-lP-5Tr">
+            <size key="intrinsicContentSize" width="45.5" height="14.5"/>
+        </designable>
+        <designable name="OdO-fY-Lhi">
+            <size key="intrinsicContentSize" width="20" height="14.5"/>
+        </designable>
+        <designable name="YuO-pw-fAS">
+            <size key="intrinsicContentSize" width="43" height="27"/>
+        </designable>
+        <designable name="Zyx-xx-Tcj">
+            <size key="intrinsicContentSize" width="50.5" height="14.5"/>
+        </designable>
+        <designable name="wvY-xy-MbH">
+            <size key="intrinsicContentSize" width="52" height="14.5"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="G4K-YQ-sCq"/>
     </inferredMetricsTieBreakers>
@@ -232,5 +251,8 @@
         <namedColor name="TranslucentPrimary">
             <color red="1" green="1" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

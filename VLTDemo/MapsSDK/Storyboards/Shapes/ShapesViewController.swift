@@ -84,6 +84,8 @@ class ShapesViewController: UIViewController {
 
         /// Load the map using your given API key
         mapView.loadMap(apiKey: apiKey, configuration: mapConfiguration)
+
+        /// Set this view controller as the VLTMapViewDelegate for the mapView
         mapView.delegate = self
 
         initializeProcessing()
@@ -139,7 +141,6 @@ class ShapesViewController: UIViewController {
 // MARK: - VLTMapViewDelegate
 extension ShapesViewController: VLTMapViewDelegate {
     func tappedOnCallout(mapView: VLTMapView, object: VLTMapObject) {
-        /// Handle the callout being tapped for the given object
     }
 
     /// Handle the map successfully loading
