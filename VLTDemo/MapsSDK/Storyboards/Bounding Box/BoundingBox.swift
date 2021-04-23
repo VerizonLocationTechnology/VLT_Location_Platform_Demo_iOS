@@ -6,8 +6,8 @@
 // Copyright © 2020 Verizon Location Technology
 //
 
-import UIKit
 import CoreLocation
+import UIKit
 
 class BoundingBox {
     // MARK: Variables
@@ -32,19 +32,19 @@ class BoundingBox {
 
     // MARK: - Static Members
     /// Bounding box for the state of Colorado
-    static var colorado = BoundingBox(sw: CLLocationCoordinate2DMake(36.9720344465142, -109.05069704261744),
-                                      ne: CLLocationCoordinate2DMake(40.96764126274334, -102.04141976742848),
+    static var colorado = BoundingBox(sw: CLLocationCoordinate2DMake(36.972_034_446_514_2, -109.050_697_042_617_44),
+                                      ne: CLLocationCoordinate2DMake(40.967_641_262_743_34, -102.041_419_767_428_48),
                                       insets: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20))
     /// Bounding box for the state of Texas
-    static var texas = BoundingBox(sw: CLLocationCoordinate2DMake(25.55958238226465, -106.58830161798092),
-                                   ne: CLLocationCoordinate2DMake(36.52360276090316, -93.825657380665),
+    static var texas = BoundingBox(sw: CLLocationCoordinate2DMake(25.559_582_382_264_65, -106.588_301_617_980_92),
+                                   ne: CLLocationCoordinate2DMake(36.523_602_760_903_16, -93.825_657_380_665),
                                    insets: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20))
     /// Bounding box for the state of New York
-    static var newYork = BoundingBox(sw: CLLocationCoordinate2DMake(40.91295686809863, -79.71714621773467),
-                                     ne: CLLocationCoordinate2DMake(45.041958421923965, -73.19126737531863),
+    static var newYork = BoundingBox(sw: CLLocationCoordinate2DMake(40.912_956_868_098_63, -79.717_146_217_734_67),
+                                     ne: CLLocationCoordinate2DMake(45.041_958_421_923_965, -73.191_267_375_318_63),
                                      insets: UIEdgeInsets(top: -120, left: -120, bottom: -120, right: -120))
     /// Bounding box for the state of Utah
-    static var utah = BoundingBox(sw: CLLocationCoordinate2DMake(36.946595344476194, -114.10586815963464),
-                                  ne: CLLocationCoordinate2DMake(41.923734248185696, -108.9862393034605),
+    static var utah = BoundingBox(sw: CLLocationCoordinate2DMake(36.946_595_344_476_194, -114.105_868_159_634_64),
+                                  ne: CLLocationCoordinate2DMake(41.923_734_248_185_696, -108.986_239_303_460_5),
                                   insets: .zero)
 }

@@ -27,7 +27,7 @@ extension GeoJSONViewController {
         /// Generate a data object from the Mixed GeoJSON string
         guard let geoJSONData = polylineGeoJSONData else { return }
         /// Create a style object with properties for the geoJSON object on the map
-        let geoJSONStyle = VLTGeoJSONStyle(polylineStrokeWidth: 10, polylineStrokeColor: .blue, polylineStrokeOpacity: 1.0)
+        let geoJSONStyle = VLTGeoJSONStyle(polylineStrokeWidth: 10, polylineStrokeColor: .systemBlue, polylineStrokeOpacity: 1.0)
 
         do {
             /// Create a customized VLTMapGeoJSON object with properties for being displayed on the map
@@ -38,7 +38,7 @@ extension GeoJSONViewController {
             self.polylineGeoJSON = geoJSON
         } catch {
             /// If creating or adding GeoJSON to the map, display an error
-            showError(withMessage: "\(literals.addPolylineErrorMessage): \(error)")
+            showError(withMessage: "\(GeoJsonVC.addPolylineErrorMessage): \(error)")
         }
     }
 
@@ -59,7 +59,7 @@ extension GeoJSONViewController {
             try mapView.update(object: polylineGeoJSON)
         } catch {
             /// If updateing the geoJSON object fails, display an error
-            showError(withMessage: "\(literals.updatePolylineErrorMessage): \(error)")
+            showError(withMessage: "\(GeoJsonVC.updatePolylineErrorMessage): \(error)")
         }
     }
 
@@ -75,7 +75,7 @@ extension GeoJSONViewController {
             self.polylineGeoJSON = nil
         } catch {
             /// If removing geoJSON fails, display an error
-            showError(withMessage: "\(literals.removePolylineErrorMessage): \(error)")
+            showError(withMessage: "\(GeoJsonVC.removePolylineErrorMessage): \(error)")
         }
     }
 }

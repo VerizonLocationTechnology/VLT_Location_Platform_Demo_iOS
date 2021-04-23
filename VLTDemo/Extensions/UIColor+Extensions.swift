@@ -18,14 +18,14 @@ extension UIColor {
     /// - Parameters:
     ///   - hexString: String in the #RRGGBB hex code format
     /// - Returns: UIColor depicting the given Hex Code String
-    static func from(hexString: String) -> UIColor {
-        var colorString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
+    static func fromHex(string: String) -> UIColor {
+        var colorString = string.trimmingCharacters(in: .whitespacesAndNewlines)
         colorString = colorString.replacingOccurrences(of: "#", with: "").uppercased()
 
         let alpha: CGFloat = 1.0
-        let red: CGFloat = colorComponentFrom(colorString: colorString, start: 0, length: 2)
-        let green: CGFloat = colorComponentFrom(colorString: colorString, start: 2, length: 2)
-        let blue: CGFloat = colorComponentFrom(colorString: colorString, start: 4, length: 2)
+        let red: CGFloat = colorComponentFromColor(string: colorString, start: 0, length: 2)
+        let green: CGFloat = colorComponentFromColor(string: colorString, start: 2, length: 2)
+        let blue: CGFloat = colorComponentFromColor(string: colorString, start: 4, length: 2)
 
         if red == green && green == blue {
             return UIColor(white: red, alpha: alpha)
@@ -40,18 +40,18 @@ extension UIColor {
     ///   - start: The index of the first character in the string that will depict the color code
     ///   - length: The number of characters in length that the color code consists of
     /// - Returns: CGFloat fraction of 255 that the color code depicts
-    private static func colorComponentFrom(colorString: String, start: Int, length: Int) -> CGFloat {
-        let startIndex = colorString.index(colorString.startIndex, offsetBy: start)
-        let endIndex = colorString.index(startIndex, offsetBy: length)
-        let subString = colorString[startIndex..<endIndex]
+    private static func colorComponentFromColor(string: String, start: Int, length: Int) -> CGFloat {
+        let startIndex = string.index(string.startIndex, offsetBy: start)
+        let endIndex = string.index(startIndex, offsetBy: length)
+        let subString = string[startIndex..<endIndex]
         let fullHexString = length == 2 ? subString : "\(subString)\(subString)"
         var hexComponent: UInt64 = 0
 
         guard Scanner(string: String(fullHexString)).scanHexInt64(&hexComponent) else {
             return 0
         }
-        let hexFloat: CGFloat = CGFloat(hexComponent)
-        let floatValue: CGFloat = CGFloat(hexFloat / 255.0)
+        let hexFloat = CGFloat(hexComponent)
+        let floatValue = CGFloat(hexFloat / 255.0)
         return floatValue
     }
 }

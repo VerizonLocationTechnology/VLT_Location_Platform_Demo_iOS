@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5XR-X9-Uqx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5XR-X9-Uqx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,7 +37,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tr-Fh-sUX" customClass="VLTMapView" customModule="VLTMaps">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fX-4h-hwn" customClass="VLTButton" customModule="VLTMapsSDK" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fX-4h-hwn">
                                 <rect key="frame" x="358" y="770" width="44" height="48"/>
                                 <color key="backgroundColor" name="Primary"/>
                                 <constraints>
@@ -54,7 +56,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="K4s-2g-6jt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="K4s-2g-6jt" firstAttribute="trailing" secondItem="6tr-Fh-sUX" secondAttribute="trailing" id="0Nk-OS-k9M"/>
                             <constraint firstItem="7fX-4h-hwn" firstAttribute="bottom" secondItem="6tr-Fh-sUX" secondAttribute="bottom" constant="-44" id="Soi-c5-6E1"/>
@@ -63,7 +66,6 @@
                             <constraint firstItem="6tr-Fh-sUX" firstAttribute="top" secondItem="K4s-2g-6jt" secondAttribute="top" id="wDy-3K-LvD"/>
                             <constraint firstItem="6tr-Fh-sUX" firstAttribute="leading" secondItem="K4s-2g-6jt" secondAttribute="leading" id="z3q-sS-KuE"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="K4s-2g-6jt"/>
                     </view>
                     <navigationItem key="navigationItem" title="User Location" id="8SO-HL-bo2"/>
                     <connections>
@@ -77,12 +79,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="location" catalog="system" width="128" height="115"/>
+        <image name="location" catalog="system" width="128" height="121"/>
         <namedColor name="AccentGray">
-            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Primary">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

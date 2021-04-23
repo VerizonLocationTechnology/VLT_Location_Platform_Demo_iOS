@@ -39,7 +39,7 @@ extension GeoJSONViewController {
             self.polygonGeoJSON = geoJSON
         } catch {
             /// If creating or adding GeoJSON to the map, display an error
-            showError(withMessage: "\(literals.addPolygonErrorMessage): \(error)")
+            showError(withMessage: "\(GeoJsonVC.addPolygonErrorMessage): \(error)")
         }
     }
 
@@ -60,7 +60,7 @@ extension GeoJSONViewController {
             try mapView.update(object: polygonGeoJSON)
         } catch {
             /// If updating the geoJSON object fails, display an error
-            showError(withMessage: "\(literals.updatePolygonErrorMessage): \(error)")
+            showError(withMessage: "\(GeoJsonVC.updatePolygonErrorMessage): \(error)")
         }
     }
 
@@ -76,7 +76,7 @@ extension GeoJSONViewController {
             self.polygonGeoJSON = nil
         } catch {
             /// If removing geoJSON fails, display an error
-            showError(withMessage: "\(literals.removePolygonErrorMessage): \(error)")
+            showError(withMessage: "\(GeoJsonVC.removePolygonErrorMessage): \(error)")
         }
     }
 }

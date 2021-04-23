@@ -22,7 +22,9 @@ enum MapFeature: String, CaseIterable {
     /// An object depicted as a closed series of points connected by a line and filled in
     case polygon
     /// A feature depicted as additional colored lines above roadways where traffic data is available
-    case traffic
+    case trafficFlow = "Traffic Flow"
+    /// A feature depicted as additional warning signals and caution lines above roadways where traffic incident (such as accidents or construction) data is available
+    case trafficIncidents = "Traffic Incidents"
     /// A feature depicted as a mix of objects placed on the map
     case mixed
 
@@ -32,15 +34,15 @@ enum MapFeature: String, CaseIterable {
     /// Static variable to define the initial state of the `FeatureVisiblity` for the application
     static var initialFeatureVisiblity: MapFeatureVisiblity {
         var featureVisiblity = MapFeatureVisiblity()
-        MapFeature.allCases.filter({ $0 != .mixed && $0 != .traffic }).forEach({ featureVisiblity[$0] = false })
-        featureVisiblity[.traffic] = true
+        MapFeature.allCases.filter({ $0 != .mixed && $0 != .trafficFlow }).forEach({ featureVisiblity[$0] = false })
+        featureVisiblity[.trafficFlow] = true
         return featureVisiblity
     }
 
     /// Static variable to define the initial state of GeoJSON object visibility for the application
     static var initialGeoJSONVisibility: MapFeatureVisiblity {
         var featureVisiblity = MapFeatureVisiblity()
-        MapFeature.allCases.filter({ $0 != .circle && $0 != .traffic }).forEach({ featureVisiblity[$0] = false })
+        MapFeature.allCases.filter({ $0 != .circle && $0 != .trafficFlow && $0 != .trafficIncidents }).forEach({ featureVisiblity[$0] = false })
         featureVisiblity[.polyline] = true
         return featureVisiblity
     }

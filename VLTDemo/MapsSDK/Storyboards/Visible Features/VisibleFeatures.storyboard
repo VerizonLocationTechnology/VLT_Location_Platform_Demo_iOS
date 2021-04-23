@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ho3-zV-u52">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ho3-zV-u52">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,14 +29,14 @@
         <!--Visible Features-->
         <scene sceneID="7FQ-3O-JsM">
             <objects>
-                <viewController id="ho3-zV-u52" customClass="VisibleFeaturesViewController" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ho3-zV-u52" customClass="VisibleFeaturesViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z55-1j-O6s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NSI-zv-Jbb">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" name="MediumAccentGray"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="LOo-pN-bB3">
@@ -58,14 +60,14 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mz1-cD-nff"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="NSI-zv-Jbb" secondAttribute="bottom" id="QHK-ep-fUU"/>
                             <constraint firstItem="NSI-zv-Jbb" firstAttribute="top" secondItem="mz1-cD-nff" secondAttribute="top" id="euc-kn-LeT"/>
                             <constraint firstItem="NSI-zv-Jbb" firstAttribute="leading" secondItem="mz1-cD-nff" secondAttribute="leading" id="le6-7d-W2Q"/>
                             <constraint firstItem="mz1-cD-nff" firstAttribute="trailing" secondItem="NSI-zv-Jbb" secondAttribute="trailing" id="zco-2m-J6f"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="mz1-cD-nff"/>
                     </view>
                     <navigationItem key="navigationItem" title="Visible Features" id="rjk-7Z-61V">
                         <barButtonItem key="backBarButtonItem" title="Map" id="NSK-zN-ka4"/>
@@ -83,5 +85,8 @@
         <namedColor name="MediumAccentGray">
             <color red="0.84705882352941175" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

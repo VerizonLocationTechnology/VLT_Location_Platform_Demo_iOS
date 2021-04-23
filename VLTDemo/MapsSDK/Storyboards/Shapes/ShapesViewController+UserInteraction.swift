@@ -6,35 +6,34 @@
 //  Copyright © 2020 Verizon Location Technology. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 import VLTMaps
-import CoreLocation
 
 /// Extension giving examples of how work with user interaction callbacks for the VLTMapViewDelegate
 extension ShapesViewController {
-
     /// Handle a user tapping on the mapView
     func tappedOnMap(mapView: VLTMapView, point: CGPoint, coordinate: CLLocationCoordinate2D) {
-        if runListeners { showAlert(withMessage: literals.tappedOnMap) }
+        if runListeners { showAlert(withMessage: VCLiterals.tappedOnMap) }
     }
 
     /// Handle a user tapping on a VLTMapMarker on the map
     func tappedOnMarker(mapView: VLTMapView, marker: VLTMapMarker, coordinate: CLLocationCoordinate2D) {
-        showAlert(withMessage: "\(literals.tappedOnMarker)\n \(literals.shapeTitle): \(marker.title ?? "nil")\n \(literals.shapeSubtitle): \(marker.subtitle ?? "nil")")
+        showAlert(withMessage: "\(VCLiterals.tappedOnMarker)\n \(VCLiterals.shapeTitle): \(marker.title ?? "nil")\n \(VCLiterals.shapeSubtitle): \(marker.subtitle ?? "nil")")
     }
 
     /// Handle a user tapping on a VLTMapCircle on the map
     func tappedOnCircle(mapView: VLTMapView, circle: VLTMapCircle, coordinate: CLLocationCoordinate2D) {
-        showAlert(withMessage: "\(literals.tappedOnCircle)\n \(literals.shapeTitle): \(circle.title ?? "nil")\n \(literals.shapeSubtitle): \(circle.subtitle ?? "nil")")
+        showAlert(withMessage: "\(VCLiterals.tappedOnCircle)\n \(VCLiterals.shapeTitle): \(circle.title ?? "nil")\n \(VCLiterals.shapeSubtitle): \(circle.subtitle ?? "nil")")
     }
 
     /// Handle a user tapping on a VLTMapPolyline on the map
     func tappedOnPolyline(mapView: VLTMapView, polyline: VLTMapPolyline, coordinate: CLLocationCoordinate2D) {
-        showAlert(withMessage: "\(literals.tappedOnPolyline)\n \(literals.shapeTitle): \(polyline.title ?? "nil")\n \(literals.shapeSubtitle): \(polyline.subtitle ?? "nil")")
+        showAlert(withMessage: "\(VCLiterals.tappedOnPolyline)\n \(VCLiterals.shapeTitle): \(polyline.title ?? "nil")\n \(VCLiterals.shapeSubtitle): \(polyline.subtitle ?? "nil")")
     }
 
     /// Handle a user tapping on a VLTMapPolygon on the map
     func tappedOnPolygon(mapView: VLTMapView, polygon: VLTMapPolygon, coordinate: CLLocationCoordinate2D) {
-        showAlert(withMessage: "\(literals.tappedOnPolygon)\n \(literals.shapeTitle): \(polygon.title ?? "nil")\n \(literals.shapeSubtitle): \(polygon.subtitle ?? "nil")")
+        showAlert(withMessage: "\(VCLiterals.tappedOnPolygon)\n \(VCLiterals.shapeTitle): \(polygon.title ?? "nil")\n \(VCLiterals.shapeSubtitle): \(polygon.subtitle ?? "nil")")
     }
 }

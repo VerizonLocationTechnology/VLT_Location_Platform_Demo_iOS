@@ -127,7 +127,8 @@ extension VLTLiterals {
         static let removePolygonErrorMessage = "\(couldNotRemove) \(polygonText)"
 
         // MARK: - Traffic Texts
-        static let updateTrafficErrorMessage = "\(failedToUpdate) traffic visibility"
+        static let updateTrafficFlowErrorMessage = "\(failedToUpdate) traffic flow visibility"
+        static let updateTrafficIncidentMessage = "\(failedToUpdate) traffic incident visibility"
 
         // MARK: - VLTMapViewDelegate Texts
         static let tappedOn = "You tapped on"
@@ -200,7 +201,6 @@ extension VLTLiterals {
 
         /// Cell Reuse Identifier for cells in the list
         static let cellReuseIdentifier = "ShapeMarkerOptionsCellReuseIdentifier"
-
     }
 
     /// String literals for RelativePositioningViewController and RelativePositioningTableVC
@@ -256,6 +256,7 @@ extension VLTLiterals {
         static let relativePositioningTitle = "Relative Positioning"
         static let boundingBoxTitle = "Bounding Box"
         static let mapboxTitle = "Mapbox Integration"
+        static let navigationTitle = "Navigation"
 
         /// Demo Feature Content
         static let welcomeContent = "Welcome to the VLT Demo Application, view our supported functionality below."
@@ -268,6 +269,7 @@ extension VLTLiterals {
         static let relativePositioningContent = "Easily group objects together, place and layer them on the map relative to other objects."
         static let boundingBoxContent = "Set camera position using latitude and longitude bounds."
         static let mapboxContent = "Integrate with Mapbox alongside VLTMaps to expand functionality"
+        static let navigationContent = "Provide navigation functionality"
 
         /// Storyboard Segues
         static let cameraSegue = "FeatureListToCameraSegue"
@@ -284,7 +286,7 @@ extension VLTLiterals {
     /// String literals for alerts and errors
     class AlertLiterals {
         static let errorTitle = "Error!"
-        static let errorActionTitle = "Okay"
+        static let errorActionTitle = "OK"
         static let alertTitle = "Alert!"
         static let alertActionTitle = "Got it!"
     }

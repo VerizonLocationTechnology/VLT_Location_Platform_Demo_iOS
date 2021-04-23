@@ -6,13 +6,13 @@
 // Copyright © 2020 Verizon Location Technology
 //
 
+import Mapbox
 import UIKit
 import VLTMaps
-import Mapbox
 
 class MapboxIntegrationViewController: UIViewController, VLTMapViewDelegate, MGLMapViewDelegate {
     // MARK: - Private variables
-    private typealias literals = VLTLiterals.MapboxIntegrationVCLiterals
+    private typealias VCLiterals = VLTLiterals.MapboxIntegrationVCLiterals
 
     // Coordinates for MGLAnnotations being added to the map
     private let coordinates = [
@@ -37,7 +37,7 @@ class MapboxIntegrationViewController: UIViewController, VLTMapViewDelegate, MGL
     // MARK: - Page life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = literals.title
+        title = VCLiterals.title
 
         /// Configure the map with the initial mode, any built-in features that should be hidden, and the initial center for the camera
         let mapConfiguration = MapConfiguration(mode: .day,
@@ -71,18 +71,18 @@ extension MapboxIntegrationViewController {
         mapView.map?.addAnnotations(pointAnnotations)
 
         // Add VLTMapMarkers
-        let markers = otherCoordinates.map({ VLTMapMarker(coordinate: $0)})
+        let markers = otherCoordinates.map({ VLTMapMarker(coordinate: $0) })
         do {
             try mapView.add(objects: markers)
         } catch {
-            showError(withMessage: literals.addMarkersErrorMessage)
+            showError(withMessage: VCLiterals.addMarkersErrorMessage)
         }
 
         // Adjust the camera out to make the Annotations and Markers visible from the outset
         do {
             try mapView.camera.set(zoom: 0)
         } catch {
-            showError(withMessage: literals.cameraUpdateErrorMessage)
+            showError(withMessage: VCLiterals.cameraUpdateErrorMessage)
         }
     }
 }

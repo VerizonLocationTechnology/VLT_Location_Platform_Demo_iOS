@@ -6,15 +6,15 @@
 // Copyright © 2020 Verizon Location Technology
 //
 
+import Combine
+import CoreLocation
 import UIKit
 import VLTMaps
-import CoreLocation
-import Combine
 
 class BoundingBoxViewController: UIViewController, VLTMapViewDelegate {
     // MARK: - Private Members
     // Reference to the String literals for this controller
-    private typealias literals = VLTLiterals.BoundingBoxVCLiterals
+    private typealias VCLiterals = VLTLiterals.BoundingBoxVCLiterals
     // Boolean representing whether the list of options is expanded
     private var optionsExpanded = false
 
@@ -41,7 +41,7 @@ class BoundingBoxViewController: UIViewController, VLTMapViewDelegate {
         super.viewDidLoad()
 
         // Set title of the view controller
-        self.title = literals.title
+        self.title = VCLiterals.title
 
         /// Retrieve the device's current user interface style
         let interfaceStyle = traitCollection.userInterfaceStyle
@@ -97,7 +97,7 @@ class BoundingBoxViewController: UIViewController, VLTMapViewDelegate {
                                             padding: boundingBox.insets,
                                             withAnimation: true)
         } catch {
-            showError(withMessage: literals.cameraUpdateErrorMessage)
+            showError(withMessage: VCLiterals.cameraUpdateErrorMessage)
         }
     }
 }

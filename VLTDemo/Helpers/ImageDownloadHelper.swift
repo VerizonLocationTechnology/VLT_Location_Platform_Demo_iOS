@@ -11,18 +11,16 @@ import UIKit
 
 class ImageDownloadHelper {
     func getImage(_for url: String, completion: @escaping ((UIImage?) -> Void)) {
-
-        if let url: URL = URL(string: url) {
+        if let url = URL(string: url) {
             let defaultSession = URLSession(configuration: .default)
 
-             let dataTask = defaultSession.dataTask(with: url) { (data, response, error) in
+             let dataTask = defaultSession.dataTask(with: url) { data, response, error in
                 // In production, you'll want to provide some better error handling
                 if let error = error {
                     OperationQueue.main.addOperation {
                         completion(nil)
-
                     }
-                    print(error)
+                    DemoError(file: #file, function: #function, line: #line, error: error).print()
                     return
                 }
 
@@ -37,10 +35,10 @@ class ImageDownloadHelper {
                         completion(image)
                     }
                 } else {
-                    print("couldnt create image out of data : \(data)")
+                    DemoError(file: #file, function: #function, line: #line, message: "Couldn't create image out of data : \(data)").print()
                     completion(nil)
                 }
-            }
+             }
             dataTask.resume()
         }
     }

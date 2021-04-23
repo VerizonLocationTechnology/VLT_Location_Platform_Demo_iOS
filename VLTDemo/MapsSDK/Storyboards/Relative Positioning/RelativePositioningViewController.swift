@@ -6,31 +6,30 @@
 // Copyright © 2020 Verizon Location Technology
 //
 
-import UIKit
 import CoreLocation
+import UIKit
 import VLTMaps
 
 class RelativePositioningViewController: UIViewController, VLTMapViewDelegate, RelativePositioningTableDelegate {
-
     /// Enum representing the layers of objects that we are showing on the map
     enum LayerNames: String {
         case layerA = "Layer A", layerB = "Layer B", layerC = "Layer C", layerD = "Layer D"
     }
 
     // MARK: - Private Members
-    private typealias literals = VLTLiterals.RelativePositioningVCLiterals
-    private typealias constants = VLTConstants.RelativePositioningVCConstants
+    private typealias VCLiterals = VLTLiterals.RelativePositioningVCLiterals
+    private typealias VCConstants = VLTConstants.RelativePositioningVCConstants
     /// Southwest corner of the area to be displayed on the map at load time
-    private let initialSouthwestCoordinate = CLLocationCoordinate2DMake(42.34753651301409, -71.0745009899108)
+    private let initialSouthwestCoordinate = CLLocationCoordinate2DMake(42.347_536_513_014_09, -71.074_500_989_910_8)
     /// Northeast corner of the area to be displayed on the map at load time
-    private let initialNortheastCoordinate = CLLocationCoordinate2DMake(42.367073230899706, -71.05851266383391)
+    private let initialNortheastCoordinate = CLLocationCoordinate2DMake(42.367_073_230_899_706, -71.058_512_663_833_91)
     /// Padding around the initial area defined by the southwest and northeast coordinates. Positive values zoom the camera away from the bounding box, while negative values zoom the camera in closer to the bounding box
     private let configurationPadding = UIEdgeInsets(top: -160, left: -160, bottom: -160, right: -160)
 
     /// Coordinates for the objects on Layer C
-    private static let layerCCoordinates = constants.layerCCoordinates
+    private static let layerCCoordinates = VCConstants.layerCCoordinates
     /// Coordinates for the objects on Layer D
-    private static let layerDCoordinates = constants.layerDCoordinates
+    private static let layerDCoordinates = VCConstants.layerDCoordinates
 
     // MARK: - Internal Members
     typealias Layer = [VLTMapObject]
@@ -62,7 +61,7 @@ class RelativePositioningViewController: UIViewController, VLTMapViewDelegate, R
         super.viewDidLoad()
 
         // Set title of view controller
-        self.title = literals.title
+        self.title = VCLiterals.title
 
         /// Retrieve the device's current user interface style
         let interfaceStyle = traitCollection.userInterfaceStyle
@@ -97,14 +96,14 @@ class RelativePositioningViewController: UIViewController, VLTMapViewDelegate, R
     func initializeLayers() {
         // Fill Layer A
         // Generate a VLTGeoJSONStyle object describing the properties of the GeoJSON to be displayed on the map
-        let geoJSONAStyle = VLTGeoJSONStyle(polygonFillColor: .from(hexString: "#ff00f7"),
-                                            polygonStrokeColor: .from(hexString: "#7e0170"),
+        let geoJSONAStyle = VLTGeoJSONStyle(polygonFillColor: .fromHex(string: "#ff00f7"),
+                                            polygonStrokeColor: .fromHex(string: "#7e0170"),
                                             polygonFillOpacity: 0.50,
                                             polylineStrokeWidth: 2,
-                                            polylineStrokeColor: .from(hexString: "#7e0170"))
+                                            polylineStrokeColor: .fromHex(string: "#7e0170"))
         // Generate a VLTMapGeoJSON object to be displayed on the map, with its style properties and data
         guard let geoJSONAData = geoJSONAData, let geoJSONA = try? VLTMapGeoJSON(data: geoJSONAData, style: geoJSONAStyle) else {
-            showError(withMessage: "\(literals.createGeoJSONErrorMessage)")
+            showError(withMessage: "\(VCLiterals.createGeoJSONErrorMessage)")
             return
         }
         // Add GeoJSON object to 'Layer A'
@@ -112,14 +111,14 @@ class RelativePositioningViewController: UIViewController, VLTMapViewDelegate, R
 
         // Fill Layer B
         // Generate a VLTGeoJSONStyle object describing the properties of the GeoJSON to be displayed on the map
-        let geoJSONBStyle = VLTGeoJSONStyle(polygonFillColor: .from(hexString: "#ffdd00"),
-                                            polygonStrokeColor: .from(hexString: "#8a7300"),
+        let geoJSONBStyle = VLTGeoJSONStyle(polygonFillColor: .fromHex(string: "#ffdd00"),
+                                            polygonStrokeColor: .fromHex(string: "#8a7300"),
                                             polygonFillOpacity: 0.50,
                                             polylineStrokeWidth: 2,
-                                            polylineStrokeColor: .from(hexString: "#8a7300"))
+                                            polylineStrokeColor: .fromHex(string: "#8a7300"))
         // Generate a VLTMapGeoJSON object to be displayed on the map, with its style properties and data
         guard let geoJSONBData = geoJSONBData, let geoJSONB = try? VLTMapGeoJSON(data: geoJSONBData, style: geoJSONBStyle) else {
-            showError(withMessage: "\(literals.createGeoJSONErrorMessage)")
+            showError(withMessage: "\(VCLiterals.createGeoJSONErrorMessage)")
             return
         }
         // Add GeoJSON object to 'Layer B'
@@ -128,24 +127,24 @@ class RelativePositioningViewController: UIViewController, VLTMapViewDelegate, R
         // Fill Layer C
         // Generate a VLTMapPolygon object with its coordinates and style properties
         let polygonC = VLTMapPolygon(coordinates: Self.layerCCoordinates,
-                                     fillColor: UIColor.from(hexString: "#00d9ff").withAlphaComponent(0.50),
-                                     strokeColor: .from(hexString: "#025b79"))
+                                     fillColor: UIColor.fromHex(string: "#00d9ff").withAlphaComponent(0.50),
+                                     strokeColor: .fromHex(string: "#025b79"))
         // Generate a VLTMapPolyline object with its coordinates and style properties
         let polylineC = VLTMapPolyline(coordinates: Self.layerCCoordinates,
                                        strokeWidth: 2,
-                                       strokeColor: .from(hexString: "#025b79"))
+                                       strokeColor: .fromHex(string: "#025b79"))
         // Add new polygon and polyline to 'Layer C'
         layerC = [polygonC, polylineC]
 
         // Fill Layer D
         // Generate a VLTMapPolygon object with its coordinates and style properties
         let polygonD = VLTMapPolygon(coordinates: Self.layerDCoordinates,
-                                     fillColor: UIColor.from(hexString: "#51ff00").withAlphaComponent(0.50),
-                                     strokeColor: .from(hexString: "#3e8901"))
+                                     fillColor: UIColor.fromHex(string: "#51ff00").withAlphaComponent(0.50),
+                                     strokeColor: .fromHex(string: "#3e8901"))
         // Generate a VLTMapPolyline object with its coordinates and style properties
         let polylineD = VLTMapPolyline(coordinates: Self.layerDCoordinates,
                                        strokeWidth: 2,
-                                       strokeColor: .from(hexString: "#3e8901"))
+                                       strokeColor: .fromHex(string: "#3e8901"))
         // Add new polygon and polyline to 'Layer D'
         layerD = [polygonD, polylineD]
     }
@@ -153,7 +152,7 @@ class RelativePositioningViewController: UIViewController, VLTMapViewDelegate, R
     func updateLayers() {
         // Verify that layerOrder contains 4 objects
         guard layerOrder.count == 4 else {
-            showError(withMessage: literals.layersOutOfOrderErrorMessage)
+            showError(withMessage: VCLiterals.layersOutOfOrderErrorMessage)
             return
         }
 
@@ -162,7 +161,7 @@ class RelativePositioningViewController: UIViewController, VLTMapViewDelegate, R
         // Retrieve references to some of the objects that we will need to reference when adding objects on the map
         guard let layer0ReferenceObject = layers[0].first,
             let layer3ReferenceObject = layers[3].first else {
-                showError(withMessage: literals.layersOutOfOrderErrorMessage)
+                showError(withMessage: VCLiterals.layersOutOfOrderErrorMessage)
                 return
         }
         // Remove all existing objects from the map. Since we don't know specifically which layers are moving, we are just removing all of them, and then will add them all in freshly
@@ -179,7 +178,7 @@ class RelativePositioningViewController: UIViewController, VLTMapViewDelegate, R
             // Add final layer above one of the bottom layer objects
             try mapView.add(objects: layers[2], above: layer3ReferenceObject)
         } catch {
-            showError(withMessage: "\(literals.addObjectsErrorMessage): \(error)")
+            showError(withMessage: "\(VCLiterals.addObjectsErrorMessage): \(error)")
         }
     }
 
@@ -209,7 +208,7 @@ class RelativePositioningViewController: UIViewController, VLTMapViewDelegate, R
             do {
                 try mapView.remove(objects: objects)
             } catch {
-                showError(withMessage: "\(literals.removeObjectsErrorMessage): \(error)")
+                showError(withMessage: "\(VCLiterals.removeObjectsErrorMessage): \(error)")
             }
         }
     }
@@ -223,7 +222,7 @@ extension RelativePositioningViewController {
     }
 
     func didFailLoadingMap(mapView: VLTMapView, error: Error) {
-        showError(withMessage: literals.mapLoadFailedErrorMessage)
+        showError(withMessage: VCLiterals.mapLoadFailedErrorMessage)
     }
 }
 

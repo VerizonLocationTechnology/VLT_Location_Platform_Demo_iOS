@@ -6,17 +6,16 @@
 //  Copyright © 2020 Verizon Location Technology. All rights reserved.
 //
 
+import Combine
+import CoreLocation
 import UIKit
 import VLTMaps
-import CoreLocation
-import Combine
 
 /// View controller that displays VLTMaps' ability to easily add and remove shapes and features on the map
 class ShapesViewController: UIViewController {
-
     // MARK: - Public members
-    typealias literals = VLTLiterals.ShapesVCLiterals
-    typealias constants = VLTConstants.ShapesVCConstants
+    typealias VCLiterals = VLTLiterals.ShapesVCLiterals
+    typealias VCConstants = VLTConstants.ShapesVCConstants
     /// The current features that can be shown on the map and their visibility
     @Published var featureVisibility: MapFeatureVisiblity = MapFeature.initialFeatureVisiblity
 
@@ -30,9 +29,9 @@ class ShapesViewController: UIViewController {
     var vltCustomImage: VLTImage?
 
     /// The list of coordinates that the polyline will consist of
-    let polylineCoordinates = constants.polylineCoordinates
+    let polylineCoordinates = VCConstants.polylineCoordinates
     /// List of coordinates that the polygon will encompass
-    let polygonCoordinates = constants.polygonCoordinates
+    let polygonCoordinates = VCConstants.polygonCoordinates
 
     /// Subscriber that listens for changes in the featureVisibility object and updates the circle label
     var circleSubscriber: AnyCancellable?
@@ -42,8 +41,10 @@ class ShapesViewController: UIViewController {
     var polylineSubscriber: AnyCancellable?
     /// Subscriber that listens for changes in the featureVisibility object and updates the polygon label
     var polygonSubscriber: AnyCancellable?
-    /// Subscriber that listens for changes in the featureVisibility object and updates the traffic label
-    var trafficSubscriber: AnyCancellable?
+    /// Subscriber that listens for changes in the featureVisibility object and updates the traffic flow label
+    var trafficFlowSubscriber: AnyCancellable?
+    /// Subscriber that listens for changes in the featureVisibility object and updates the traffic incident label
+    var trafficIncidentSubscriber: AnyCancellable?
     /// Subscriber that listens for changes in the featureVisibility object and updates the statusView
     var statusSubscriber: AnyCancellable?
     /// Subscriber that listens for changes in the featureVisibility object and updates the redrawButton
@@ -53,7 +54,7 @@ class ShapesViewController: UIViewController {
     /// The mapView objec that displays map data
     @IBOutlet weak var mapView: VLTMapView!
     /// View containing a list of currently visible shapes and features
-    @IBOutlet weak var statusView: VLTView!
+    @IBOutlet weak var statusView: UIView!
     /// Label indicating whether or not circles are being shown on the map
     @IBOutlet weak var circleLabel: UILabel!
     /// Label indicating whether or not markers are being shown on the map
@@ -62,17 +63,19 @@ class ShapesViewController: UIViewController {
     @IBOutlet weak var polylineLabel: UILabel!
     /// Label indicating whether or not polygons are being shown on the map
     @IBOutlet weak var polygonLabel: UILabel!
-    /// Label inidicating whether or not traffic is being shown on the map
-    @IBOutlet weak var trafficLabel: UILabel!
+    /// Label indicating whether or not traffic flow is being shown on the map
+    @IBOutlet weak var trafficFlowLabel: UILabel!
+    /// Label indicating whether or not traffic incidents are being shown on the map
+    @IBOutlet weak var trafficIncidentLabel: VLTLabel!
     /// Button for Updating and redrawing shapes being shown on the map
-    @IBOutlet weak var redrawButton: VLTButton!
+    @IBOutlet weak var redrawButton: UIButton!
 
     // MARK: - Page life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         /// Set title for view controller
-        self.title = runListeners ? literals.titleForListeners : literals.titleForShapes
+        self.title = runListeners ? VCLiterals.titleForListeners : VCLiterals.titleForShapes
 
         /// Get the map mode that matches the device's current interface style
         let mode = VLTMapMode.mapMode(forUserInterfaceStyle: traitCollection.userInterfaceStyle)
@@ -80,7 +83,7 @@ class ShapesViewController: UIViewController {
         /// Configure the map with the initial mode, any built-in features that should be hidden, and the initial center for the camera
         let mapConfiguration = MapConfiguration(mode: mode,
                                                 hiddenFeatures: [.traffic],
-                                                cameraCenter: CLLocationCoordinate2D(latitude: 42.3637, longitude: -71.053604))
+                                                cameraCenter: CLLocationCoordinate2D(latitude: 42.3637, longitude: -71.053_604))
 
         /// Load the map using your given API key
         mapView.loadMap(apiKey: apiKey, configuration: mapConfiguration)
@@ -115,7 +118,8 @@ class ShapesViewController: UIViewController {
         updateCircleVisibility()
         updatePolylineVisibility()
         updatePolygonVisibility()
-        updateTrafficVisibility()
+        updateTrafficFlowVisibility()
+        updateTrafficIncidentVisibility()
     }
 
     // MARK: - Helpers
@@ -129,12 +133,14 @@ class ShapesViewController: UIViewController {
         polylineSubscriber = $featureVisibility.map({ !($0[.polyline] ?? false) }).receive(on: DispatchQueue.main).assign(to: \.isHidden, on: polylineLabel)
         /// Subscribe to the featureVisibility object. Update the visibility of the polygon label when featureVisibility[.polygon] is updated
         polygonSubscriber = $featureVisibility.map({ !($0[.polygon] ?? false) }).receive(on: DispatchQueue.main).assign(to: \.isHidden, on: polygonLabel)
-        /// Subscribe to the featureVisibility object. Update the visibility of the traffic label when featureVisibility[.traffic] is updated
-        trafficSubscriber = $featureVisibility.map({ !($0[.traffic] ?? false) }).receive(on: DispatchQueue.main).assign(to: \.isHidden, on: trafficLabel)
+        /// Subscribe to the featureVisibility object. Update the visibility of the traffic flow label when featureVisibility[.trafficFlow] is updated
+        trafficFlowSubscriber = $featureVisibility.map({ !($0[.trafficFlow] ?? false) }).receive(on: DispatchQueue.main).assign(to: \.isHidden, on: trafficFlowLabel)
+        /// Subscribe to the featureVisibility object. Update the visibility of the traffic incidents label when featureVisibility[.trafficIncidents] is updated
+        trafficIncidentSubscriber = $featureVisibility.map({ !($0[.trafficIncidents] ?? false) }).receive(on: DispatchQueue.main).assign(to: \.isHidden, on: trafficIncidentLabel)
         /// Subscribe to the featureVisibility object. Update the visibility of the statusView when featureVisibility is updated
         statusSubscriber = $featureVisibility.map({ !$0.values.contains(true) }).receive(on: DispatchQueue.main).assign(to: \.isHidden, on: statusView)
         /// Subscribe to the featureVisibility object. Update the visibility of the redrawButton when featureVisibility is updated
-        redrawSubscriber = $featureVisibility.map({ !($0[.polygon] ?? false || $0[.polyline] ?? false || $0[.circle] ?? false || $0[.marker] ?? false ) }).receive(on: DispatchQueue.main).assign(to: \.isHidden, on: redrawButton)
+        redrawSubscriber = $featureVisibility.map({ !($0[.polygon] ?? false || $0[.polyline] ?? false || $0[.circle] ?? false || $0[.marker] ?? false ) }).receive(on: DispatchQueue.main).assign(to: \.isHidden, on: redrawButton) // swiftlint:disable:this line_length
     }
 }
 
@@ -149,7 +155,7 @@ extension ShapesViewController: VLTMapViewDelegate {
             /// Zoom the camera in to the area where shapes are displayed
             try mapView.camera.set(zoom: 12)
         } catch {
-            showError(withMessage: "\(literals.updateCameraError): \(error)")
+            showError(withMessage: "\(VCLiterals.updateCameraError): \(error)")
         }
         /// Update the map to display the default visible shapes and features
         updateShapesAndFeatures()
@@ -157,7 +163,7 @@ extension ShapesViewController: VLTMapViewDelegate {
 
     /// Handle the map failing to load
     func didFailLoadingMap(mapView: VLTMapView, error: Error) {
-        showError(withMessage: "\(literals.loadMapError): \(error)")
+        showError(withMessage: "\(VCLiterals.loadMapError): \(error)")
     }
 }
 

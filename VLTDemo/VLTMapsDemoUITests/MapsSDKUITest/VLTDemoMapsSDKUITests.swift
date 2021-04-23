@@ -12,7 +12,6 @@ let app = XCUIApplication()
 let tablesQuery = app.tables
 
 class VLTDemoMapsSDKUITests: XCTestCase {
-
     override func setUp() {
         super.setUp()
 
@@ -66,7 +65,6 @@ class VLTDemoMapsSDKUITests: XCTestCase {
         XCTAssert(app.staticTexts["User Location"].exists)
         app.staticTexts["User Location"].tap()
         XCTAssert(app.staticTexts["User Location"].exists)
-
     }
 
     func testShapes() {
@@ -84,7 +82,6 @@ class VLTDemoMapsSDKUITests: XCTestCase {
         XCTAssert(app.staticTexts["Marker"].exists)
         XCTAssert(app.staticTexts["Polyline"].exists)
         XCTAssert(app.staticTexts["Polygon"].exists)
-
     }
 
     func testListeners() {

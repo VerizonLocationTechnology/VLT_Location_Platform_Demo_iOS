@@ -46,7 +46,7 @@ extension GeoJSONViewController {
             self.mixedGeoJSON = geoJSON
         } catch {
             /// If creating or adding GeoJSON to the map, display an error
-            showError(withMessage: "\(literals.addMixedErrorMessage): \(error)")
+            showError(withMessage: "\(GeoJsonVC.addMixedErrorMessage): \(error)")
         }
     }
 
@@ -73,7 +73,7 @@ extension GeoJSONViewController {
             try mapView.update(object: mixedGeoJSON)
         } catch {
             /// If updateing the geoJSON object fails, display an error
-            showError(withMessage: "\(literals.updateMixedErrorMessage): \(error)")
+            showError(withMessage: "\(GeoJsonVC.updateMixedErrorMessage): \(error)")
         }
     }
 
@@ -89,7 +89,7 @@ extension GeoJSONViewController {
             self.mixedGeoJSON = nil
         } catch {
             /// If removing geoJSON fails, display an error
-            showError(withMessage: "\(literals.removeMixedErrorMessage): \(error)")
+            showError(withMessage: "\(GeoJsonVC.removeMixedErrorMessage): \(error)")
         }
     }
 }

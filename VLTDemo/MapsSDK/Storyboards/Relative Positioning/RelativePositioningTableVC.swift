@@ -10,7 +10,7 @@ import UIKit
 
 class RelativePositioningTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // MARK: Private Members
-    private typealias literals = VLTLiterals.RelativePositioningVCLiterals
+    private typealias VCLiterals = VLTLiterals.RelativePositioningVCLiterals
 
     // MARK: IBOutlets
     @IBOutlet weak var tableView: UITableView!
@@ -21,7 +21,9 @@ class RelativePositioningTableVC: UIViewController, UITableViewDelegate, UITable
 
     // MARK: View Life Cycle
     override func viewDidLoad() {
-        title = literals.title
+        super.viewDidLoad()
+
+        title = VCLiterals.title
         tableView.delegate = self
         tableView.dataSource = self
         tableView.isEditing = true
@@ -74,6 +76,6 @@ extension RelativePositioningTableVC {
 }
 
 // MARK: RelativePositioningTableDelegate Declaration
-protocol RelativePositioningTableDelegate: class {
+protocol RelativePositioningTableDelegate: AnyObject {
     func update(with layers: [RelativePositioningViewController.LayerNames])
 }

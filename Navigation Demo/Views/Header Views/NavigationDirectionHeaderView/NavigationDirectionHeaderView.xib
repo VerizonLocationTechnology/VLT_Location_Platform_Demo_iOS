@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationDirectionHeaderView" customModule="VLTMapsSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="3Ly-P7-IgM" id="pEs-Gc-ruK"/>
+                <outlet property="descriptionLabel" destination="o0R-ev-iju" id="VQI-xX-6FS"/>
+                <outlet property="directionImage" destination="anZ-pu-FQj" id="lMa-vd-UUB"/>
+                <outlet property="distanceLabel" destination="kFc-7W-jb5" id="ksP-oX-JgO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="3Ly-P7-IgM">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dlO-IF-jRr">
+                    <rect key="frame" x="16" y="52" width="295" height="110"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="anZ-pu-FQj">
+                            <rect key="frame" x="0.0" y="4" width="50" height="102.5"/>
+                            <color key="tintColor" name="Secondary"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Ty6-VT-FCA"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="hzG-WH-LB9"/>
+                            </constraints>
+                            <imageReference key="image" image="arrow.turn.up.right" catalog="system" symbolScale="small"/>
+                        </imageView>
+                        <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sbp-Qp-OQ8">
+                            <rect key="frame" x="62" y="0.0" width="233" height="110"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Turn right onto significant location with  a really long name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0R-ev-iju">
+                                    <rect key="frame" x="0.0" y="0.0" width="233" height="68.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="750ft" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFc-7W-jb5">
+                                    <rect key="frame" x="0.0" y="76.5" width="41" height="33.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="o0R-ev-iju" secondAttribute="trailing" id="GE1-04-Cl6"/>
+                                <constraint firstItem="o0R-ev-iju" firstAttribute="leading" secondItem="sbp-Qp-OQ8" secondAttribute="leading" id="XKL-wk-NSO"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="anZ-pu-FQj" secondAttribute="bottom" id="gvT-K9-w7y"/>
+                        <constraint firstItem="anZ-pu-FQj" firstAttribute="top" secondItem="dlO-IF-jRr" secondAttribute="top" id="j28-Ij-edw"/>
+                        <constraint firstItem="sbp-Qp-OQ8" firstAttribute="top" secondItem="dlO-IF-jRr" secondAttribute="top" id="skY-Ez-0wB"/>
+                        <constraint firstAttribute="bottom" secondItem="sbp-Qp-OQ8" secondAttribute="bottom" id="y9o-jG-fqB"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="4Z5-wg-fWc"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dlO-IF-jRr" firstAttribute="top" secondItem="4Z5-wg-fWc" secondAttribute="top" constant="8" id="5MR-G0-LyN"/>
+                <constraint firstItem="4Z5-wg-fWc" firstAttribute="trailing" secondItem="dlO-IF-jRr" secondAttribute="trailing" constant="16" id="5iR-VD-sbn"/>
+                <constraint firstItem="dlO-IF-jRr" firstAttribute="leading" secondItem="4Z5-wg-fWc" secondAttribute="leading" constant="16" id="IY1-hu-lYO"/>
+                <constraint firstItem="4Z5-wg-fWc" firstAttribute="bottom" secondItem="dlO-IF-jRr" secondAttribute="bottom" constant="8" id="ykt-fb-gnT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-125" y="-519"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.turn.up.right" catalog="system" width="128" height="99"/>
+        <namedColor name="Secondary">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

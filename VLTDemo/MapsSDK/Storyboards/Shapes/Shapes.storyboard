@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cmu-Iu-zYo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cmu-Iu-zYo">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Shapes & Markers-->
         <scene sceneID="5j5-Ub-RVW">
             <objects>
-                <viewController id="cmu-Iu-zYo" customClass="ShapesViewController" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cmu-Iu-zYo" customClass="ShapesViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ajd-jZ-Qjs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,14 +21,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrN-Z1-gzJ" customClass="VLTMapView" customModule="VLTMaps">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZMr-BV-kPx" userLabel="Status View" customClass="VLTView" customModule="VLTMapsSDK" customModuleProvider="target">
-                                <rect key="frame" x="342" y="96" width="60" height="38.333333333333343"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZMr-BV-kPx" userLabel="Status View">
+                                <rect key="frame" x="310.66666666666669" y="96" width="91.333333333333314" height="38.333333333333343"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="anu-QY-uMn">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="38.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="38.333333333333336"/>
                                         <subviews>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhx-bj-0Ps" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="0.0"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhx-bj-0Ps" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
@@ -45,8 +47,8 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGd-7H-tTZ" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="0.0"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGd-7H-tTZ" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
@@ -65,8 +67,8 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polyline" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AQ-Zz-8nr" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="0.0"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polyline" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AQ-Zz-8nr" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
@@ -85,8 +87,8 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polygon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPu-Qc-2yy" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="0.0"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polygon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPu-Qc-2yy" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
@@ -105,8 +107,8 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traffic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wk-TQ-Bef" customClass="VLTLabel" customModule="VLTMapsSDK" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="14.333333333333334"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traffic Flow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wk-TQ-Bef" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="14.333333333333334"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
@@ -125,8 +127,28 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2c-jV-gof" customClass="VLTButton" customModule="VLTMapsSDK" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="14.333333333333329" width="60" height="24"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traffic Incidents" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrg-l3-AC3" customClass="VLTLabel" customModule="VLTDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="14.333333333333329" width="91.333333333333329" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2c-jV-gof">
+                                                <rect key="frame" x="0.0" y="14.333333333333329" width="91.333333333333329" height="24"/>
                                                 <color key="backgroundColor" name="Secondary"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="5MM-wp-GOS"/>
@@ -171,7 +193,8 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hyz-g0-ZbE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZMr-BV-kPx" firstAttribute="trailing" secondItem="zrN-Z1-gzJ" secondAttribute="trailing" constant="-12" id="2jy-0k-zw1"/>
                             <constraint firstItem="zrN-Z1-gzJ" firstAttribute="top" secondItem="hyz-g0-ZbE" secondAttribute="top" id="BcP-FH-YDv"/>
@@ -182,7 +205,6 @@
                             <constraint firstAttribute="bottom" secondItem="zrN-Z1-gzJ" secondAttribute="bottom" id="tGH-ah-hay"/>
                             <constraint firstItem="zrN-Z1-gzJ" firstAttribute="leading" secondItem="hyz-g0-ZbE" secondAttribute="leading" id="zbZ-hA-wxm"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hyz-g0-ZbE"/>
                     </view>
                     <navigationItem key="navigationItem" title="Shapes &amp; Markers" id="7wG-QU-pHg">
                         <barButtonItem key="rightBarButtonItem" image="list.bullet" catalog="system" id="Y3c-ZD-05a" userLabel="List Button">
@@ -200,7 +222,8 @@
                         <outlet property="polylineLabel" destination="3AQ-Zz-8nr" id="3ec-eW-eyG"/>
                         <outlet property="redrawButton" destination="w2c-jV-gof" id="UcD-6M-t5e"/>
                         <outlet property="statusView" destination="ZMr-BV-kPx" id="x6b-Qz-g0a"/>
-                        <outlet property="trafficLabel" destination="8wk-TQ-Bef" id="S1h-Oz-L07"/>
+                        <outlet property="trafficFlowLabel" destination="8wk-TQ-Bef" id="S1h-Oz-L07"/>
+                        <outlet property="trafficIncidentLabel" destination="zrg-l3-AC3" id="ClA-C2-pGM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcJ-Io-c2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -239,6 +262,26 @@
             <point key="canvasLocation" x="655" y="879"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="3AQ-Zz-8nr">
+            <size key="intrinsicContentSize" width="44" height="14.333333333333334"/>
+        </designable>
+        <designable name="8wk-TQ-Bef">
+            <size key="intrinsicContentSize" width="66" height="14.333333333333334"/>
+        </designable>
+        <designable name="SGd-7H-tTZ">
+            <size key="intrinsicContentSize" width="39.333333333333336" height="14.333333333333334"/>
+        </designable>
+        <designable name="jhx-bj-0Ps">
+            <size key="intrinsicContentSize" width="32.666666666666664" height="14.333333333333334"/>
+        </designable>
+        <designable name="tPu-Qc-2yy">
+            <size key="intrinsicContentSize" width="45.333333333333336" height="14.333333333333334"/>
+        </designable>
+        <designable name="zrg-l3-AC3">
+            <size key="intrinsicContentSize" width="91.333333333333329" height="14.333333333333334"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="SPy-sA-juK"/>
     </inferredMetricsTieBreakers>
@@ -253,5 +296,8 @@
         <namedColor name="TranslucentPrimary">
             <color red="1" green="1" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

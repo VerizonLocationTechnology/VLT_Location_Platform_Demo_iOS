@@ -6,9 +6,9 @@
 //  Copyright © 2020 Verizon Location Technology. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 import VLTMaps
-import CoreLocation
 
 /// Extension giving examples of how to interact with VLTMapPolygon objects on the map
 extension ShapesViewController {
@@ -29,8 +29,8 @@ extension ShapesViewController {
         do {
             /// Create a customized VLTMapPolygon object with a title and subtitle that displays a callout when the polygon is tapped on the map
             let polygon = VLTMapPolygon(coordinates: polygonCoordinates,
-                                        title: literals.polygonTitle,
-                                        subtitle: literals.polygonSubtitle,
+                                        title: VCLiterals.polygonTitle,
+                                        subtitle: VCLiterals.polygonSubtitle,
                                         showCallout: self.runListeners,
                                         fillColor: .orange,
                                         strokeColor: .white)
@@ -39,10 +39,9 @@ extension ShapesViewController {
             try mapView.add(object: polygon)
             /// Store a reference to the polygon for future use
             self.polygon = polygon
-
         } catch {
             /// If adding polygon to the map fails, display an error
-            showError(withMessage: "\(literals.addPolygonErrorMessage): \(error)")
+            showError(withMessage: "\(VCLiterals.addPolygonErrorMessage): \(error)")
         }
     }
 
@@ -64,9 +63,9 @@ extension ShapesViewController {
             /// Update the fill color of the polygon
             polygon.fillColor = .random
             /// Update the title of the polygon with new ones
-            polygon.title = Bool.random() ? "\(literals.polygonText) \(literals.shapeTitleUpdated)" : nil
+            polygon.title = Bool.random() ? "\(VCLiterals.polygonText) \(VCLiterals.shapeTitleUpdated)" : nil
             /// Update the subtitle of the polygon with new ones
-            polygon.subtitle = Bool.random() ? "\(literals.polygonText) \(literals.shapeSubtitleUpdated)" : nil
+            polygon.subtitle = Bool.random() ? "\(VCLiterals.polygonText) \(VCLiterals.shapeSubtitleUpdated)" : nil
             /// Update whether or not the polygon should display a callout when tapped
             polygon.showCallout = self.runListeners
 
@@ -74,7 +73,7 @@ extension ShapesViewController {
             try mapView.update(object: polygon)
         } catch {
             /// If updating the polygon fails, display an error
-            showError(withMessage: "\(literals.updatePolygonErrorMessage): \(error)")
+            showError(withMessage: "\(VCLiterals.updatePolygonErrorMessage): \(error)")
         }
     }
 
@@ -90,7 +89,7 @@ extension ShapesViewController {
             self.polygon = nil
         } catch {
             /// If removing polygon fails, throw an error
-            showError(withMessage: "\(literals.removePolygonErrorMessage): \(error)")
+            showError(withMessage: "\(VCLiterals.removePolygonErrorMessage): \(error)")
         }
     }
 }
