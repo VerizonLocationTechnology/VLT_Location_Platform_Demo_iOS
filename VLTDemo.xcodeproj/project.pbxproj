@@ -3,16 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5834F686249EB1DC897E39B2 /* Pods_VLTDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213B7357FDE149C2FB6EAA0F /* Pods_VLTDemo.framework */; };
+		3B3D3B3B6F282B6C9E906DA2 /* Pods_VLTDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5874B0E8B883C7596191B1A1 /* Pods_VLTDemoTests.framework */; };
+		6A3F5E7C25F936D500CA7209 /* VLTMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3F5E7B25F936D500CA7209 /* VLTMaps.framework */; };
 		6A540DFB2491926A002FF921 /* VLTLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A540DFA2491926A002FF921 /* VLTLabel.swift */; };
 		6A540DFD249275CB002FF921 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A540DFC249275CB002FF921 /* UIViewController+Extensions.swift */; };
 		6A630DA52497DBAA0043D272 /* VLTLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A630DA42497DBAA0043D272 /* VLTLiterals.swift */; };
 		6A869C2F248EC6D4005A77E3 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A869C2E248EC6D4005A77E3 /* Double+Extensions.swift */; };
 		6A869C3124913F15005A77E3 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A869C3024913F15005A77E3 /* UIColor+Extensions.swift */; };
+		6A998FC125F042E400B055A2 /* HERE_TransportMode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FBB25F042E400B055A2 /* HERE_TransportMode+Extensions.swift */; };
+		6A998FC225F042E400B055A2 /* Int32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FBC25F042E400B055A2 /* Int32+Extension.swift */; };
+		6A998FC325F042E400B055A2 /* HERE_ManeuverAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FBD25F042E400B055A2 /* HERE_ManeuverAction+Extensions.swift */; };
+		6A998FC425F042E400B055A2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FBE25F042E400B055A2 /* UIView+Extensions.swift */; };
+		6A998FC525F042E400B055A2 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FBF25F042E400B055A2 /* UIImage+Extensions.swift */; };
+		6A998FCA25F0434A00B055A2 /* DemoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FC925F0434A00B055A2 /* DemoError.swift */; };
+		6A998FCF25F0455600B055A2 /* CustomMglAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FCE25F0455600B055A2 /* CustomMglAnnotationView.swift */; };
+		6A998FD625F0465700B055A2 /* MapboxIntegrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FD425F0465700B055A2 /* MapboxIntegrationViewController.swift */; };
+		6A998FD725F0465700B055A2 /* Mapbox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A998FD525F0465700B055A2 /* Mapbox.storyboard */; };
+		6A998FEF25F0495600B055A2 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A998FEE25F0495600B055A2 /* Navigation.storyboard */; };
+		6A998FF425F0496B00B055A2 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FF325F0496B00B055A2 /* NavigationCoordinator.swift */; };
+		6A998FFF25F0497400B055A2 /* VLTMapsRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FF825F0497400B055A2 /* VLTMapsRouting.swift */; };
+		6A99900025F0497400B055A2 /* GenericDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FF925F0497400B055A2 /* GenericDefinitions.swift */; };
+		6A99900125F0497400B055A2 /* VLTLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FFA25F0497400B055A2 /* VLTLocation.swift */; };
+		6A99900225F0497400B055A2 /* GPXRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FFB25F0497400B055A2 /* GPXRecording.swift */; };
+		6A99900325F0497400B055A2 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FFC25F0497400B055A2 /* XibView.swift */; };
+		6A99900425F0497400B055A2 /* XibViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FFD25F0497400B055A2 /* XibViewProtocol.swift */; };
+		6A99900525F0497400B055A2 /* VLTNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FFE25F0497400B055A2 /* VLTNavigation.swift */; };
+		6A99900F25F0498500B055A2 /* ExitableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99900925F0498500B055A2 /* ExitableViewDelegate.swift */; };
+		6A99901025F0498500B055A2 /* SearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99900A25F0498500B055A2 /* SearchDelegate.swift */; };
+		6A99901125F0498500B055A2 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99900B25F0498500B055A2 /* Storyboarded.swift */; };
+		6A99901225F0498500B055A2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99900C25F0498500B055A2 /* Coordinator.swift */; };
+		6A99901325F0498500B055A2 /* ModeOfTravelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99900D25F0498500B055A2 /* ModeOfTravelDelegate.swift */; };
+		6A99901425F0498500B055A2 /* NavigationCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99900E25F0498500B055A2 /* NavigationCoordinatorDelegate.swift */; };
+		6A99901925F0499000B055A2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99901825F0499000B055A2 /* MapViewController.swift */; };
+		6A99901F25F0499800B055A2 /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99901D25F0499800B055A2 /* DirectionsViewController.swift */; };
+		6A99902025F0499800B055A2 /* DirectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99901E25F0499800B055A2 /* DirectionsCell.swift */; };
+		6A99902625F049B100B055A2 /* RouteOverviewFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99902425F049B100B055A2 /* RouteOverviewFooterView.swift */; };
+		6A99902725F049B100B055A2 /* RouteOverviewFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A99902525F049B100B055A2 /* RouteOverviewFooterView.xib */; };
+		6A99902D25F049BD00B055A2 /* LayerOptionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A99902B25F049BD00B055A2 /* LayerOptionsView.xib */; };
+		6A99902E25F049BD00B055A2 /* LayerOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99902C25F049BD00B055A2 /* LayerOptionsView.swift */; };
+		6A99903425F049DA00B055A2 /* NavigationDirectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A99903225F049DA00B055A2 /* NavigationDirectionHeaderView.xib */; };
+		6A99903525F049DA00B055A2 /* NavigationDirectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99903325F049DA00B055A2 /* NavigationDirectionHeaderView.swift */; };
+		6A99903C25F049E900B055A2 /* SearchResultsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99903925F049E900B055A2 /* SearchResultsTable.swift */; };
+		6A99903D25F049E900B055A2 /* SearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A99903A25F049E900B055A2 /* SearchHeaderView.xib */; };
+		6A99903E25F049E900B055A2 /* SearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99903B25F049E900B055A2 /* SearchHeaderView.swift */; };
+		6A99904425F049F700B055A2 /* LocationShortcutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A99904225F049F700B055A2 /* LocationShortcutCell.xib */; };
+		6A99904525F049F700B055A2 /* LocationShortcutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99904325F049F700B055A2 /* LocationShortcutCell.swift */; };
+		6A99904B25F04A0000B055A2 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99904925F04A0000B055A2 /* SearchResultCell.swift */; };
+		6A99904C25F04A0000B055A2 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A99904A25F04A0000B055A2 /* SearchResultCell.xib */; };
+		6A99905125F04A0B00B055A2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99905025F04A0B00B055A2 /* CircleView.swift */; };
+		6A99905625F04A2800B055A2 /* VLTLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99905525F04A2800B055A2 /* VLTLocationManager.swift */; };
+		6A99905D25F04A3400B055A2 /* HERE_LanguageCodeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99905A25F04A3400B055A2 /* HERE_LanguageCodeConverter.swift */; };
+		6A99905F25F04A3400B055A2 /* HERE_VoiceAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99905C25F04A3400B055A2 /* HERE_VoiceAssistant.swift */; };
+		6A99906625F04A4400B055A2 /* Route+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99906325F04A4400B055A2 /* Route+Extensions.swift */; };
+		6A99906725F04A4400B055A2 /* HEREsdk+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99906425F04A4400B055A2 /* HEREsdk+Extensions.swift */; };
+		6A99906825F04A4400B055A2 /* CoreLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99906525F04A4400B055A2 /* CoreLocation+Extensions.swift */; };
+		6A9990AB25F04E6D00B055A2 /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9990AA25F04E6D00B055A2 /* Buildable.swift */; };
 		6AC10056251419390084EB48 /* RelativePositioningTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC10051251419390084EB48 /* RelativePositioningTableVC.swift */; };
 		6AC10057251419390084EB48 /* RelativePositioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC10052251419390084EB48 /* RelativePositioningViewController.swift */; };
 		6AC10058251419390084EB48 /* GeoJSON-SectionB.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AC10053251419390084EB48 /* GeoJSON-SectionB.json */; };
@@ -40,24 +89,22 @@
 		6AD5D8CA24EDE0EC004AFCDD /* Points.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C624EDE0EB004AFCDD /* Points.json */; };
 		6AD5D8CB24EDE0EC004AFCDD /* Polylines.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C724EDE0EB004AFCDD /* Polylines.json */; };
 		6AD5D8CC24EDE0EC004AFCDD /* Polygons.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C824EDE0EB004AFCDD /* Polygons.json */; };
-		6AE56ECC2579AD80003B2EBA /* Mapbox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE56ECA2579AD7F003B2EBA /* Mapbox.storyboard */; };
-		6AE56ECD2579AD80003B2EBA /* MapboxIntegrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE56ECB2579AD7F003B2EBA /* MapboxIntegrationViewController.swift */; };
-		6AE56EE8257AA40D003B2EBA /* CustomMglAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE56EE7257AA40D003B2EBA /* CustomMglAnnotationView.swift */; };
 		6AE7ECB824745D1100821502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7ECB724745D1100821502 /* AppDelegate.swift */; };
 		6AE7ECBA24745D1100821502 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7ECB924745D1100821502 /* SceneDelegate.swift */; };
 		6AE7ECBF24745D1100821502 /* FeatureList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7ECBD24745D1100821502 /* FeatureList.storyboard */; };
 		6AE7ECC124745D1300821502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7ECC024745D1300821502 /* Assets.xcassets */; };
 		6AE7ECC424745D1300821502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7ECC224745D1300821502 /* LaunchScreen.storyboard */; };
 		6AE7ECF724747EF000821502 /* FeatureListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7ECF624747EF000821502 /* FeatureListViewController.swift */; };
+		82CA184AACF4A7A099DA8B52 /* Pods_VLTDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A02A703C3A521D49F18B58 /* Pods_VLTDemo.framework */; };
 		874080E824F47F0D0085DC6E /* VLTLiterals+VLTMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007824C2522C00D10382 /* VLTLiterals+VLTMaps.swift */; };
 		874080E924F47F910085DC6E /* VLTLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A630DA42497DBAA0043D272 /* VLTLiterals.swift */; };
-		87438B752485A45C0007D1FC /* VLTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87438B732485A45B0007D1FC /* VLTButton.swift */; };
 		87438B762485A45C0007D1FC /* VLTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87438B742485A45C0007D1FC /* VLTTextField.swift */; };
 		876FA84724CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876FA84624CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift */; };
 		876FA84924CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876FA84824CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift */; };
+		87C01A1925FC23A50095C7C7 /* heresdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C01A1225FC23630095C7C7 /* heresdk.xcframework */; };
+		87C01A1A25FC23A50095C7C7 /* heresdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87C01A1225FC23630095C7C7 /* heresdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87D4004724C24AB000D10382 /* VLTHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4004424C24AB000D10382 /* VLTHomeTableViewCell.swift */; };
 		87D4004824C24AB000D10382 /* VLTHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87D4004524C24AB000D10382 /* VLTHomeTableViewCell.xib */; };
-		87D4004924C24AB000D10382 /* VLTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4004624C24AB000D10382 /* VLTView.swift */; };
 		87D4007924C2522C00D10382 /* ModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4005B24C2522C00D10382 /* ModesViewController.swift */; };
 		87D4007A24C2522C00D10382 /* Modes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D4005C24C2522C00D10382 /* Modes.storyboard */; };
 		87D4007B24C2522C00D10382 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4005E24C2522C00D10382 /* CameraViewController.swift */; };
@@ -81,8 +128,7 @@
 		87D4008E24C2522C00D10382 /* MapFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007624C2522C00D10382 /* MapFeature.swift */; };
 		87D4008F24C2522C00D10382 /* DemoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007724C2522C00D10382 /* DemoFeature.swift */; };
 		87D4009024C2522C00D10382 /* VLTLiterals+VLTMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007824C2522C00D10382 /* VLTLiterals+VLTMaps.swift */; };
-		8D68C28F388525AB65C2475E /* Pods_VLTDemo_VLTDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D7F79DAC61642321567F4C /* Pods_VLTDemo_VLTDemoUITests.framework */; };
-		C15DAD1EFFD20F0ACE3A9F32 /* Pods_VLTDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759CC16120E616DF2E5B7B75 /* Pods_VLTDemoTests.framework */; };
+		AEB9F2C0BDBEC19954473DFE /* Pods_VLTDemo_VLTDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCFC6BB06D7CBEE6310CA48 /* Pods_VLTDemo_VLTDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,16 +148,80 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		87C019DF25FC202A0095C7C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				87C01A1A25FC23A50095C7C7 /* heresdk.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		213B7357FDE149C2FB6EAA0F /* Pods_VLTDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DC7BB54C1B902D49600ABCF /* Pods-VLTDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-VLTDemoTests/Pods-VLTDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3463E94B447EF31AEE501274 /* Pods-VLTDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo.release.xcconfig"; path = "Target Support Files/Pods-VLTDemo/Pods-VLTDemo.release.xcconfig"; sourceTree = "<group>"; };
-		440923A5F7EF230FEB7AD312 /* Pods-VLTDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemoTests.release.xcconfig"; path = "Target Support Files/Pods-VLTDemoTests/Pods-VLTDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		0DCFC6BB06D7CBEE6310CA48 /* Pods_VLTDemo_VLTDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTDemo_VLTDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A648E17EA41238146835923 /* Pods-VLTDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo.debug.xcconfig"; path = "Target Support Files/Pods-VLTDemo/Pods-VLTDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		309F94DD85AFCC3F770C9146 /* Pods-VLTDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo.release.xcconfig"; path = "Target Support Files/Pods-VLTDemo/Pods-VLTDemo.release.xcconfig"; sourceTree = "<group>"; };
+		42FD2AFE25FDDAF06EA3F10A /* Pods-VLTNavigationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTNavigationDemo.release.xcconfig"; path = "Target Support Files/Pods-VLTNavigationDemo/Pods-VLTNavigationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5874B0E8B883C7596191B1A1 /* Pods_VLTDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A3F5E7B25F936D500CA7209 /* VLTMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VLTMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A540DFA2491926A002FF921 /* VLTLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTLabel.swift; sourceTree = "<group>"; };
 		6A540DFC249275CB002FF921 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		6A630DA42497DBAA0043D272 /* VLTLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTLiterals.swift; sourceTree = "<group>"; };
 		6A869C2E248EC6D4005A77E3 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		6A869C3024913F15005A77E3 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		6A998FBB25F042E400B055A2 /* HERE_TransportMode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HERE_TransportMode+Extensions.swift"; sourceTree = "<group>"; };
+		6A998FBC25F042E400B055A2 /* Int32+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int32+Extension.swift"; sourceTree = "<group>"; };
+		6A998FBD25F042E400B055A2 /* HERE_ManeuverAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HERE_ManeuverAction+Extensions.swift"; sourceTree = "<group>"; };
+		6A998FBE25F042E400B055A2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		6A998FBF25F042E400B055A2 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		6A998FC925F0434A00B055A2 /* DemoError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoError.swift; sourceTree = "<group>"; };
+		6A998FCE25F0455600B055A2 /* CustomMglAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMglAnnotationView.swift; sourceTree = "<group>"; };
+		6A998FD425F0465700B055A2 /* MapboxIntegrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxIntegrationViewController.swift; sourceTree = "<group>"; };
+		6A998FD525F0465700B055A2 /* Mapbox.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mapbox.storyboard; sourceTree = "<group>"; };
+		6A998FEE25F0495600B055A2 /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
+		6A998FF325F0496B00B055A2 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		6A998FF825F0497400B055A2 /* VLTMapsRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTMapsRouting.swift; sourceTree = "<group>"; };
+		6A998FF925F0497400B055A2 /* GenericDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDefinitions.swift; sourceTree = "<group>"; };
+		6A998FFA25F0497400B055A2 /* VLTLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTLocation.swift; sourceTree = "<group>"; };
+		6A998FFB25F0497400B055A2 /* GPXRecording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXRecording.swift; sourceTree = "<group>"; };
+		6A998FFC25F0497400B055A2 /* XibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		6A998FFD25F0497400B055A2 /* XibViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibViewProtocol.swift; sourceTree = "<group>"; };
+		6A998FFE25F0497400B055A2 /* VLTNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTNavigation.swift; sourceTree = "<group>"; };
+		6A99900925F0498500B055A2 /* ExitableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExitableViewDelegate.swift; sourceTree = "<group>"; };
+		6A99900A25F0498500B055A2 /* SearchDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDelegate.swift; sourceTree = "<group>"; };
+		6A99900B25F0498500B055A2 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		6A99900C25F0498500B055A2 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6A99900D25F0498500B055A2 /* ModeOfTravelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeOfTravelDelegate.swift; sourceTree = "<group>"; };
+		6A99900E25F0498500B055A2 /* NavigationCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		6A99901825F0499000B055A2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6A99901D25F0499800B055A2 /* DirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
+		6A99901E25F0499800B055A2 /* DirectionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsCell.swift; sourceTree = "<group>"; };
+		6A99902425F049B100B055A2 /* RouteOverviewFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteOverviewFooterView.swift; sourceTree = "<group>"; };
+		6A99902525F049B100B055A2 /* RouteOverviewFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteOverviewFooterView.xib; sourceTree = "<group>"; };
+		6A99902B25F049BD00B055A2 /* LayerOptionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LayerOptionsView.xib; sourceTree = "<group>"; };
+		6A99902C25F049BD00B055A2 /* LayerOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerOptionsView.swift; sourceTree = "<group>"; };
+		6A99903225F049DA00B055A2 /* NavigationDirectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationDirectionHeaderView.xib; sourceTree = "<group>"; };
+		6A99903325F049DA00B055A2 /* NavigationDirectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDirectionHeaderView.swift; sourceTree = "<group>"; };
+		6A99903925F049E900B055A2 /* SearchResultsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsTable.swift; sourceTree = "<group>"; };
+		6A99903A25F049E900B055A2 /* SearchHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHeaderView.xib; sourceTree = "<group>"; };
+		6A99903B25F049E900B055A2 /* SearchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHeaderView.swift; sourceTree = "<group>"; };
+		6A99904225F049F700B055A2 /* LocationShortcutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationShortcutCell.xib; sourceTree = "<group>"; };
+		6A99904325F049F700B055A2 /* LocationShortcutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationShortcutCell.swift; sourceTree = "<group>"; };
+		6A99904925F04A0000B055A2 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		6A99904A25F04A0000B055A2 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		6A99905025F04A0B00B055A2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		6A99905525F04A2800B055A2 /* VLTLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTLocationManager.swift; sourceTree = "<group>"; };
+		6A99905A25F04A3400B055A2 /* HERE_LanguageCodeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HERE_LanguageCodeConverter.swift; sourceTree = "<group>"; };
+		6A99905C25F04A3400B055A2 /* HERE_VoiceAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HERE_VoiceAssistant.swift; sourceTree = "<group>"; };
+		6A99906325F04A4400B055A2 /* Route+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Route+Extensions.swift"; sourceTree = "<group>"; };
+		6A99906425F04A4400B055A2 /* HEREsdk+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HEREsdk+Extensions.swift"; sourceTree = "<group>"; };
+		6A99906525F04A4400B055A2 /* CoreLocation+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreLocation+Extensions.swift"; sourceTree = "<group>"; };
+		6A9990AA25F04E6D00B055A2 /* Buildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buildable.swift; sourceTree = "<group>"; };
 		6AC10051251419390084EB48 /* RelativePositioningTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativePositioningTableVC.swift; sourceTree = "<group>"; };
 		6AC10052251419390084EB48 /* RelativePositioningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativePositioningViewController.swift; sourceTree = "<group>"; };
 		6AC10053251419390084EB48 /* GeoJSON-SectionB.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "GeoJSON-SectionB.json"; sourceTree = "<group>"; };
@@ -139,9 +249,6 @@
 		6AD5D8C624EDE0EB004AFCDD /* Points.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Points.json; sourceTree = "<group>"; };
 		6AD5D8C724EDE0EB004AFCDD /* Polylines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Polylines.json; sourceTree = "<group>"; };
 		6AD5D8C824EDE0EB004AFCDD /* Polygons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Polygons.json; sourceTree = "<group>"; };
-		6AE56ECA2579AD7F003B2EBA /* Mapbox.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mapbox.storyboard; sourceTree = "<group>"; };
-		6AE56ECB2579AD7F003B2EBA /* MapboxIntegrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxIntegrationViewController.swift; sourceTree = "<group>"; };
-		6AE56EE7257AA40D003B2EBA /* CustomMglAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMglAnnotationView.swift; sourceTree = "<group>"; };
 		6AE7ECB424745D1100821502 /* VLTDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VLTDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE7ECB724745D1100821502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AE7ECB924745D1100821502 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,15 +261,15 @@
 		6AE7ECD524745D1300821502 /* VLTDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VLTDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE7ECDB24745D1300821502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AE7ECF624747EF000821502 /* FeatureListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureListViewController.swift; sourceTree = "<group>"; };
-		759CC16120E616DF2E5B7B75 /* Pods_VLTDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D9FAAC7BE65257A03C5B5FD /* Pods-VLTDemo-VLTDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo-VLTDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		87438B732485A45B0007D1FC /* VLTButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTButton.swift; sourceTree = "<group>"; };
+		716E2A25B76EF84DBFB1B56A /* Pods_VLTNavigationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTNavigationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7331148D5A5A9C67A2946376 /* Pods-VLTDemo-VLTDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo-VLTDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		86944E275F186261850E2916 /* Pods-VLTDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-VLTDemoTests/Pods-VLTDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		87438B742485A45C0007D1FC /* VLTTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTTextField.swift; sourceTree = "<group>"; };
 		876FA84624CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTDemoMapsSDKUITests.swift; sourceTree = "<group>"; };
 		876FA84824CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTDemoMapsSDKTests.swift; sourceTree = "<group>"; };
+		87C01A1225FC23630095C7C7 /* heresdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = heresdk.xcframework; sourceTree = "<group>"; };
 		87D4004424C24AB000D10382 /* VLTHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTHomeTableViewCell.swift; sourceTree = "<group>"; };
 		87D4004524C24AB000D10382 /* VLTHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VLTHomeTableViewCell.xib; sourceTree = "<group>"; };
-		87D4004624C24AB000D10382 /* VLTView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTView.swift; sourceTree = "<group>"; };
 		87D4005B24C2522C00D10382 /* ModesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
 		87D4005C24C2522C00D10382 /* Modes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Modes.storyboard; sourceTree = "<group>"; };
 		87D4005E24C2522C00D10382 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -186,9 +293,10 @@
 		87D4007624C2522C00D10382 /* MapFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapFeature.swift; sourceTree = "<group>"; };
 		87D4007724C2522C00D10382 /* DemoFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoFeature.swift; sourceTree = "<group>"; };
 		87D4007824C2522C00D10382 /* VLTLiterals+VLTMaps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VLTLiterals+VLTMaps.swift"; sourceTree = "<group>"; };
-		D4FBCEB3EB0B9C42DBB4F657 /* Pods-VLTDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo.debug.xcconfig"; path = "Target Support Files/Pods-VLTDemo/Pods-VLTDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		E45F244698A2F328AF98A335 /* Pods-VLTDemo-VLTDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo-VLTDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F9D7F79DAC61642321567F4C /* Pods_VLTDemo_VLTDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTDemo_VLTDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1292E21CA400DE5A3527F5 /* Pods-VLTDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemoTests.release.xcconfig"; path = "Target Support Files/Pods-VLTDemoTests/Pods-VLTDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9A02A703C3A521D49F18B58 /* Pods_VLTDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06114BB5B37BEF33C97D20A /* Pods-VLTNavigationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTNavigationDemo.debug.xcconfig"; path = "Target Support Files/Pods-VLTNavigationDemo/Pods-VLTNavigationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B63F68B14D5F57E816E47A27 /* Pods-VLTDemo-VLTDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo-VLTDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +304,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5834F686249EB1DC897E39B2 /* Pods_VLTDemo.framework in Frameworks */,
+				6A3F5E7C25F936D500CA7209 /* VLTMaps.framework in Frameworks */,
+				87C01A1925FC23A50095C7C7 /* heresdk.xcframework in Frameworks */,
+				82CA184AACF4A7A099DA8B52 /* Pods_VLTDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +314,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C15DAD1EFFD20F0ACE3A9F32 /* Pods_VLTDemoTests.framework in Frameworks */,
+				3B3D3B3B6F282B6C9E906DA2 /* Pods_VLTDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,19 +322,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D68C28F388525AB65C2475E /* Pods_VLTDemo_VLTDemoUITests.framework in Frameworks */,
+				AEB9F2C0BDBEC19954473DFE /* Pods_VLTDemo_VLTDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DD17FC845AC179D1C9E4947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A3F5E7B25F936D500CA7209 /* VLTMaps.framework */,
+				A9A02A703C3A521D49F18B58 /* Pods_VLTDemo.framework */,
+				716E2A25B76EF84DBFB1B56A /* Pods_VLTNavigationDemo.framework */,
+				0DCFC6BB06D7CBEE6310CA48 /* Pods_VLTDemo_VLTDemoUITests.framework */,
+				5874B0E8B883C7596191B1A1 /* Pods_VLTDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6A848165247EDBF400D0E514 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				6A869C2E248EC6D4005A77E3 /* Double+Extensions.swift */,
+				6A998FBD25F042E400B055A2 /* HERE_ManeuverAction+Extensions.swift */,
+				6A998FBB25F042E400B055A2 /* HERE_TransportMode+Extensions.swift */,
+				6A998FBC25F042E400B055A2 /* Int32+Extension.swift */,
 				6AD5D87E24EDCABE004AFCDD /* String+Extension.swift */,
 				6A869C3024913F15005A77E3 /* UIColor+Extensions.swift */,
+				6A998FBF25F042E400B055A2 /* UIImage+Extensions.swift */,
+				6A998FBE25F042E400B055A2 /* UIView+Extensions.swift */,
 				6A540DFC249275CB002FF921 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
@@ -233,11 +360,211 @@
 		6A84816A247F0D0A00D0E514 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				6A9990AA25F04E6D00B055A2 /* Buildable.swift */,
+				6A998FC925F0434A00B055A2 /* DemoError.swift */,
 				6AD5D88024EDCACC004AFCDD /* ImageDownloadHelper.swift */,
-				6A630DA42497DBAA0043D272 /* VLTLiterals.swift */,
 				6AC1006325153F350084EB48 /* VLTConstants.swift */,
+				6A630DA42497DBAA0043D272 /* VLTLiterals.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6A998FD325F0460A00B055A2 /* Mapbox Integration */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FD525F0465700B055A2 /* Mapbox.storyboard */,
+				6A998FD425F0465700B055A2 /* MapboxIntegrationViewController.swift */,
+			);
+			path = "Mapbox Integration";
+			sourceTree = "<group>";
+		};
+		6A998FDB25F0471600B055A2 /* Navigation Demo */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FDC25F0473500B055A2 /* Coordinators */,
+				6A998FDD25F0473D00B055A2 /* Helpers */,
+				6A998FEE25F0495600B055A2 /* Navigation.storyboard */,
+				6A998FDE25F0474800B055A2 /* Protocols */,
+				6A998FDF25F0475100B055A2 /* View Controllers */,
+				6A998FE025F0475B00B055A2 /* Views */,
+				6A998FE125F0476300B055A2 /* VLTMaps_HERENavigation */,
+			);
+			path = "Navigation Demo";
+			sourceTree = "<group>";
+		};
+		6A998FDC25F0473500B055A2 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FF325F0496B00B055A2 /* NavigationCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6A998FDD25F0473D00B055A2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FF925F0497400B055A2 /* GenericDefinitions.swift */,
+				6A998FFB25F0497400B055A2 /* GPXRecording.swift */,
+				6A998FFA25F0497400B055A2 /* VLTLocation.swift */,
+				6A998FF825F0497400B055A2 /* VLTMapsRouting.swift */,
+				6A998FFE25F0497400B055A2 /* VLTNavigation.swift */,
+				6A998FFC25F0497400B055A2 /* XibView.swift */,
+				6A998FFD25F0497400B055A2 /* XibViewProtocol.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6A998FDE25F0474800B055A2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6A99900C25F0498500B055A2 /* Coordinator.swift */,
+				6A99900925F0498500B055A2 /* ExitableViewDelegate.swift */,
+				6A99900D25F0498500B055A2 /* ModeOfTravelDelegate.swift */,
+				6A99900E25F0498500B055A2 /* NavigationCoordinatorDelegate.swift */,
+				6A99900A25F0498500B055A2 /* SearchDelegate.swift */,
+				6A99900B25F0498500B055A2 /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6A998FDF25F0475100B055A2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FE225F0479A00B055A2 /* Directions */,
+				6A99901825F0499000B055A2 /* MapViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6A998FE025F0475B00B055A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A99905025F04A0B00B055A2 /* CircleView.swift */,
+				6A998FE325F047AC00B055A2 /* Footer Views */,
+				6A998FE425F047B500B055A2 /* Header Views */,
+				6A998FE525F047C100B055A2 /* TableView Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6A998FE125F0476300B055A2 /* VLTMaps_HERENavigation */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FEC25F0490900B055A2 /* Extensions */,
+				6A998FED25F0491200B055A2 /* HERE_Modules */,
+				6A99905525F04A2800B055A2 /* VLTLocationManager.swift */,
+			);
+			path = VLTMaps_HERENavigation;
+			sourceTree = "<group>";
+		};
+		6A998FE225F0479A00B055A2 /* Directions */ = {
+			isa = PBXGroup;
+			children = (
+				6A99901E25F0499800B055A2 /* DirectionsCell.swift */,
+				6A99901D25F0499800B055A2 /* DirectionsViewController.swift */,
+			);
+			path = Directions;
+			sourceTree = "<group>";
+		};
+		6A998FE325F047AC00B055A2 /* Footer Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FE625F047DA00B055A2 /* LayerOptionsView */,
+				6A998FE725F047E300B055A2 /* RouteOverviewFooterView */,
+			);
+			path = "Footer Views";
+			sourceTree = "<group>";
+		};
+		6A998FE425F047B500B055A2 /* Header Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FE925F0481700B055A2 /* NavigationDirectionHeaderView */,
+				6A998FE825F0480D00B055A2 /* SearchHeaderView */,
+			);
+			path = "Header Views";
+			sourceTree = "<group>";
+		};
+		6A998FE525F047C100B055A2 /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FEB25F0483400B055A2 /* LocationShortcutCell */,
+				6A998FEA25F0482900B055A2 /* SearchResultCell */,
+			);
+			path = "TableView Cells";
+			sourceTree = "<group>";
+		};
+		6A998FE625F047DA00B055A2 /* LayerOptionsView */ = {
+			isa = PBXGroup;
+			children = (
+				6A99902C25F049BD00B055A2 /* LayerOptionsView.swift */,
+				6A99902B25F049BD00B055A2 /* LayerOptionsView.xib */,
+			);
+			path = LayerOptionsView;
+			sourceTree = "<group>";
+		};
+		6A998FE725F047E300B055A2 /* RouteOverviewFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				6A99902425F049B100B055A2 /* RouteOverviewFooterView.swift */,
+				6A99902525F049B100B055A2 /* RouteOverviewFooterView.xib */,
+			);
+			path = RouteOverviewFooterView;
+			sourceTree = "<group>";
+		};
+		6A998FE825F0480D00B055A2 /* SearchHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				6A99903B25F049E900B055A2 /* SearchHeaderView.swift */,
+				6A99903A25F049E900B055A2 /* SearchHeaderView.xib */,
+				6A99903925F049E900B055A2 /* SearchResultsTable.swift */,
+			);
+			path = SearchHeaderView;
+			sourceTree = "<group>";
+		};
+		6A998FE925F0481700B055A2 /* NavigationDirectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				6A99903325F049DA00B055A2 /* NavigationDirectionHeaderView.swift */,
+				6A99903225F049DA00B055A2 /* NavigationDirectionHeaderView.xib */,
+			);
+			path = NavigationDirectionHeaderView;
+			sourceTree = "<group>";
+		};
+		6A998FEA25F0482900B055A2 /* SearchResultCell */ = {
+			isa = PBXGroup;
+			children = (
+				6A99904925F04A0000B055A2 /* SearchResultCell.swift */,
+				6A99904A25F04A0000B055A2 /* SearchResultCell.xib */,
+			);
+			path = SearchResultCell;
+			sourceTree = "<group>";
+		};
+		6A998FEB25F0483400B055A2 /* LocationShortcutCell */ = {
+			isa = PBXGroup;
+			children = (
+				6A99904325F049F700B055A2 /* LocationShortcutCell.swift */,
+				6A99904225F049F700B055A2 /* LocationShortcutCell.xib */,
+			);
+			path = LocationShortcutCell;
+			sourceTree = "<group>";
+		};
+		6A998FEC25F0490900B055A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6A99906525F04A4400B055A2 /* CoreLocation+Extensions.swift */,
+				6A99906425F04A4400B055A2 /* HEREsdk+Extensions.swift */,
+				6A99906325F04A4400B055A2 /* Route+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6A998FED25F0491200B055A2 /* HERE_Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6A99905A25F04A3400B055A2 /* HERE_LanguageCodeConverter.swift */,
+				6A99905C25F04A3400B055A2 /* HERE_VoiceAssistant.swift */,
+			);
+			path = HERE_Modules;
 			sourceTree = "<group>";
 		};
 		6AC1004F251418D50084EB48 /* Bounding Box */ = {
@@ -295,24 +622,18 @@
 			path = "GeoJSON Files";
 			sourceTree = "<group>";
 		};
-		6AE56EC92579AD12003B2EBA /* Mapbox Integration */ = {
-			isa = PBXGroup;
-			children = (
-				6AE56ECA2579AD7F003B2EBA /* Mapbox.storyboard */,
-				6AE56ECB2579AD7F003B2EBA /* MapboxIntegrationViewController.swift */,
-			);
-			path = "Mapbox Integration";
-			sourceTree = "<group>";
-		};
 		6AE7ECAB24745D1100821502 = {
 			isa = PBXGroup;
 			children = (
+				87C01A1025FC23630095C7C7 /* Dependencies */,
+				3DD17FC845AC179D1C9E4947 /* Frameworks */,
+				8757AA88260293A3002867D0 /* GPX_TestFiles */,
+				6A998FDB25F0471600B055A2 /* Navigation Demo */,
+				EC17C61B1364ECCF41E38DB1 /* Pods */,
+				6AE7ECB524745D1100821502 /* Products */,
 				6AE7ECB624745D1100821502 /* VLTDemo */,
 				6AE7ECCD24745D1300821502 /* VLTDemoTests */,
 				6AE7ECD824745D1300821502 /* VLTDemoUITests */,
-				6AE7ECB524745D1100821502 /* Products */,
-				EC17C61B1364ECCF41E38DB1 /* Pods */,
-				76CA83A911F0876E98EDC3E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -332,11 +653,11 @@
 				6AE7ECB724745D1100821502 /* AppDelegate.swift */,
 				6AE7ECC024745D1300821502 /* Assets.xcassets */,
 				6A848165247EDBF400D0E514 /* Extensions */,
+				6AE7ECBD24745D1100821502 /* FeatureList.storyboard */,
+				6AE7ECF624747EF000821502 /* FeatureListViewController.swift */,
 				6A84816A247F0D0A00D0E514 /* Helpers */,
 				6AE7ECC524745D1300821502 /* Info.plist */,
 				6AE7ECC224745D1300821502 /* LaunchScreen.storyboard */,
-				6AE7ECF624747EF000821502 /* FeatureListViewController.swift */,
-				6AE7ECBD24745D1100821502 /* FeatureList.storyboard */,
 				87D4005824C2522C00D10382 /* MapsSDK */,
 				6AE7ECB924745D1100821502 /* SceneDelegate.swift */,
 				87438B6C2485A21F0007D1FC /* UIControls */,
@@ -363,24 +684,20 @@
 			path = VLTDemoUITests;
 			sourceTree = "<group>";
 		};
-		76CA83A911F0876E98EDC3E1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				213B7357FDE149C2FB6EAA0F /* Pods_VLTDemo.framework */,
-				F9D7F79DAC61642321567F4C /* Pods_VLTDemo_VLTDemoUITests.framework */,
-				759CC16120E616DF2E5B7B75 /* Pods_VLTDemoTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		87438B6C2485A21F0007D1FC /* UIControls */ = {
 			isa = PBXGroup;
 			children = (
-				87438B732485A45B0007D1FC /* VLTButton.swift */,
 				87438B742485A45C0007D1FC /* VLTTextField.swift */,
 				6A540DFA2491926A002FF921 /* VLTLabel.swift */,
 			);
 			path = UIControls;
+			sourceTree = "<group>";
+		};
+		8757AA88260293A3002867D0 /* GPX_TestFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GPX_TestFiles;
 			sourceTree = "<group>";
 		};
 		876FA84424CB9F3F0098AEAA /* MapsSDKTests */ = {
@@ -399,13 +716,28 @@
 			path = MapsSDKUITest;
 			sourceTree = "<group>";
 		};
+		87C01A1025FC23630095C7C7 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				87C01A1125FC23630095C7C7 /* HERE */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		87C01A1125FC23630095C7C7 /* HERE */ = {
+			isa = PBXGroup;
+			children = (
+				87C01A1225FC23630095C7C7 /* heresdk.xcframework */,
+			);
+			path = HERE;
+			sourceTree = "<group>";
+		};
 		87D4004324C24A4E00D10382 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				6AC1006125141E770084EB48 /* VLTToggleButton.swift */,
 				87D4004424C24AB000D10382 /* VLTHomeTableViewCell.swift */,
 				87D4004524C24AB000D10382 /* VLTHomeTableViewCell.xib */,
-				87D4004624C24AB000D10382 /* VLTView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -430,7 +762,7 @@
 				6AC1004F251418D50084EB48 /* Bounding Box */,
 				87D4005D24C2522C00D10382 /* Camera */,
 				6AD5D89524EDCC71004AFCDD /* GeoJSON */,
-				6AE56EC92579AD12003B2EBA /* Mapbox Integration */,
+				6A998FD325F0460A00B055A2 /* Mapbox Integration */,
 				87D4005A24C2522C00D10382 /* Modes */,
 				6AC10050251418F30084EB48 /* Relative Positioning */,
 				87D4006124C2522C00D10382 /* Shapes */,
@@ -504,7 +836,7 @@
 		87D4007424C2522C00D10382 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				6AE56EE7257AA40D003B2EBA /* CustomMglAnnotationView.swift */,
+				6A998FCE25F0455600B055A2 /* CustomMglAnnotationView.swift */,
 				87D4007524C2522C00D10382 /* CameraMetrics.swift */,
 				87D4007724C2522C00D10382 /* DemoFeature.swift */,
 				87D4007624C2522C00D10382 /* MapFeature.swift */,
@@ -517,12 +849,14 @@
 		EC17C61B1364ECCF41E38DB1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D4FBCEB3EB0B9C42DBB4F657 /* Pods-VLTDemo.debug.xcconfig */,
-				3463E94B447EF31AEE501274 /* Pods-VLTDemo.release.xcconfig */,
-				7D9FAAC7BE65257A03C5B5FD /* Pods-VLTDemo-VLTDemoUITests.debug.xcconfig */,
-				E45F244698A2F328AF98A335 /* Pods-VLTDemo-VLTDemoUITests.release.xcconfig */,
-				2DC7BB54C1B902D49600ABCF /* Pods-VLTDemoTests.debug.xcconfig */,
-				440923A5F7EF230FEB7AD312 /* Pods-VLTDemoTests.release.xcconfig */,
+				2A648E17EA41238146835923 /* Pods-VLTDemo.debug.xcconfig */,
+				309F94DD85AFCC3F770C9146 /* Pods-VLTDemo.release.xcconfig */,
+				B06114BB5B37BEF33C97D20A /* Pods-VLTNavigationDemo.debug.xcconfig */,
+				42FD2AFE25FDDAF06EA3F10A /* Pods-VLTNavigationDemo.release.xcconfig */,
+				7331148D5A5A9C67A2946376 /* Pods-VLTDemo-VLTDemoUITests.debug.xcconfig */,
+				B63F68B14D5F57E816E47A27 /* Pods-VLTDemo-VLTDemoUITests.release.xcconfig */,
+				86944E275F186261850E2916 /* Pods-VLTDemoTests.debug.xcconfig */,
+				9C1292E21CA400DE5A3527F5 /* Pods-VLTDemoTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -534,12 +868,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AE7ECDE24745D1300821502 /* Build configuration list for PBXNativeTarget "VLTDemo" */;
 			buildPhases = (
-				65CD52A486359FA2F0142DFE /* [CP] Check Pods Manifest.lock */,
-				E9C351ED823325E55C81DF48 /* [CP] Prepare Artifacts */,
+				B9387D487B75541F45B449C1 /* [CP] Check Pods Manifest.lock */,
 				6AE7ECB024745D1100821502 /* Sources */,
 				6AE7ECB124745D1100821502 /* Frameworks */,
 				6AE7ECB224745D1100821502 /* Resources */,
-				75A5C683D604E49B51D05A23 /* [CP] Embed Pods Frameworks */,
+				DD8ABC72905666A57E74337B /* [CP] Embed Pods Frameworks */,
+				87C0179F25FBEC720095C7C7 /* Swift Lint */,
+				87C019DF25FC202A0095C7C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -554,7 +889,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AE7ECE124745D1300821502 /* Build configuration list for PBXNativeTarget "VLTDemoTests" */;
 			buildPhases = (
-				104AA0DB5DD55071B5FAE3E1 /* [CP] Check Pods Manifest.lock */,
+				0A5960B08FF831AAB787D739 /* [CP] Check Pods Manifest.lock */,
 				6AE7ECC624745D1300821502 /* Sources */,
 				6AE7ECC724745D1300821502 /* Frameworks */,
 				6AE7ECC824745D1300821502 /* Resources */,
@@ -573,12 +908,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AE7ECE424745D1300821502 /* Build configuration list for PBXNativeTarget "VLTDemoUITests" */;
 			buildPhases = (
-				F696DE5E1936EC00D9A9CD05 /* [CP] Check Pods Manifest.lock */,
-				1DBB6555BB6FAC8A69021B1F /* [CP] Prepare Artifacts */,
+				2EE0778FB8D5AB0CD6F58792 /* [CP] Check Pods Manifest.lock */,
 				6AE7ECD124745D1300821502 /* Sources */,
 				6AE7ECD224745D1300821502 /* Frameworks */,
 				6AE7ECD324745D1300821502 /* Resources */,
-				408801777FF18771C542192B /* [CP] Embed Pods Frameworks */,
+				C1E2CD1070FE5DE8229E5CA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -596,8 +930,8 @@
 		6AE7ECAC24745D1100821502 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Verizon Location Technology";
 				TargetAttributes = {
 					6AE7ECB324745D1100821502 = {
@@ -640,27 +974,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A99903425F049DA00B055A2 /* NavigationDirectionHeaderView.xib in Resources */,
 				6AD5D8CC24EDE0EC004AFCDD /* Polygons.json in Resources */,
+				6A99902D25F049BD00B055A2 /* LayerOptionsView.xib in Resources */,
 				6AC10058251419390084EB48 /* GeoJSON-SectionB.json in Resources */,
 				6AD5D8B224EDCD13004AFCDD /* VisibleFeatures.storyboard in Resources */,
 				87D4007A24C2522C00D10382 /* Modes.storyboard in Resources */,
+				6A99904C25F04A0000B055A2 /* SearchResultCell.xib in Resources */,
+				6A99902725F049B100B055A2 /* RouteOverviewFooterView.xib in Resources */,
 				6AC1005E2514194B0084EB48 /* BoundingBox.storyboard in Resources */,
 				87D4007D24C2522C00D10382 /* Camera.storyboard in Resources */,
+				6A99903D25F049E900B055A2 /* SearchHeaderView.xib in Resources */,
 				6AD5D8AC24EDCCDF004AFCDD /* GeoJSON.storyboard in Resources */,
 				6AD5D8CA24EDE0EC004AFCDD /* Points.json in Resources */,
+				6A99904425F049F700B055A2 /* LocationShortcutCell.xib in Resources */,
 				6AE7ECC424745D1300821502 /* LaunchScreen.storyboard in Resources */,
 				87D4008524C2522C00D10382 /* Shapes.storyboard in Resources */,
 				6AD5D8CB24EDE0EC004AFCDD /* Polylines.json in Resources */,
 				6AD5D8B924EDD132004AFCDD /* Contents.json in Resources */,
 				6AE7ECC124745D1300821502 /* Assets.xcassets in Resources */,
 				6AD5D8C924EDE0EB004AFCDD /* MixedFeatureCollection.json in Resources */,
+				6A998FEF25F0495600B055A2 /* Navigation.storyboard in Resources */,
 				6AE7ECBF24745D1100821502 /* FeatureList.storyboard in Resources */,
 				87D4008924C2522C00D10382 /* VLTMaps.xcassets in Resources */,
 				6AC1005A251419390084EB48 /* GeoJSON-SectionA.json in Resources */,
 				87D4008724C2522C00D10382 /* UserLocation.storyboard in Resources */,
 				6AC10059251419390084EB48 /* RelativePositioning.storyboard in Resources */,
 				87D4004824C24AB000D10382 /* VLTHomeTableViewCell.xib in Resources */,
-				6AE56ECC2579AD80003B2EBA /* Mapbox.storyboard in Resources */,
+				6A998FD725F0465700B055A2 /* Mapbox.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,7 +1022,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		104AA0DB5DD55071B5FAE3E1 /* [CP] Check Pods Manifest.lock */ = {
+		0A5960B08FF831AAB787D739 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -703,89 +1044,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1DBB6555BB6FAC8A69021B1F /* [CP] Prepare Artifacts */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			name = "[CP] Prepare Artifacts";
-			outputFileListPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests-artifacts.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		408801777FF18771C542192B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		65CD52A486359FA2F0142DFE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VLTDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75A5C683D604E49B51D05A23 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLTDemo/Pods-VLTDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E9C351ED823325E55C81DF48 /* [CP] Prepare Artifacts */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			name = "[CP] Prepare Artifacts";
-			outputFileListPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLTDemo/Pods-VLTDemo-artifacts.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F696DE5E1936EC00D9A9CD05 /* [CP] Check Pods Manifest.lock */ = {
+		2EE0778FB8D5AB0CD6F58792 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -807,6 +1066,76 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		87C0179F25FBEC720095C7C7 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${PODS_ROOT}/SwiftLint/swiftlint autocorrect \n#${PODS_ROOT}/SwiftLint/swiftlint lint \n";
+		};
+		B9387D487B75541F45B449C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VLTDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E2CD1070FE5DE8229E5CA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD8ABC72905666A57E74337B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLTDemo/Pods-VLTDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -814,54 +1143,90 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A99900525F0497400B055A2 /* VLTNavigation.swift in Sources */,
 				6AD5D8A924EDCCDF004AFCDD /* GeoJSONViewController+Polylines.swift in Sources */,
 				6AC1006425153F350084EB48 /* VLTConstants.swift in Sources */,
 				6AD5D8A824EDCCDF004AFCDD /* GeoJSONViewController.swift in Sources */,
 				87D4007C24C2522C00D10382 /* CameraMetricsViewController.swift in Sources */,
+				6A998FC325F042E400B055A2 /* HERE_ManeuverAction+Extensions.swift in Sources */,
 				6AD5D88124EDCACC004AFCDD /* ImageDownloadHelper.swift in Sources */,
+				6A99903E25F049E900B055A2 /* SearchHeaderView.swift in Sources */,
+				6A998FC425F042E400B055A2 /* UIView+Extensions.swift in Sources */,
 				6AC1006225141E780084EB48 /* VLTToggleButton.swift in Sources */,
 				6AE7ECB824745D1100821502 /* AppDelegate.swift in Sources */,
 				6A540DFD249275CB002FF921 /* UIViewController+Extensions.swift in Sources */,
+				6A99902025F0499800B055A2 /* DirectionsCell.swift in Sources */,
+				6A99900125F0497400B055A2 /* VLTLocation.swift in Sources */,
+				6A998FC225F042E400B055A2 /* Int32+Extension.swift in Sources */,
+				6A99901925F0499000B055A2 /* MapViewController.swift in Sources */,
 				87D4008C24C2522C00D10382 /* CameraMetricsControllerDelegate.swift in Sources */,
-				6AE56EE8257AA40D003B2EBA /* CustomMglAnnotationView.swift in Sources */,
 				87D4008324C2522C00D10382 /* ShapesViewController+TrafficExamples.swift in Sources */,
 				6AE7ECBA24745D1100821502 /* SceneDelegate.swift in Sources */,
 				6AC1005F2514194B0084EB48 /* BoundingBox.swift in Sources */,
 				87D4008D24C2522C00D10382 /* CameraMetrics.swift in Sources */,
 				87D4008F24C2522C00D10382 /* DemoFeature.swift in Sources */,
-				87438B752485A45C0007D1FC /* VLTButton.swift in Sources */,
+				6A99904B25F04A0000B055A2 /* SearchResultCell.swift in Sources */,
 				87D4009024C2522C00D10382 /* VLTLiterals+VLTMaps.swift in Sources */,
 				6AD5D8AB24EDCCDF004AFCDD /* GeoJSONViewController+MixedFeatures.swift in Sources */,
+				6A99903525F049DA00B055A2 /* NavigationDirectionHeaderView.swift in Sources */,
 				6AC10056251419390084EB48 /* RelativePositioningTableVC.swift in Sources */,
 				6AD5D8B124EDCD13004AFCDD /* VisibleFeaturesViewController.swift in Sources */,
+				6A99901325F0498500B055A2 /* ModeOfTravelDelegate.swift in Sources */,
 				87D4008624C2522C00D10382 /* ShapesViewController+PolygonExamples.swift in Sources */,
+				6A99900F25F0498500B055A2 /* ExitableViewDelegate.swift in Sources */,
+				6A998FC525F042E400B055A2 /* UIImage+Extensions.swift in Sources */,
+				6A99901025F0498500B055A2 /* SearchDelegate.swift in Sources */,
 				87D4004724C24AB000D10382 /* VLTHomeTableViewCell.swift in Sources */,
+				6A9990AB25F04E6D00B055A2 /* Buildable.swift in Sources */,
+				6A99901125F0498500B055A2 /* Storyboarded.swift in Sources */,
 				87D4008E24C2522C00D10382 /* MapFeature.swift in Sources */,
+				6A99900025F0497400B055A2 /* GenericDefinitions.swift in Sources */,
+				6A99900325F0497400B055A2 /* XibView.swift in Sources */,
+				6A99905F25F04A3400B055A2 /* HERE_VoiceAssistant.swift in Sources */,
 				87D4008B24C2522C00D10382 /* VisibleFeaturesControllerDelegate.swift in Sources */,
 				87D4008224C2522C00D10382 /* ShapesViewController+UserInteraction.swift in Sources */,
+				6A99904525F049F700B055A2 /* LocationShortcutCell.swift in Sources */,
+				6A99901225F0498500B055A2 /* Coordinator.swift in Sources */,
+				6A99902E25F049BD00B055A2 /* LayerOptionsView.swift in Sources */,
+				6A998FD625F0465700B055A2 /* MapboxIntegrationViewController.swift in Sources */,
+				6A99901F25F0499800B055A2 /* DirectionsViewController.swift in Sources */,
+				6A99903C25F049E900B055A2 /* SearchResultsTable.swift in Sources */,
+				6A99902625F049B100B055A2 /* RouteOverviewFooterView.swift in Sources */,
 				6AD5D87F24EDCABF004AFCDD /* String+Extension.swift in Sources */,
+				6A99906825F04A4400B055A2 /* CoreLocation+Extensions.swift in Sources */,
 				6A540DFB2491926A002FF921 /* VLTLabel.swift in Sources */,
 				6AD5D8AA24EDCCDF004AFCDD /* GeoJSONViewController+Polygons.swift in Sources */,
 				87D4008124C2522C00D10382 /* ShapesViewController+CircleExamples.swift in Sources */,
+				6A998FF425F0496B00B055A2 /* NavigationCoordinator.swift in Sources */,
+				6A998FFF25F0497400B055A2 /* VLTMapsRouting.swift in Sources */,
+				6A998FCF25F0455600B055A2 /* CustomMglAnnotationView.swift in Sources */,
+				6A99905125F04A0B00B055A2 /* CircleView.swift in Sources */,
 				87D4007924C2522C00D10382 /* ModesViewController.swift in Sources */,
+				6A99905625F04A2800B055A2 /* VLTLocationManager.swift in Sources */,
+				6A998FC125F042E400B055A2 /* HERE_TransportMode+Extensions.swift in Sources */,
 				87D4007F24C2522C00D10382 /* ShapesViewController+MarkerExamples.swift in Sources */,
 				87D4007E24C2522C00D10382 /* ShapesViewController.swift in Sources */,
 				6A630DA52497DBAA0043D272 /* VLTLiterals.swift in Sources */,
-				6AE56ECD2579AD80003B2EBA /* MapboxIntegrationViewController.swift in Sources */,
 				6AC1006625153F910084EB48 /* VLTConstants+VLTMaps.swift in Sources */,
+				6A99906625F04A4400B055A2 /* Route+Extensions.swift in Sources */,
+				6A99900225F0497400B055A2 /* GPXRecording.swift in Sources */,
 				6AD5D8B424EDCDAC004AFCDD /* Data+Extensions.swift in Sources */,
+				6A99905D25F04A3400B055A2 /* HERE_LanguageCodeConverter.swift in Sources */,
 				6A869C2F248EC6D4005A77E3 /* Double+Extensions.swift in Sources */,
 				6AE7ECF724747EF000821502 /* FeatureListViewController.swift in Sources */,
+				6A99900425F0497400B055A2 /* XibViewProtocol.swift in Sources */,
 				6AC100602514194B0084EB48 /* BoundingBoxViewController.swift in Sources */,
 				6A869C3124913F15005A77E3 /* UIColor+Extensions.swift in Sources */,
+				6A99901425F0498500B055A2 /* NavigationCoordinatorDelegate.swift in Sources */,
 				87D4007B24C2522C00D10382 /* CameraViewController.swift in Sources */,
 				6AC10057251419390084EB48 /* RelativePositioningViewController.swift in Sources */,
+				6A99906725F04A4400B055A2 /* HEREsdk+Extensions.swift in Sources */,
 				87D4008824C2522C00D10382 /* UserLocationViewController.swift in Sources */,
 				6AD5D8AD24EDCCDF004AFCDD /* GeoJSONViewController+MultiPoints.swift in Sources */,
 				87D4008A24C2522C00D10382 /* VLTMapMode+extensions.swift in Sources */,
 				87438B762485A45C0007D1FC /* VLTTextField.swift in Sources */,
-				87D4004924C24AB000D10382 /* VLTView.swift in Sources */,
 				87D4008024C2522C00D10382 /* ShapesViewController+PolylineExamples.swift in Sources */,
+				6A998FCA25F0434A00B055A2 /* DemoError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -944,6 +1309,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1004,6 +1370,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1034,7 +1401,7 @@
 		};
 		6AE7ECDF24745D1300821502 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4FBCEB3EB0B9C42DBB4F657 /* Pods-VLTDemo.debug.xcconfig */;
+			baseConfigurationReference = 2A648E17EA41238146835923 /* Pods-VLTDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -1048,7 +1415,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemo;
 				PRODUCT_NAME = VLTDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.Verizon.Location.Technology.VLTDemo";
@@ -1059,7 +1426,7 @@
 		};
 		6AE7ECE024745D1300821502 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3463E94B447EF31AEE501274 /* Pods-VLTDemo.release.xcconfig */;
+			baseConfigurationReference = 309F94DD85AFCC3F770C9146 /* Pods-VLTDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -1073,7 +1440,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemo;
 				PRODUCT_NAME = VLTDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.Verizon.Location.Technology.VLTDemo";
@@ -1084,9 +1451,9 @@
 		};
 		6AE7ECE224745D1300821502 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DC7BB54C1B902D49600ABCF /* Pods-VLTDemoTests.debug.xcconfig */;
+			baseConfigurationReference = 86944E275F186261850E2916 /* Pods-VLTDemoTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1109,9 +1476,9 @@
 		};
 		6AE7ECE324745D1300821502 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 440923A5F7EF230FEB7AD312 /* Pods-VLTDemoTests.release.xcconfig */;
+			baseConfigurationReference = 9C1292E21CA400DE5A3527F5 /* Pods-VLTDemoTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1133,9 +1500,9 @@
 		};
 		6AE7ECE524745D1300821502 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D9FAAC7BE65257A03C5B5FD /* Pods-VLTDemo-VLTDemoUITests.debug.xcconfig */;
+			baseConfigurationReference = 7331148D5A5A9C67A2946376 /* Pods-VLTDemo-VLTDemoUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2244V2577;
@@ -1158,9 +1525,9 @@
 		};
 		6AE7ECE624745D1300821502 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E45F244698A2F328AF98A335 /* Pods-VLTDemo-VLTDemoUITests.release.xcconfig */;
+			baseConfigurationReference = B63F68B14D5F57E816E47A27 /* Pods-VLTDemo-VLTDemoUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2244V2577;

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5e2-Nw-qta">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5e2-Nw-qta">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ih-ZM-fQ6" customClass="VLTMapView" customModule="VLTMaps">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </view>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sju-Vq-Ln9" userLabel="Status View" customClass="VLTView" customModule="VLTMapsSDK" customModuleProvider="target">
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sju-Vq-Ln9" userLabel="Status View">
                                 <rect key="frame" x="276" y="100" width="122" height="75.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yq6-7y-Xp2">
@@ -60,16 +62,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K2u-Rd-Vxg">
-                                                <rect key="frame" x="0.0" y="45" width="53.5" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="45" width="53" height="14.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tilt:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8d-W8-KZb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="22" height="14.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="21.5" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVp-7x-okS">
-                                                        <rect key="frame" x="30" y="0.0" width="23.5" height="14.5"/>
+                                                        <rect key="frame" x="29.5" y="0.0" width="23.5" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -83,7 +85,7 @@
                                         </connections>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Yq6-7y-Xp2" secondAttribute="trailing" constant="8" id="I6l-g9-1kc"/>
                                     <constraint firstAttribute="bottom" secondItem="Yq6-7y-Xp2" secondAttribute="bottom" constant="8" id="PeQ-Rx-ckY"/>
@@ -96,7 +98,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lf-vD-mVB" userLabel="Zoom Control View" customClass="VLTView" customModule="VLTMapsSDK" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lf-vD-mVB" userLabel="Zoom Control View">
                                 <rect key="frame" x="360" y="736" width="42" height="88"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dw5-bz-U7U">
@@ -123,7 +125,7 @@
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="KRM-BQ-EOB"/>
                                                     <constraint firstAttribute="trailing" secondItem="KFp-k6-Duw" secondAttribute="trailing" constant="4" id="O27-FV-e5f"/>
@@ -163,7 +165,8 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gLO-Ep-5YD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="8ih-ZM-fQ6" secondAttribute="bottom" id="1Vo-GV-w27"/>
                             <constraint firstItem="8ih-ZM-fQ6" firstAttribute="trailing" secondItem="gLO-Ep-5YD" secondAttribute="trailing" id="MFL-Uq-nOc"/>
@@ -174,7 +177,6 @@
                             <constraint firstItem="sju-Vq-Ln9" firstAttribute="trailing" secondItem="8ih-ZM-fQ6" secondAttribute="trailing" constant="-16" id="mZv-gT-tDn"/>
                             <constraint firstItem="gLO-Ep-5YD" firstAttribute="bottom" secondItem="9lf-vD-mVB" secondAttribute="bottom" constant="38" id="yYD-i2-F49"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="gLO-Ep-5YD"/>
                     </view>
                     <navigationItem key="navigationItem" title="Camera" id="qYL-vV-wqO">
                         <barButtonItem key="rightBarButtonItem" title="Metrics" id="AYE-Ys-wBp">
@@ -250,14 +252,14 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" name="MediumAccentGray"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leadingTextPadding">
+                                                        <real key="value" value="16"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
                                                         <color key="value" name="Secondary"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="leadingTextPadding">
-                                                        <real key="value" value="16"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="MediumAccentGray"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
@@ -334,7 +336,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iC6-Zm-FXn">
                                         <rect key="frame" x="0.0" y="279" width="382" height="44"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qp5-Ly-5CT" customClass="VLTButton" customModule="VLTMapsSDK" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qp5-Ly-5CT">
                                                 <rect key="frame" x="119" y="0.0" width="144" height="44"/>
                                                 <color key="backgroundColor" name="Secondary"/>
                                                 <constraints>
@@ -355,7 +357,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="qp5-Ly-5CT" firstAttribute="centerX" secondItem="iC6-Zm-FXn" secondAttribute="centerX" id="0hV-Bq-Tix"/>
                                             <constraint firstItem="qp5-Ly-5CT" firstAttribute="top" secondItem="iC6-Zm-FXn" secondAttribute="top" id="1bc-ZW-y77"/>
@@ -365,13 +367,13 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="94K-nk-OaC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pgd-O7-jqX" firstAttribute="trailing" secondItem="g7P-PQ-V6q" secondAttribute="trailing" constant="-16" id="E4h-4T-6OH"/>
                             <constraint firstItem="pgd-O7-jqX" firstAttribute="leading" secondItem="94K-nk-OaC" secondAttribute="leading" constant="16" id="sHH-gi-qcm"/>
                             <constraint firstItem="pgd-O7-jqX" firstAttribute="top" secondItem="94K-nk-OaC" secondAttribute="top" constant="20" id="wmk-2G-PVu"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="94K-nk-OaC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Metrics" id="reG-P1-1Ve"/>
                     <connections>
@@ -385,6 +387,17 @@
             <point key="canvasLocation" x="1477" y="879"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="FLK-5o-lw3">
+            <size key="intrinsicContentSize" width="57" height="21"/>
+        </designable>
+        <designable name="IZW-By-BTO">
+            <size key="intrinsicContentSize" width="49" height="21"/>
+        </designable>
+        <designable name="NMG-4M-0Ei">
+            <size key="intrinsicContentSize" width="53" height="21"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="Vu9-w7-ilW"/>
     </inferredMetricsTieBreakers>
@@ -403,5 +416,8 @@
         <namedColor name="Secondary">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

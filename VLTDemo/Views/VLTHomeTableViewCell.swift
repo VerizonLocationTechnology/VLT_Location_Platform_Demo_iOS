@@ -10,9 +10,8 @@ import UIKit
 
 /// Table view cell for the list of functionality and features
 class VLTHomeTableViewCell: UITableViewCell {
-
     // MARK: - Private Member
-    private typealias literals = VLTLiterals.AssetNameLiterals
+    private typealias VCLiterals = VLTLiterals.AssetNameLiterals
 
     // MARK: - Public Member
     static let reuseIdentifier = String(describing: VLTHomeTableViewCell.self)
@@ -30,8 +29,8 @@ class VLTHomeTableViewCell: UITableViewCell {
     /// - Parameters:
     ///   - shouldInvert:  True: Swamp primary and secondary colors | False: Leave colors alone
     func invertColors(_ shouldInvert: Bool) {
-        let primaryColor = UIColor(named: literals.primaryColor)
-        let secondaryColor = UIColor(named: literals.secondaryColor)
+        let primaryColor = UIColor(named: VCLiterals.primaryColor)
+        let secondaryColor = UIColor(named: VCLiterals.secondaryColor)
 
         let background = shouldInvert ? secondaryColor : primaryColor
         let accent = shouldInvert ? primaryColor : secondaryColor

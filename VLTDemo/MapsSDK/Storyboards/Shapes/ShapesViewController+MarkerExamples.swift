@@ -6,9 +6,9 @@
 //  Copyright © 2020 Verizon Location Technology. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 import VLTMaps
-import CoreLocation
 
 /// Extension giving examples of how to interact with VLTMapMarker objects on the map
 extension ShapesViewController {
@@ -29,9 +29,9 @@ extension ShapesViewController {
         do {
             /// A basic marker that will have a title and subtitle, and display a callout when tapped
             let marker1 = VLTMapMarker(coordinate: CLLocationCoordinate2D(latitude: 42.3637,
-                                                                          longitude: -71.053604),
-                                       title: literals.marker1Title,
-                                       subtitle: literals.marker1Subtitle,
+                                                                          longitude: -71.053_604),
+                                       title: VCLiterals.marker1Title,
+                                       subtitle: VCLiterals.marker1Subtitle,
                                        showCallout: self.runListeners)
             /// Add the marker to the map
             try mapView.add(object: marker1)
@@ -39,10 +39,10 @@ extension ShapesViewController {
             markers.append(marker1)
 
             /// A basic marker that will have a title and subtitle, and will not display a callout when tapped
-            let marker2 = VLTMapMarker(coordinate: CLLocationCoordinate2D(latitude: 42.35611,
-                                                                          longitude: -71.065944),
-                                       title: literals.marker2Title,
-                                       subtitle: literals.marker2Subtitle,
+            let marker2 = VLTMapMarker(coordinate: CLLocationCoordinate2D(latitude: 42.356_11,
+                                                                          longitude: -71.065_944),
+                                       title: VCLiterals.marker2Title,
+                                       subtitle: VCLiterals.marker2Subtitle,
                                        showCallout: self.runListeners)
             /// Add the marker to the map
             try mapView.add(object: marker2)
@@ -50,17 +50,17 @@ extension ShapesViewController {
             markers.append(marker2)
 
             /// A basic marker that has just a title, and will display a callout when tapped
-            let marker3 = VLTMapMarker(coordinate: CLLocationCoordinate2D(latitude: 42.374106,
-                                                                          longitude: -71.05537),
-                                       title: literals.marker3Title,
+            let marker3 = VLTMapMarker(coordinate: CLLocationCoordinate2D(latitude: 42.374_106,
+                                                                          longitude: -71.055_37),
+                                       title: VCLiterals.marker3Title,
                                        showCallout: self.runListeners)
             try mapView.add(object: marker3)
             /// Store a reference to the marker for future use
             markers.append(marker3)
 
             /// Create a basic marker that will not show a callout when tapped
-            let marker4 = VLTMapMarker(coordinate: CLLocationCoordinate2D(latitude: 42.358744,
-                                                                          longitude: -71.057403))
+            let marker4 = VLTMapMarker(coordinate: CLLocationCoordinate2D(latitude: 42.358_744,
+                                                                          longitude: -71.057_403))
             /// Add the marker to the map
             try mapView.add(object: marker4)
             /// Store a reference to the marker for future use
@@ -72,11 +72,11 @@ extension ShapesViewController {
                 let customImage = VLTImage(image: customImage, imageName: VLTLiterals.AssetNameLiterals.customDestinationImage)
                 vltCustomImage = customImage
                 /// Create the marker with the custom image and other optional properties
-                let marker5 = VLTMapMarker(coordinate: CLLocationCoordinate2D(latitude: 42.376331,
-                                                                              longitude: -71.060757),
+                let marker5 = VLTMapMarker(coordinate: CLLocationCoordinate2D(latitude: 42.376_331,
+                                                                              longitude: -71.060_757),
                                            image: customImage,
-                                           title: literals.marker5Title,
-                                           subtitle: literals.marker5Subtitle,
+                                           title: VCLiterals.marker5Title,
+                                           subtitle: VCLiterals.marker5Subtitle,
                                            showCallout: self.runListeners)
                 /// Add the marker to the map
                 try mapView.add(object: marker5)
@@ -85,7 +85,7 @@ extension ShapesViewController {
             }
         } catch {
             /// If adding markers to the map fails, display an error
-            showError(withMessage: "\(literals.addMarkerErrorMessage): \(error)")
+            showError(withMessage: "\(VCLiterals.addMarkerErrorMessage): \(error)")
         }
     }
 
@@ -97,16 +97,16 @@ extension ShapesViewController {
             for (index, marker) in markers.enumerated() {
                 /// Update the image of the marker with a new one
                 if marker.image == vltCustomImage {
-                    //TODO:Need to fix this at some point
-                    //marker.image =  VLTMaps.VLTShapeFilte VLTMaps.ShapeConstants.Defaults.markerImage
+                    // TODO:Need to fix this at some point
+                    // marker.image =  VLTMaps.VLTShapeFilte VLTMaps.ShapeConstants.Defaults.markerImage
                 } else {
                     marker.image = customImage
                 }
 
                 /// Update the title of the marker with new ones
-                marker.title = Bool.random() ? "\(literals.markerText) \(index) \(literals.shapeTitleUpdated)" : nil
+                marker.title = Bool.random() ? "\(VCLiterals.markerText) \(index) \(VCLiterals.shapeTitleUpdated)" : nil
                 /// Update the subtitle of the marker with new ones
-                marker.subtitle = Bool.random() ? "\(literals.markerText) \(index) \(literals.shapeSubtitleUpdated)" : nil
+                marker.subtitle = Bool.random() ? "\(VCLiterals.markerText) \(index) \(VCLiterals.shapeSubtitleUpdated)" : nil
                 /// Update whether or not the marker should display a callout when tapped
                 marker.showCallout = self.runListeners
 
@@ -114,7 +114,7 @@ extension ShapesViewController {
                 try mapView.update(object: marker)
             }
         } catch {
-            showError(withMessage: "\(literals.updateMarkerErrorMessage): \(error)")
+            showError(withMessage: "\(VCLiterals.updateMarkerErrorMessage): \(error)")
         }
     }
 
@@ -133,7 +133,7 @@ extension ShapesViewController {
             markers = []
         } catch {
             /// If removing markers fails, throw an error
-            showError(withMessage: "\(literals.removeMarkerErrorMessage): \(error)")
+            showError(withMessage: "\(VCLiterals.removeMarkerErrorMessage): \(error)")
         }
     }
 }

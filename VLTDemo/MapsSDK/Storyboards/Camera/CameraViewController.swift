@@ -6,16 +6,16 @@
 //  Copyright © 2020 Verizon Location Technology. All rights reserved.
 //
 
+import Combine
+import CoreLocation
 import UIKit
 import VLTMaps
-import CoreLocation
-import Combine
 
 /// View controller that displays VLTMaps' ability to easily update the camera view of the map
 class CameraViewController: UIViewController {
     // MARK: - Public members
     /// Typealias pointing to string literals for this controller
-    typealias literals = VLTLiterals.CameraVCLiterals
+    typealias VCLiterals = VLTLiterals.CameraVCLiterals
     /// The current camera settings displayed in the statusView
     @Published var cameraMetrics = CameraMetrics()
     /// Subscriber that listens for changes in the cameraMetrics object and updates the zoomValueLabel
@@ -31,7 +31,7 @@ class CameraViewController: UIViewController {
     /// Navigation button the the CameraMetricsViewController
     @IBOutlet weak var metricsButton: UIBarButtonItem!
     /// View containing the current Camera status of the map
-    @IBOutlet weak var statusView: VLTView!
+    @IBOutlet weak var statusView: UIView!
     /// Label containing the current zoom level of the map
     @IBOutlet weak var zoomValueLabel: UILabel!
     /// Label containing the current bearing value of the map
@@ -52,7 +52,7 @@ class CameraViewController: UIViewController {
         /// Configure the map with the initial mode, any built-in features that should be hidden, and the initial center for the camera
         let mapConfiguration = MapConfiguration(mode: mode,
                                                 hiddenFeatures: [.traffic],
-                                                cameraCenter: CLLocationCoordinate2D(latitude: 42.3637, longitude: -71.053604))
+                                                cameraCenter: CLLocationCoordinate2D(latitude: 42.3637, longitude: -71.053_604))
 
         /// Load the map using your given API key
         mapView.loadMap(apiKey: apiKey, configuration: mapConfiguration)
@@ -108,7 +108,6 @@ class CameraViewController: UIViewController {
         /// Subscribe to the cameraMetrics object. Update the tiltValueLabel when cameraMetrics is updated
         tiltSubscriber = $cameraMetrics.map({ $0.tilt.roundedString() }).receive(on: DispatchQueue.main).assign(to: \.text, on: tiltValueLabel)
     }
-
 }
 
 // MARK: - VLTMapViewDelegate
@@ -118,7 +117,7 @@ extension CameraViewController: VLTMapViewDelegate {
 
     /// If the map fails to load, throw an error
     func didFailLoadingMap(mapView: VLTMapView, error: Error) {
-        showError(withMessage: "\(literals.mapLoadErrorMessage): \(error)")
+        showError(withMessage: "\(VCLiterals.mapLoadErrorMessage): \(error)")
     }
 
     /// When the user interacts with the map (through panning, zooming, etc) update the current camera metrics
@@ -134,7 +133,6 @@ extension CameraViewController: CameraMetricsControllerDelegate {
     /// - Parameters:
     ///   - cameraMetrics: The new CameraMetrics state to update to
     func update(_ cameraMetrics: CameraMetrics) {
-
         do {
             /// Update the map camera to use the new camera metrics
             try mapView.camera.updateCamera(tilt: cameraMetrics.tilt,
@@ -145,7 +143,7 @@ extension CameraViewController: CameraMetricsControllerDelegate {
             self.cameraMetrics = cameraMetrics
         } catch {
             /// If the camera update fails, display an error
-            showError(withMessage: "\(literals.cameraUpdateErrorMessage): \(error)")
+            showError(withMessage: "\(VCLiterals.cameraUpdateErrorMessage): \(error)")
         }
     }
 }

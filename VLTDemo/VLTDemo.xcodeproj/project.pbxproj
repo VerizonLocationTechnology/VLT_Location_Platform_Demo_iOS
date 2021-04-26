@@ -1,0 +1,1620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B3D3B3B6F282B6C9E906DA2 /* Pods_VLTDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5874B0E8B883C7596191B1A1 /* Pods_VLTDemoTests.framework */; };
+		6A20952825F979EE00D7CD83 /* VLT_Denver.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6A20952725F979EE00D7CD83 /* VLT_Denver.gpx */; };
+		6A3F5E7C25F936D500CA7209 /* VLTMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3F5E7B25F936D500CA7209 /* VLTMaps.framework */; };
+		6A540DFB2491926A002FF921 /* VLTLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A540DFA2491926A002FF921 /* VLTLabel.swift */; };
+		6A540DFD249275CB002FF921 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A540DFC249275CB002FF921 /* UIViewController+Extensions.swift */; };
+		6A630DA52497DBAA0043D272 /* VLTLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A630DA42497DBAA0043D272 /* VLTLiterals.swift */; };
+		6A869C2F248EC6D4005A77E3 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A869C2E248EC6D4005A77E3 /* Double+Extensions.swift */; };
+		6A869C3124913F15005A77E3 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A869C3024913F15005A77E3 /* UIColor+Extensions.swift */; };
+		6A998FC125F042E400B055A2 /* HERE_TransportMode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FBB25F042E400B055A2 /* HERE_TransportMode+Extensions.swift */; };
+		6A998FC225F042E400B055A2 /* Int32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FBC25F042E400B055A2 /* Int32+Extension.swift */; };
+		6A998FC325F042E400B055A2 /* HERE_ManeuverAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FBD25F042E400B055A2 /* HERE_ManeuverAction+Extensions.swift */; };
+		6A998FC425F042E400B055A2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FBE25F042E400B055A2 /* UIView+Extensions.swift */; };
+		6A998FC525F042E400B055A2 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FBF25F042E400B055A2 /* UIImage+Extensions.swift */; };
+		6A998FCA25F0434A00B055A2 /* DemoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FC925F0434A00B055A2 /* DemoError.swift */; };
+		6A998FCF25F0455600B055A2 /* CustomMglAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FCE25F0455600B055A2 /* CustomMglAnnotationView.swift */; };
+		6A998FD625F0465700B055A2 /* MapboxIntegrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FD425F0465700B055A2 /* MapboxIntegrationViewController.swift */; };
+		6A998FD725F0465700B055A2 /* Mapbox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A998FD525F0465700B055A2 /* Mapbox.storyboard */; };
+		6A998FEF25F0495600B055A2 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A998FEE25F0495600B055A2 /* Navigation.storyboard */; };
+		6A998FF425F0496B00B055A2 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FF325F0496B00B055A2 /* NavigationCoordinator.swift */; };
+		6A998FFF25F0497400B055A2 /* VLTMapsRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FF825F0497400B055A2 /* VLTMapsRouting.swift */; };
+		6A99900025F0497400B055A2 /* GenericDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FF925F0497400B055A2 /* GenericDefinitions.swift */; };
+		6A99900125F0497400B055A2 /* VLTLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FFA25F0497400B055A2 /* VLTLocation.swift */; };
+		6A99900225F0497400B055A2 /* GPXRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FFB25F0497400B055A2 /* GPXRecording.swift */; };
+		6A99900325F0497400B055A2 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FFC25F0497400B055A2 /* XibView.swift */; };
+		6A99900425F0497400B055A2 /* XibViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FFD25F0497400B055A2 /* XibViewProtocol.swift */; };
+		6A99900525F0497400B055A2 /* VLTNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A998FFE25F0497400B055A2 /* VLTNavigation.swift */; };
+		6A99900F25F0498500B055A2 /* ExitableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99900925F0498500B055A2 /* ExitableViewDelegate.swift */; };
+		6A99901025F0498500B055A2 /* SearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99900A25F0498500B055A2 /* SearchDelegate.swift */; };
+		6A99901125F0498500B055A2 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99900B25F0498500B055A2 /* Storyboarded.swift */; };
+		6A99901225F0498500B055A2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99900C25F0498500B055A2 /* Coordinator.swift */; };
+		6A99901325F0498500B055A2 /* ModeOfTravelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99900D25F0498500B055A2 /* ModeOfTravelDelegate.swift */; };
+		6A99901425F0498500B055A2 /* NavigationCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99900E25F0498500B055A2 /* NavigationCoordinatorDelegate.swift */; };
+		6A99901925F0499000B055A2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99901825F0499000B055A2 /* MapViewController.swift */; };
+		6A99901F25F0499800B055A2 /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99901D25F0499800B055A2 /* DirectionsViewController.swift */; };
+		6A99902025F0499800B055A2 /* DirectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99901E25F0499800B055A2 /* DirectionsCell.swift */; };
+		6A99902625F049B100B055A2 /* RouteOverviewFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99902425F049B100B055A2 /* RouteOverviewFooterView.swift */; };
+		6A99902725F049B100B055A2 /* RouteOverviewFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A99902525F049B100B055A2 /* RouteOverviewFooterView.xib */; };
+		6A99902D25F049BD00B055A2 /* LayerOptionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A99902B25F049BD00B055A2 /* LayerOptionsView.xib */; };
+		6A99902E25F049BD00B055A2 /* LayerOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99902C25F049BD00B055A2 /* LayerOptionsView.swift */; };
+		6A99903425F049DA00B055A2 /* NavigationDirectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A99903225F049DA00B055A2 /* NavigationDirectionHeaderView.xib */; };
+		6A99903525F049DA00B055A2 /* NavigationDirectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99903325F049DA00B055A2 /* NavigationDirectionHeaderView.swift */; };
+		6A99903C25F049E900B055A2 /* SearchResultsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99903925F049E900B055A2 /* SearchResultsTable.swift */; };
+		6A99903D25F049E900B055A2 /* SearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A99903A25F049E900B055A2 /* SearchHeaderView.xib */; };
+		6A99903E25F049E900B055A2 /* SearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99903B25F049E900B055A2 /* SearchHeaderView.swift */; };
+		6A99904425F049F700B055A2 /* LocationShortcutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A99904225F049F700B055A2 /* LocationShortcutCell.xib */; };
+		6A99904525F049F700B055A2 /* LocationShortcutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99904325F049F700B055A2 /* LocationShortcutCell.swift */; };
+		6A99904B25F04A0000B055A2 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99904925F04A0000B055A2 /* SearchResultCell.swift */; };
+		6A99904C25F04A0000B055A2 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A99904A25F04A0000B055A2 /* SearchResultCell.xib */; };
+		6A99905125F04A0B00B055A2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99905025F04A0B00B055A2 /* CircleView.swift */; };
+		6A99905625F04A2800B055A2 /* VLTLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99905525F04A2800B055A2 /* VLTLocationManager.swift */; };
+		6A99905D25F04A3400B055A2 /* HERE_LanguageCodeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99905A25F04A3400B055A2 /* HERE_LanguageCodeConverter.swift */; };
+		6A99905F25F04A3400B055A2 /* HERE_VoiceAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99905C25F04A3400B055A2 /* HERE_VoiceAssistant.swift */; };
+		6A99906625F04A4400B055A2 /* Route+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99906325F04A4400B055A2 /* Route+Extensions.swift */; };
+		6A99906725F04A4400B055A2 /* HEREsdk+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99906425F04A4400B055A2 /* HEREsdk+Extensions.swift */; };
+		6A99906825F04A4400B055A2 /* CoreLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99906525F04A4400B055A2 /* CoreLocation+Extensions.swift */; };
+		6A9990AB25F04E6D00B055A2 /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9990AA25F04E6D00B055A2 /* Buildable.swift */; };
+		6AC10056251419390084EB48 /* RelativePositioningTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC10051251419390084EB48 /* RelativePositioningTableVC.swift */; };
+		6AC10057251419390084EB48 /* RelativePositioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC10052251419390084EB48 /* RelativePositioningViewController.swift */; };
+		6AC10058251419390084EB48 /* GeoJSON-SectionB.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AC10053251419390084EB48 /* GeoJSON-SectionB.json */; };
+		6AC10059251419390084EB48 /* RelativePositioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC10054251419390084EB48 /* RelativePositioning.storyboard */; };
+		6AC1005A251419390084EB48 /* GeoJSON-SectionA.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AC10055251419390084EB48 /* GeoJSON-SectionA.json */; };
+		6AC1005E2514194B0084EB48 /* BoundingBox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1005B2514194A0084EB48 /* BoundingBox.storyboard */; };
+		6AC1005F2514194B0084EB48 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1005C2514194A0084EB48 /* BoundingBox.swift */; };
+		6AC100602514194B0084EB48 /* BoundingBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1005D2514194A0084EB48 /* BoundingBoxViewController.swift */; };
+		6AC1006225141E780084EB48 /* VLTToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1006125141E770084EB48 /* VLTToggleButton.swift */; };
+		6AC1006425153F350084EB48 /* VLTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1006325153F350084EB48 /* VLTConstants.swift */; };
+		6AC1006625153F910084EB48 /* VLTConstants+VLTMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1006525153F910084EB48 /* VLTConstants+VLTMaps.swift */; };
+		6AD5D87F24EDCABF004AFCDD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D87E24EDCABE004AFCDD /* String+Extension.swift */; };
+		6AD5D88124EDCACC004AFCDD /* ImageDownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D88024EDCACC004AFCDD /* ImageDownloadHelper.swift */; };
+		6AD5D8A824EDCCDF004AFCDD /* GeoJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A224EDCCDF004AFCDD /* GeoJSONViewController.swift */; };
+		6AD5D8A924EDCCDF004AFCDD /* GeoJSONViewController+Polylines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A324EDCCDF004AFCDD /* GeoJSONViewController+Polylines.swift */; };
+		6AD5D8AA24EDCCDF004AFCDD /* GeoJSONViewController+Polygons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A424EDCCDF004AFCDD /* GeoJSONViewController+Polygons.swift */; };
+		6AD5D8AB24EDCCDF004AFCDD /* GeoJSONViewController+MixedFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A524EDCCDF004AFCDD /* GeoJSONViewController+MixedFeatures.swift */; };
+		6AD5D8AC24EDCCDF004AFCDD /* GeoJSON.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A624EDCCDF004AFCDD /* GeoJSON.storyboard */; };
+		6AD5D8AD24EDCCDF004AFCDD /* GeoJSONViewController+MultiPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8A724EDCCDF004AFCDD /* GeoJSONViewController+MultiPoints.swift */; };
+		6AD5D8B124EDCD13004AFCDD /* VisibleFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8AF24EDCD13004AFCDD /* VisibleFeaturesViewController.swift */; };
+		6AD5D8B224EDCD13004AFCDD /* VisibleFeatures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8B024EDCD13004AFCDD /* VisibleFeatures.storyboard */; };
+		6AD5D8B424EDCDAC004AFCDD /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5D8B324EDCDAC004AFCDD /* Data+Extensions.swift */; };
+		6AD5D8B924EDD132004AFCDD /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8B724EDD132004AFCDD /* Contents.json */; };
+		6AD5D8C924EDE0EB004AFCDD /* MixedFeatureCollection.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C524EDE0EB004AFCDD /* MixedFeatureCollection.json */; };
+		6AD5D8CA24EDE0EC004AFCDD /* Points.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C624EDE0EB004AFCDD /* Points.json */; };
+		6AD5D8CB24EDE0EC004AFCDD /* Polylines.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C724EDE0EB004AFCDD /* Polylines.json */; };
+		6AD5D8CC24EDE0EC004AFCDD /* Polygons.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5D8C824EDE0EB004AFCDD /* Polygons.json */; };
+		6AE7ECB824745D1100821502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7ECB724745D1100821502 /* AppDelegate.swift */; };
+		6AE7ECBA24745D1100821502 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7ECB924745D1100821502 /* SceneDelegate.swift */; };
+		6AE7ECBF24745D1100821502 /* FeatureList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7ECBD24745D1100821502 /* FeatureList.storyboard */; };
+		6AE7ECC124745D1300821502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7ECC024745D1300821502 /* Assets.xcassets */; };
+		6AE7ECC424745D1300821502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7ECC224745D1300821502 /* LaunchScreen.storyboard */; };
+		6AE7ECF724747EF000821502 /* FeatureListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7ECF624747EF000821502 /* FeatureListViewController.swift */; };
+		82CA184AACF4A7A099DA8B52 /* Pods_VLTDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A02A703C3A521D49F18B58 /* Pods_VLTDemo.framework */; };
+		874080E824F47F0D0085DC6E /* VLTLiterals+VLTMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007824C2522C00D10382 /* VLTLiterals+VLTMaps.swift */; };
+		874080E924F47F910085DC6E /* VLTLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A630DA42497DBAA0043D272 /* VLTLiterals.swift */; };
+		87438B762485A45C0007D1FC /* VLTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87438B742485A45C0007D1FC /* VLTTextField.swift */; };
+		876FA84724CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876FA84624CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift */; };
+		876FA84924CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876FA84824CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift */; };
+		87C01A1925FC23A50095C7C7 /* heresdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C01A1225FC23630095C7C7 /* heresdk.xcframework */; };
+		87C01A1A25FC23A50095C7C7 /* heresdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87C01A1225FC23630095C7C7 /* heresdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		87D4004724C24AB000D10382 /* VLTHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4004424C24AB000D10382 /* VLTHomeTableViewCell.swift */; };
+		87D4004824C24AB000D10382 /* VLTHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87D4004524C24AB000D10382 /* VLTHomeTableViewCell.xib */; };
+		87D4007924C2522C00D10382 /* ModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4005B24C2522C00D10382 /* ModesViewController.swift */; };
+		87D4007A24C2522C00D10382 /* Modes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D4005C24C2522C00D10382 /* Modes.storyboard */; };
+		87D4007B24C2522C00D10382 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4005E24C2522C00D10382 /* CameraViewController.swift */; };
+		87D4007C24C2522C00D10382 /* CameraMetricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4005F24C2522C00D10382 /* CameraMetricsViewController.swift */; };
+		87D4007D24C2522C00D10382 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D4006024C2522C00D10382 /* Camera.storyboard */; };
+		87D4007E24C2522C00D10382 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006224C2522C00D10382 /* ShapesViewController.swift */; };
+		87D4007F24C2522C00D10382 /* ShapesViewController+MarkerExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006324C2522C00D10382 /* ShapesViewController+MarkerExamples.swift */; };
+		87D4008024C2522C00D10382 /* ShapesViewController+PolylineExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006424C2522C00D10382 /* ShapesViewController+PolylineExamples.swift */; };
+		87D4008124C2522C00D10382 /* ShapesViewController+CircleExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006524C2522C00D10382 /* ShapesViewController+CircleExamples.swift */; };
+		87D4008224C2522C00D10382 /* ShapesViewController+UserInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006624C2522C00D10382 /* ShapesViewController+UserInteraction.swift */; };
+		87D4008324C2522C00D10382 /* ShapesViewController+TrafficExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006724C2522C00D10382 /* ShapesViewController+TrafficExamples.swift */; };
+		87D4008524C2522C00D10382 /* Shapes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D4006924C2522C00D10382 /* Shapes.storyboard */; };
+		87D4008624C2522C00D10382 /* ShapesViewController+PolygonExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006A24C2522C00D10382 /* ShapesViewController+PolygonExamples.swift */; };
+		87D4008724C2522C00D10382 /* UserLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D4006C24C2522C00D10382 /* UserLocation.storyboard */; };
+		87D4008824C2522C00D10382 /* UserLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4006D24C2522C00D10382 /* UserLocationViewController.swift */; };
+		87D4008924C2522C00D10382 /* VLTMaps.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D4006E24C2522C00D10382 /* VLTMaps.xcassets */; };
+		87D4008A24C2522C00D10382 /* VLTMapMode+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007024C2522C00D10382 /* VLTMapMode+extensions.swift */; };
+		87D4008B24C2522C00D10382 /* VisibleFeaturesControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007224C2522C00D10382 /* VisibleFeaturesControllerDelegate.swift */; };
+		87D4008C24C2522C00D10382 /* CameraMetricsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007324C2522C00D10382 /* CameraMetricsControllerDelegate.swift */; };
+		87D4008D24C2522C00D10382 /* CameraMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007524C2522C00D10382 /* CameraMetrics.swift */; };
+		87D4008E24C2522C00D10382 /* MapFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007624C2522C00D10382 /* MapFeature.swift */; };
+		87D4008F24C2522C00D10382 /* DemoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007724C2522C00D10382 /* DemoFeature.swift */; };
+		87D4009024C2522C00D10382 /* VLTLiterals+VLTMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4007824C2522C00D10382 /* VLTLiterals+VLTMaps.swift */; };
+		AEB9F2C0BDBEC19954473DFE /* Pods_VLTDemo_VLTDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCFC6BB06D7CBEE6310CA48 /* Pods_VLTDemo_VLTDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AE7ECCB24745D1300821502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AE7ECAC24745D1100821502 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AE7ECB324745D1100821502;
+			remoteInfo = VLTMapsDemo;
+		};
+		6AE7ECD624745D1300821502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AE7ECAC24745D1100821502 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AE7ECB324745D1100821502;
+			remoteInfo = VLTMapsDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87C019DF25FC202A0095C7C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				87C01A1A25FC23A50095C7C7 /* heresdk.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DCFC6BB06D7CBEE6310CA48 /* Pods_VLTDemo_VLTDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTDemo_VLTDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A648E17EA41238146835923 /* Pods-VLTDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo.debug.xcconfig"; path = "Target Support Files/Pods-VLTDemo/Pods-VLTDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		309F94DD85AFCC3F770C9146 /* Pods-VLTDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo.release.xcconfig"; path = "Target Support Files/Pods-VLTDemo/Pods-VLTDemo.release.xcconfig"; sourceTree = "<group>"; };
+		42FD2AFE25FDDAF06EA3F10A /* Pods-VLTNavigationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTNavigationDemo.release.xcconfig"; path = "Target Support Files/Pods-VLTNavigationDemo/Pods-VLTNavigationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5874B0E8B883C7596191B1A1 /* Pods_VLTDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A20952725F979EE00D7CD83 /* VLT_Denver.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = VLT_Denver.gpx; sourceTree = "<group>"; };
+		6A3F5E7B25F936D500CA7209 /* VLTMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VLTMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A540DFA2491926A002FF921 /* VLTLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTLabel.swift; sourceTree = "<group>"; };
+		6A540DFC249275CB002FF921 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		6A630DA42497DBAA0043D272 /* VLTLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTLiterals.swift; sourceTree = "<group>"; };
+		6A869C2E248EC6D4005A77E3 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		6A869C3024913F15005A77E3 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		6A998FBB25F042E400B055A2 /* HERE_TransportMode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HERE_TransportMode+Extensions.swift"; sourceTree = "<group>"; };
+		6A998FBC25F042E400B055A2 /* Int32+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int32+Extension.swift"; sourceTree = "<group>"; };
+		6A998FBD25F042E400B055A2 /* HERE_ManeuverAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HERE_ManeuverAction+Extensions.swift"; sourceTree = "<group>"; };
+		6A998FBE25F042E400B055A2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		6A998FBF25F042E400B055A2 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		6A998FC925F0434A00B055A2 /* DemoError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoError.swift; sourceTree = "<group>"; };
+		6A998FCE25F0455600B055A2 /* CustomMglAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMglAnnotationView.swift; sourceTree = "<group>"; };
+		6A998FD425F0465700B055A2 /* MapboxIntegrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxIntegrationViewController.swift; sourceTree = "<group>"; };
+		6A998FD525F0465700B055A2 /* Mapbox.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mapbox.storyboard; sourceTree = "<group>"; };
+		6A998FEE25F0495600B055A2 /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
+		6A998FF325F0496B00B055A2 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		6A998FF825F0497400B055A2 /* VLTMapsRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTMapsRouting.swift; sourceTree = "<group>"; };
+		6A998FF925F0497400B055A2 /* GenericDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDefinitions.swift; sourceTree = "<group>"; };
+		6A998FFA25F0497400B055A2 /* VLTLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTLocation.swift; sourceTree = "<group>"; };
+		6A998FFB25F0497400B055A2 /* GPXRecording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXRecording.swift; sourceTree = "<group>"; };
+		6A998FFC25F0497400B055A2 /* XibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		6A998FFD25F0497400B055A2 /* XibViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibViewProtocol.swift; sourceTree = "<group>"; };
+		6A998FFE25F0497400B055A2 /* VLTNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTNavigation.swift; sourceTree = "<group>"; };
+		6A99900925F0498500B055A2 /* ExitableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExitableViewDelegate.swift; sourceTree = "<group>"; };
+		6A99900A25F0498500B055A2 /* SearchDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDelegate.swift; sourceTree = "<group>"; };
+		6A99900B25F0498500B055A2 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		6A99900C25F0498500B055A2 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6A99900D25F0498500B055A2 /* ModeOfTravelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeOfTravelDelegate.swift; sourceTree = "<group>"; };
+		6A99900E25F0498500B055A2 /* NavigationCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		6A99901825F0499000B055A2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6A99901D25F0499800B055A2 /* DirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
+		6A99901E25F0499800B055A2 /* DirectionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsCell.swift; sourceTree = "<group>"; };
+		6A99902425F049B100B055A2 /* RouteOverviewFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteOverviewFooterView.swift; sourceTree = "<group>"; };
+		6A99902525F049B100B055A2 /* RouteOverviewFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteOverviewFooterView.xib; sourceTree = "<group>"; };
+		6A99902B25F049BD00B055A2 /* LayerOptionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LayerOptionsView.xib; sourceTree = "<group>"; };
+		6A99902C25F049BD00B055A2 /* LayerOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerOptionsView.swift; sourceTree = "<group>"; };
+		6A99903225F049DA00B055A2 /* NavigationDirectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationDirectionHeaderView.xib; sourceTree = "<group>"; };
+		6A99903325F049DA00B055A2 /* NavigationDirectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDirectionHeaderView.swift; sourceTree = "<group>"; };
+		6A99903925F049E900B055A2 /* SearchResultsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsTable.swift; sourceTree = "<group>"; };
+		6A99903A25F049E900B055A2 /* SearchHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHeaderView.xib; sourceTree = "<group>"; };
+		6A99903B25F049E900B055A2 /* SearchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHeaderView.swift; sourceTree = "<group>"; };
+		6A99904225F049F700B055A2 /* LocationShortcutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationShortcutCell.xib; sourceTree = "<group>"; };
+		6A99904325F049F700B055A2 /* LocationShortcutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationShortcutCell.swift; sourceTree = "<group>"; };
+		6A99904925F04A0000B055A2 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		6A99904A25F04A0000B055A2 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		6A99905025F04A0B00B055A2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		6A99905525F04A2800B055A2 /* VLTLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTLocationManager.swift; sourceTree = "<group>"; };
+		6A99905A25F04A3400B055A2 /* HERE_LanguageCodeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HERE_LanguageCodeConverter.swift; sourceTree = "<group>"; };
+		6A99905C25F04A3400B055A2 /* HERE_VoiceAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HERE_VoiceAssistant.swift; sourceTree = "<group>"; };
+		6A99906325F04A4400B055A2 /* Route+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Route+Extensions.swift"; sourceTree = "<group>"; };
+		6A99906425F04A4400B055A2 /* HEREsdk+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HEREsdk+Extensions.swift"; sourceTree = "<group>"; };
+		6A99906525F04A4400B055A2 /* CoreLocation+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreLocation+Extensions.swift"; sourceTree = "<group>"; };
+		6A9990AA25F04E6D00B055A2 /* Buildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buildable.swift; sourceTree = "<group>"; };
+		6AC10051251419390084EB48 /* RelativePositioningTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativePositioningTableVC.swift; sourceTree = "<group>"; };
+		6AC10052251419390084EB48 /* RelativePositioningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativePositioningViewController.swift; sourceTree = "<group>"; };
+		6AC10053251419390084EB48 /* GeoJSON-SectionB.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "GeoJSON-SectionB.json"; sourceTree = "<group>"; };
+		6AC10054251419390084EB48 /* RelativePositioning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelativePositioning.storyboard; sourceTree = "<group>"; };
+		6AC10055251419390084EB48 /* GeoJSON-SectionA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "GeoJSON-SectionA.json"; sourceTree = "<group>"; };
+		6AC1005B2514194A0084EB48 /* BoundingBox.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BoundingBox.storyboard; sourceTree = "<group>"; };
+		6AC1005C2514194A0084EB48 /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		6AC1005D2514194A0084EB48 /* BoundingBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBoxViewController.swift; sourceTree = "<group>"; };
+		6AC1006125141E770084EB48 /* VLTToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTToggleButton.swift; sourceTree = "<group>"; };
+		6AC1006325153F350084EB48 /* VLTConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLTConstants.swift; sourceTree = "<group>"; };
+		6AC1006525153F910084EB48 /* VLTConstants+VLTMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VLTConstants+VLTMaps.swift"; sourceTree = "<group>"; };
+		6AD5D87E24EDCABE004AFCDD /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		6AD5D88024EDCACC004AFCDD /* ImageDownloadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadHelper.swift; sourceTree = "<group>"; };
+		6AD5D8A224EDCCDF004AFCDD /* GeoJSONViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONViewController.swift; sourceTree = "<group>"; };
+		6AD5D8A324EDCCDF004AFCDD /* GeoJSONViewController+Polylines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeoJSONViewController+Polylines.swift"; sourceTree = "<group>"; };
+		6AD5D8A424EDCCDF004AFCDD /* GeoJSONViewController+Polygons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeoJSONViewController+Polygons.swift"; sourceTree = "<group>"; };
+		6AD5D8A524EDCCDF004AFCDD /* GeoJSONViewController+MixedFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeoJSONViewController+MixedFeatures.swift"; sourceTree = "<group>"; };
+		6AD5D8A624EDCCDF004AFCDD /* GeoJSON.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GeoJSON.storyboard; sourceTree = "<group>"; };
+		6AD5D8A724EDCCDF004AFCDD /* GeoJSONViewController+MultiPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeoJSONViewController+MultiPoints.swift"; sourceTree = "<group>"; };
+		6AD5D8AF24EDCD13004AFCDD /* VisibleFeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibleFeaturesViewController.swift; sourceTree = "<group>"; };
+		6AD5D8B024EDCD13004AFCDD /* VisibleFeatures.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VisibleFeatures.storyboard; sourceTree = "<group>"; };
+		6AD5D8B324EDCDAC004AFCDD /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		6AD5D8B724EDD132004AFCDD /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = VLTMaps.xcassets/Contents.json; sourceTree = "<group>"; };
+		6AD5D8C524EDE0EB004AFCDD /* MixedFeatureCollection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MixedFeatureCollection.json; sourceTree = "<group>"; };
+		6AD5D8C624EDE0EB004AFCDD /* Points.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Points.json; sourceTree = "<group>"; };
+		6AD5D8C724EDE0EB004AFCDD /* Polylines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Polylines.json; sourceTree = "<group>"; };
+		6AD5D8C824EDE0EB004AFCDD /* Polygons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Polygons.json; sourceTree = "<group>"; };
+		6AE7ECB424745D1100821502 /* VLTDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VLTDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE7ECB724745D1100821502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6AE7ECB924745D1100821502 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6AE7ECBE24745D1100821502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FeatureList.storyboard; sourceTree = "<group>"; };
+		6AE7ECC024745D1300821502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AE7ECC324745D1300821502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AE7ECC524745D1300821502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE7ECCA24745D1300821502 /* VLTDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VLTDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE7ECD024745D1300821502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE7ECD524745D1300821502 /* VLTDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VLTDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE7ECDB24745D1300821502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE7ECF624747EF000821502 /* FeatureListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureListViewController.swift; sourceTree = "<group>"; };
+		716E2A25B76EF84DBFB1B56A /* Pods_VLTNavigationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTNavigationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7331148D5A5A9C67A2946376 /* Pods-VLTDemo-VLTDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo-VLTDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		86944E275F186261850E2916 /* Pods-VLTDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-VLTDemoTests/Pods-VLTDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87438B742485A45C0007D1FC /* VLTTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTTextField.swift; sourceTree = "<group>"; };
+		876FA84624CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTDemoMapsSDKUITests.swift; sourceTree = "<group>"; };
+		876FA84824CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTDemoMapsSDKTests.swift; sourceTree = "<group>"; };
+		87C01A1225FC23630095C7C7 /* heresdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = heresdk.xcframework; sourceTree = "<group>"; };
+		87D4004424C24AB000D10382 /* VLTHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLTHomeTableViewCell.swift; sourceTree = "<group>"; };
+		87D4004524C24AB000D10382 /* VLTHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VLTHomeTableViewCell.xib; sourceTree = "<group>"; };
+		87D4005B24C2522C00D10382 /* ModesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
+		87D4005C24C2522C00D10382 /* Modes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Modes.storyboard; sourceTree = "<group>"; };
+		87D4005E24C2522C00D10382 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		87D4005F24C2522C00D10382 /* CameraMetricsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMetricsViewController.swift; sourceTree = "<group>"; };
+		87D4006024C2522C00D10382 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		87D4006224C2522C00D10382 /* ShapesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
+		87D4006324C2522C00D10382 /* ShapesViewController+MarkerExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+MarkerExamples.swift"; sourceTree = "<group>"; };
+		87D4006424C2522C00D10382 /* ShapesViewController+PolylineExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+PolylineExamples.swift"; sourceTree = "<group>"; };
+		87D4006524C2522C00D10382 /* ShapesViewController+CircleExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+CircleExamples.swift"; sourceTree = "<group>"; };
+		87D4006624C2522C00D10382 /* ShapesViewController+UserInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+UserInteraction.swift"; sourceTree = "<group>"; };
+		87D4006724C2522C00D10382 /* ShapesViewController+TrafficExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+TrafficExamples.swift"; sourceTree = "<group>"; };
+		87D4006924C2522C00D10382 /* Shapes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shapes.storyboard; sourceTree = "<group>"; };
+		87D4006A24C2522C00D10382 /* ShapesViewController+PolygonExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShapesViewController+PolygonExamples.swift"; sourceTree = "<group>"; };
+		87D4006C24C2522C00D10382 /* UserLocation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserLocation.storyboard; sourceTree = "<group>"; };
+		87D4006D24C2522C00D10382 /* UserLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationViewController.swift; sourceTree = "<group>"; };
+		87D4006E24C2522C00D10382 /* VLTMaps.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = VLTMaps.xcassets; sourceTree = "<group>"; };
+		87D4007024C2522C00D10382 /* VLTMapMode+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VLTMapMode+extensions.swift"; sourceTree = "<group>"; };
+		87D4007224C2522C00D10382 /* VisibleFeaturesControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibleFeaturesControllerDelegate.swift; sourceTree = "<group>"; };
+		87D4007324C2522C00D10382 /* CameraMetricsControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMetricsControllerDelegate.swift; sourceTree = "<group>"; };
+		87D4007524C2522C00D10382 /* CameraMetrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMetrics.swift; sourceTree = "<group>"; };
+		87D4007624C2522C00D10382 /* MapFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapFeature.swift; sourceTree = "<group>"; };
+		87D4007724C2522C00D10382 /* DemoFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoFeature.swift; sourceTree = "<group>"; };
+		87D4007824C2522C00D10382 /* VLTLiterals+VLTMaps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VLTLiterals+VLTMaps.swift"; sourceTree = "<group>"; };
+		9C1292E21CA400DE5A3527F5 /* Pods-VLTDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemoTests.release.xcconfig"; path = "Target Support Files/Pods-VLTDemoTests/Pods-VLTDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9A02A703C3A521D49F18B58 /* Pods_VLTDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VLTDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06114BB5B37BEF33C97D20A /* Pods-VLTNavigationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTNavigationDemo.debug.xcconfig"; path = "Target Support Files/Pods-VLTNavigationDemo/Pods-VLTNavigationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B63F68B14D5F57E816E47A27 /* Pods-VLTDemo-VLTDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLTDemo-VLTDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AE7ECB124745D1100821502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3F5E7C25F936D500CA7209 /* VLTMaps.framework in Frameworks */,
+				87C01A1925FC23A50095C7C7 /* heresdk.xcframework in Frameworks */,
+				82CA184AACF4A7A099DA8B52 /* Pods_VLTDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE7ECC724745D1300821502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3D3B3B6F282B6C9E906DA2 /* Pods_VLTDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE7ECD224745D1300821502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB9F2C0BDBEC19954473DFE /* Pods_VLTDemo_VLTDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DD17FC845AC179D1C9E4947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A3F5E7B25F936D500CA7209 /* VLTMaps.framework */,
+				A9A02A703C3A521D49F18B58 /* Pods_VLTDemo.framework */,
+				716E2A25B76EF84DBFB1B56A /* Pods_VLTNavigationDemo.framework */,
+				0DCFC6BB06D7CBEE6310CA48 /* Pods_VLTDemo_VLTDemoUITests.framework */,
+				5874B0E8B883C7596191B1A1 /* Pods_VLTDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A20952625F979D400D7CD83 /* GPX Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A20952725F979EE00D7CD83 /* VLT_Denver.gpx */,
+			);
+			path = "GPX Files";
+			sourceTree = "<group>";
+		};
+		6A848165247EDBF400D0E514 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6A869C2E248EC6D4005A77E3 /* Double+Extensions.swift */,
+				6A998FBD25F042E400B055A2 /* HERE_ManeuverAction+Extensions.swift */,
+				6A998FBB25F042E400B055A2 /* HERE_TransportMode+Extensions.swift */,
+				6A998FBC25F042E400B055A2 /* Int32+Extension.swift */,
+				6AD5D87E24EDCABE004AFCDD /* String+Extension.swift */,
+				6A869C3024913F15005A77E3 /* UIColor+Extensions.swift */,
+				6A998FBF25F042E400B055A2 /* UIImage+Extensions.swift */,
+				6A998FBE25F042E400B055A2 /* UIView+Extensions.swift */,
+				6A540DFC249275CB002FF921 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6A84816A247F0D0A00D0E514 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6A9990AA25F04E6D00B055A2 /* Buildable.swift */,
+				6A998FC925F0434A00B055A2 /* DemoError.swift */,
+				6AD5D88024EDCACC004AFCDD /* ImageDownloadHelper.swift */,
+				6AC1006325153F350084EB48 /* VLTConstants.swift */,
+				6A630DA42497DBAA0043D272 /* VLTLiterals.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6A998FD325F0460A00B055A2 /* Mapbox Integration */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FD525F0465700B055A2 /* Mapbox.storyboard */,
+				6A998FD425F0465700B055A2 /* MapboxIntegrationViewController.swift */,
+			);
+			path = "Mapbox Integration";
+			sourceTree = "<group>";
+		};
+		6A998FDB25F0471600B055A2 /* Navigation Demo */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FDC25F0473500B055A2 /* Coordinators */,
+				6A998FDD25F0473D00B055A2 /* Helpers */,
+				6A998FEE25F0495600B055A2 /* Navigation.storyboard */,
+				6A998FDE25F0474800B055A2 /* Protocols */,
+				6A998FDF25F0475100B055A2 /* View Controllers */,
+				6A998FE025F0475B00B055A2 /* Views */,
+				6A998FE125F0476300B055A2 /* VLTMaps_HERENavigation */,
+			);
+			path = "Navigation Demo";
+			sourceTree = "<group>";
+		};
+		6A998FDC25F0473500B055A2 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FF325F0496B00B055A2 /* NavigationCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6A998FDD25F0473D00B055A2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FF925F0497400B055A2 /* GenericDefinitions.swift */,
+				6A998FFB25F0497400B055A2 /* GPXRecording.swift */,
+				6A998FFA25F0497400B055A2 /* VLTLocation.swift */,
+				6A998FF825F0497400B055A2 /* VLTMapsRouting.swift */,
+				6A998FFE25F0497400B055A2 /* VLTNavigation.swift */,
+				6A998FFC25F0497400B055A2 /* XibView.swift */,
+				6A998FFD25F0497400B055A2 /* XibViewProtocol.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6A998FDE25F0474800B055A2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6A99900C25F0498500B055A2 /* Coordinator.swift */,
+				6A99900925F0498500B055A2 /* ExitableViewDelegate.swift */,
+				6A99900D25F0498500B055A2 /* ModeOfTravelDelegate.swift */,
+				6A99900E25F0498500B055A2 /* NavigationCoordinatorDelegate.swift */,
+				6A99900A25F0498500B055A2 /* SearchDelegate.swift */,
+				6A99900B25F0498500B055A2 /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6A998FDF25F0475100B055A2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FE225F0479A00B055A2 /* Directions */,
+				6A99901825F0499000B055A2 /* MapViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6A998FE025F0475B00B055A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A99905025F04A0B00B055A2 /* CircleView.swift */,
+				6A998FE325F047AC00B055A2 /* Footer Views */,
+				6A998FE425F047B500B055A2 /* Header Views */,
+				6A998FE525F047C100B055A2 /* TableView Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6A998FE125F0476300B055A2 /* VLTMaps_HERENavigation */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FEC25F0490900B055A2 /* Extensions */,
+				6A998FED25F0491200B055A2 /* HERE_Modules */,
+				6A99905525F04A2800B055A2 /* VLTLocationManager.swift */,
+			);
+			path = VLTMaps_HERENavigation;
+			sourceTree = "<group>";
+		};
+		6A998FE225F0479A00B055A2 /* Directions */ = {
+			isa = PBXGroup;
+			children = (
+				6A99901E25F0499800B055A2 /* DirectionsCell.swift */,
+				6A99901D25F0499800B055A2 /* DirectionsViewController.swift */,
+			);
+			path = Directions;
+			sourceTree = "<group>";
+		};
+		6A998FE325F047AC00B055A2 /* Footer Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FE625F047DA00B055A2 /* LayerOptionsView */,
+				6A998FE725F047E300B055A2 /* RouteOverviewFooterView */,
+			);
+			path = "Footer Views";
+			sourceTree = "<group>";
+		};
+		6A998FE425F047B500B055A2 /* Header Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FE925F0481700B055A2 /* NavigationDirectionHeaderView */,
+				6A998FE825F0480D00B055A2 /* SearchHeaderView */,
+			);
+			path = "Header Views";
+			sourceTree = "<group>";
+		};
+		6A998FE525F047C100B055A2 /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FEB25F0483400B055A2 /* LocationShortcutCell */,
+				6A998FEA25F0482900B055A2 /* SearchResultCell */,
+			);
+			path = "TableView Cells";
+			sourceTree = "<group>";
+		};
+		6A998FE625F047DA00B055A2 /* LayerOptionsView */ = {
+			isa = PBXGroup;
+			children = (
+				6A99902C25F049BD00B055A2 /* LayerOptionsView.swift */,
+				6A99902B25F049BD00B055A2 /* LayerOptionsView.xib */,
+			);
+			path = LayerOptionsView;
+			sourceTree = "<group>";
+		};
+		6A998FE725F047E300B055A2 /* RouteOverviewFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				6A99902425F049B100B055A2 /* RouteOverviewFooterView.swift */,
+				6A99902525F049B100B055A2 /* RouteOverviewFooterView.xib */,
+			);
+			path = RouteOverviewFooterView;
+			sourceTree = "<group>";
+		};
+		6A998FE825F0480D00B055A2 /* SearchHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				6A99903B25F049E900B055A2 /* SearchHeaderView.swift */,
+				6A99903A25F049E900B055A2 /* SearchHeaderView.xib */,
+				6A99903925F049E900B055A2 /* SearchResultsTable.swift */,
+			);
+			path = SearchHeaderView;
+			sourceTree = "<group>";
+		};
+		6A998FE925F0481700B055A2 /* NavigationDirectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				6A99903325F049DA00B055A2 /* NavigationDirectionHeaderView.swift */,
+				6A99903225F049DA00B055A2 /* NavigationDirectionHeaderView.xib */,
+			);
+			path = NavigationDirectionHeaderView;
+			sourceTree = "<group>";
+		};
+		6A998FEA25F0482900B055A2 /* SearchResultCell */ = {
+			isa = PBXGroup;
+			children = (
+				6A99904925F04A0000B055A2 /* SearchResultCell.swift */,
+				6A99904A25F04A0000B055A2 /* SearchResultCell.xib */,
+			);
+			path = SearchResultCell;
+			sourceTree = "<group>";
+		};
+		6A998FEB25F0483400B055A2 /* LocationShortcutCell */ = {
+			isa = PBXGroup;
+			children = (
+				6A99904325F049F700B055A2 /* LocationShortcutCell.swift */,
+				6A99904225F049F700B055A2 /* LocationShortcutCell.xib */,
+			);
+			path = LocationShortcutCell;
+			sourceTree = "<group>";
+		};
+		6A998FEC25F0490900B055A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6A99906525F04A4400B055A2 /* CoreLocation+Extensions.swift */,
+				6A99906425F04A4400B055A2 /* HEREsdk+Extensions.swift */,
+				6A99906325F04A4400B055A2 /* Route+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6A998FED25F0491200B055A2 /* HERE_Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6A99905A25F04A3400B055A2 /* HERE_LanguageCodeConverter.swift */,
+				6A99905C25F04A3400B055A2 /* HERE_VoiceAssistant.swift */,
+			);
+			path = HERE_Modules;
+			sourceTree = "<group>";
+		};
+		6AC1004F251418D50084EB48 /* Bounding Box */ = {
+			isa = PBXGroup;
+			children = (
+				6AC1005B2514194A0084EB48 /* BoundingBox.storyboard */,
+				6AC1005C2514194A0084EB48 /* BoundingBox.swift */,
+				6AC1005D2514194A0084EB48 /* BoundingBoxViewController.swift */,
+			);
+			path = "Bounding Box";
+			sourceTree = "<group>";
+		};
+		6AC10050251418F30084EB48 /* Relative Positioning */ = {
+			isa = PBXGroup;
+			children = (
+				6AC10055251419390084EB48 /* GeoJSON-SectionA.json */,
+				6AC10053251419390084EB48 /* GeoJSON-SectionB.json */,
+				6AC10054251419390084EB48 /* RelativePositioning.storyboard */,
+				6AC10051251419390084EB48 /* RelativePositioningTableVC.swift */,
+				6AC10052251419390084EB48 /* RelativePositioningViewController.swift */,
+			);
+			path = "Relative Positioning";
+			sourceTree = "<group>";
+		};
+		6AD5D89524EDCC71004AFCDD /* GeoJSON */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5D8A624EDCCDF004AFCDD /* GeoJSON.storyboard */,
+				6AD5D8A224EDCCDF004AFCDD /* GeoJSONViewController.swift */,
+				6AD5D8A524EDCCDF004AFCDD /* GeoJSONViewController+MixedFeatures.swift */,
+				6AD5D8A724EDCCDF004AFCDD /* GeoJSONViewController+MultiPoints.swift */,
+				6AD5D8A424EDCCDF004AFCDD /* GeoJSONViewController+Polygons.swift */,
+				6AD5D8A324EDCCDF004AFCDD /* GeoJSONViewController+Polylines.swift */,
+			);
+			path = GeoJSON;
+			sourceTree = "<group>";
+		};
+		6AD5D8AE24EDCCF4004AFCDD /* Visible Features */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5D8B024EDCD13004AFCDD /* VisibleFeatures.storyboard */,
+				6AD5D8AF24EDCD13004AFCDD /* VisibleFeaturesViewController.swift */,
+			);
+			path = "Visible Features";
+			sourceTree = "<group>";
+		};
+		6AD5D8C424EDE0CB004AFCDD /* GeoJSON Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5D8C524EDE0EB004AFCDD /* MixedFeatureCollection.json */,
+				6AD5D8C624EDE0EB004AFCDD /* Points.json */,
+				6AD5D8C824EDE0EB004AFCDD /* Polygons.json */,
+				6AD5D8C724EDE0EB004AFCDD /* Polylines.json */,
+			);
+			path = "GeoJSON Files";
+			sourceTree = "<group>";
+		};
+		6AE7ECAB24745D1100821502 = {
+			isa = PBXGroup;
+			children = (
+				87C01A1025FC23630095C7C7 /* Dependencies */,
+				3DD17FC845AC179D1C9E4947 /* Frameworks */,
+				8757AA88260293A3002867D0 /* GPX_TestFiles */,
+				6A998FDB25F0471600B055A2 /* Navigation Demo */,
+				EC17C61B1364ECCF41E38DB1 /* Pods */,
+				6AE7ECB524745D1100821502 /* Products */,
+				6AE7ECB624745D1100821502 /* VLTDemo */,
+				6AE7ECCD24745D1300821502 /* VLTDemoTests */,
+				6AE7ECD824745D1300821502 /* VLTDemoUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		6AE7ECB524745D1100821502 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AE7ECB424745D1100821502 /* VLTDemo.app */,
+				6AE7ECCA24745D1300821502 /* VLTDemoTests.xctest */,
+				6AE7ECD524745D1300821502 /* VLTDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AE7ECB624745D1100821502 /* VLTDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6AE7ECB724745D1100821502 /* AppDelegate.swift */,
+				6AE7ECC024745D1300821502 /* Assets.xcassets */,
+				6A848165247EDBF400D0E514 /* Extensions */,
+				6AE7ECBD24745D1100821502 /* FeatureList.storyboard */,
+				6AE7ECF624747EF000821502 /* FeatureListViewController.swift */,
+				6A20952625F979D400D7CD83 /* GPX Files */,
+				6A84816A247F0D0A00D0E514 /* Helpers */,
+				6AE7ECC524745D1300821502 /* Info.plist */,
+				6AE7ECC224745D1300821502 /* LaunchScreen.storyboard */,
+				87D4005824C2522C00D10382 /* MapsSDK */,
+				6AE7ECB924745D1100821502 /* SceneDelegate.swift */,
+				87438B6C2485A21F0007D1FC /* UIControls */,
+				87D4004324C24A4E00D10382 /* Views */,
+			);
+			path = VLTDemo;
+			sourceTree = "<group>";
+		};
+		6AE7ECCD24745D1300821502 /* VLTDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AE7ECD024745D1300821502 /* Info.plist */,
+				876FA84424CB9F3F0098AEAA /* MapsSDKTests */,
+			);
+			path = VLTDemoTests;
+			sourceTree = "<group>";
+		};
+		6AE7ECD824745D1300821502 /* VLTDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6AE7ECDB24745D1300821502 /* Info.plist */,
+				876FA84524CB9F560098AEAA /* MapsSDKUITest */,
+			);
+			path = VLTDemoUITests;
+			sourceTree = "<group>";
+		};
+		87438B6C2485A21F0007D1FC /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				87438B742485A45C0007D1FC /* VLTTextField.swift */,
+				6A540DFA2491926A002FF921 /* VLTLabel.swift */,
+			);
+			path = UIControls;
+			sourceTree = "<group>";
+		};
+		8757AA88260293A3002867D0 /* GPX_TestFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GPX_TestFiles;
+			sourceTree = "<group>";
+		};
+		876FA84424CB9F3F0098AEAA /* MapsSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				876FA84824CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift */,
+			);
+			path = MapsSDKTests;
+			sourceTree = "<group>";
+		};
+		876FA84524CB9F560098AEAA /* MapsSDKUITest */ = {
+			isa = PBXGroup;
+			children = (
+				876FA84624CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift */,
+			);
+			path = MapsSDKUITest;
+			sourceTree = "<group>";
+		};
+		87C01A1025FC23630095C7C7 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				87C01A1125FC23630095C7C7 /* HERE */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		87C01A1125FC23630095C7C7 /* HERE */ = {
+			isa = PBXGroup;
+			children = (
+				87C01A1225FC23630095C7C7 /* heresdk.xcframework */,
+			);
+			path = HERE;
+			sourceTree = "<group>";
+		};
+		87D4004324C24A4E00D10382 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6AC1006125141E770084EB48 /* VLTToggleButton.swift */,
+				87D4004424C24AB000D10382 /* VLTHomeTableViewCell.swift */,
+				87D4004524C24AB000D10382 /* VLTHomeTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		87D4005824C2522C00D10382 /* MapsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5D8B724EDD132004AFCDD /* Contents.json */,
+				87D4006F24C2522C00D10382 /* Extensions */,
+				6AD5D8C424EDE0CB004AFCDD /* GeoJSON Files */,
+				87D4007424C2522C00D10382 /* Helpers */,
+				87D4007124C2522C00D10382 /* Protocols */,
+				87D4005924C2522C00D10382 /* Storyboards */,
+				87D4006E24C2522C00D10382 /* VLTMaps.xcassets */,
+			);
+			path = MapsSDK;
+			sourceTree = "<group>";
+		};
+		87D4005924C2522C00D10382 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6AC1004F251418D50084EB48 /* Bounding Box */,
+				87D4005D24C2522C00D10382 /* Camera */,
+				6AD5D89524EDCC71004AFCDD /* GeoJSON */,
+				6A998FD325F0460A00B055A2 /* Mapbox Integration */,
+				87D4005A24C2522C00D10382 /* Modes */,
+				6AC10050251418F30084EB48 /* Relative Positioning */,
+				87D4006124C2522C00D10382 /* Shapes */,
+				87D4006B24C2522C00D10382 /* User Location */,
+				6AD5D8AE24EDCCF4004AFCDD /* Visible Features */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		87D4005A24C2522C00D10382 /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+				87D4005C24C2522C00D10382 /* Modes.storyboard */,
+				87D4005B24C2522C00D10382 /* ModesViewController.swift */,
+			);
+			path = Modes;
+			sourceTree = "<group>";
+		};
+		87D4005D24C2522C00D10382 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				87D4006024C2522C00D10382 /* Camera.storyboard */,
+				87D4005F24C2522C00D10382 /* CameraMetricsViewController.swift */,
+				87D4005E24C2522C00D10382 /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		87D4006124C2522C00D10382 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				87D4006924C2522C00D10382 /* Shapes.storyboard */,
+				87D4006224C2522C00D10382 /* ShapesViewController.swift */,
+				87D4006524C2522C00D10382 /* ShapesViewController+CircleExamples.swift */,
+				87D4006324C2522C00D10382 /* ShapesViewController+MarkerExamples.swift */,
+				87D4006A24C2522C00D10382 /* ShapesViewController+PolygonExamples.swift */,
+				87D4006424C2522C00D10382 /* ShapesViewController+PolylineExamples.swift */,
+				87D4006724C2522C00D10382 /* ShapesViewController+TrafficExamples.swift */,
+				87D4006624C2522C00D10382 /* ShapesViewController+UserInteraction.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		87D4006B24C2522C00D10382 /* User Location */ = {
+			isa = PBXGroup;
+			children = (
+				87D4006C24C2522C00D10382 /* UserLocation.storyboard */,
+				87D4006D24C2522C00D10382 /* UserLocationViewController.swift */,
+			);
+			path = "User Location";
+			sourceTree = "<group>";
+		};
+		87D4006F24C2522C00D10382 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5D8B324EDCDAC004AFCDD /* Data+Extensions.swift */,
+				87D4007024C2522C00D10382 /* VLTMapMode+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87D4007124C2522C00D10382 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				87D4007324C2522C00D10382 /* CameraMetricsControllerDelegate.swift */,
+				87D4007224C2522C00D10382 /* VisibleFeaturesControllerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		87D4007424C2522C00D10382 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6A998FCE25F0455600B055A2 /* CustomMglAnnotationView.swift */,
+				87D4007524C2522C00D10382 /* CameraMetrics.swift */,
+				87D4007724C2522C00D10382 /* DemoFeature.swift */,
+				87D4007624C2522C00D10382 /* MapFeature.swift */,
+				87D4007824C2522C00D10382 /* VLTLiterals+VLTMaps.swift */,
+				6AC1006525153F910084EB48 /* VLTConstants+VLTMaps.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EC17C61B1364ECCF41E38DB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A648E17EA41238146835923 /* Pods-VLTDemo.debug.xcconfig */,
+				309F94DD85AFCC3F770C9146 /* Pods-VLTDemo.release.xcconfig */,
+				B06114BB5B37BEF33C97D20A /* Pods-VLTNavigationDemo.debug.xcconfig */,
+				42FD2AFE25FDDAF06EA3F10A /* Pods-VLTNavigationDemo.release.xcconfig */,
+				7331148D5A5A9C67A2946376 /* Pods-VLTDemo-VLTDemoUITests.debug.xcconfig */,
+				B63F68B14D5F57E816E47A27 /* Pods-VLTDemo-VLTDemoUITests.release.xcconfig */,
+				86944E275F186261850E2916 /* Pods-VLTDemoTests.debug.xcconfig */,
+				9C1292E21CA400DE5A3527F5 /* Pods-VLTDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AE7ECB324745D1100821502 /* VLTDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE7ECDE24745D1300821502 /* Build configuration list for PBXNativeTarget "VLTDemo" */;
+			buildPhases = (
+				B9387D487B75541F45B449C1 /* [CP] Check Pods Manifest.lock */,
+				6AE7ECB024745D1100821502 /* Sources */,
+				6AE7ECB124745D1100821502 /* Frameworks */,
+				6AE7ECB224745D1100821502 /* Resources */,
+				DD8ABC72905666A57E74337B /* [CP] Embed Pods Frameworks */,
+				87C0179F25FBEC720095C7C7 /* Swift Lint */,
+				87C019DF25FC202A0095C7C7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VLTDemo;
+			productName = VLTMapsDemo;
+			productReference = 6AE7ECB424745D1100821502 /* VLTDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AE7ECC924745D1300821502 /* VLTDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE7ECE124745D1300821502 /* Build configuration list for PBXNativeTarget "VLTDemoTests" */;
+			buildPhases = (
+				0A5960B08FF831AAB787D739 /* [CP] Check Pods Manifest.lock */,
+				6AE7ECC624745D1300821502 /* Sources */,
+				6AE7ECC724745D1300821502 /* Frameworks */,
+				6AE7ECC824745D1300821502 /* Resources */,
+				BF59D1B43EB5D54D4F25035D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AE7ECCC24745D1300821502 /* PBXTargetDependency */,
+			);
+			name = VLTDemoTests;
+			productName = VLTMapsDemoTests;
+			productReference = 6AE7ECCA24745D1300821502 /* VLTDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6AE7ECD424745D1300821502 /* VLTDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE7ECE424745D1300821502 /* Build configuration list for PBXNativeTarget "VLTDemoUITests" */;
+			buildPhases = (
+				2EE0778FB8D5AB0CD6F58792 /* [CP] Check Pods Manifest.lock */,
+				6AE7ECD124745D1300821502 /* Sources */,
+				6AE7ECD224745D1300821502 /* Frameworks */,
+				6AE7ECD324745D1300821502 /* Resources */,
+				C1E2CD1070FE5DE8229E5CA2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AE7ECD724745D1300821502 /* PBXTargetDependency */,
+			);
+			name = VLTDemoUITests;
+			productName = VLTMapsDemoUITests;
+			productReference = 6AE7ECD524745D1300821502 /* VLTDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AE7ECAC24745D1100821502 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "Verizon Location Technology";
+				TargetAttributes = {
+					6AE7ECB324745D1100821502 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					6AE7ECC924745D1300821502 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1160;
+						TestTargetID = 6AE7ECB324745D1100821502;
+					};
+					6AE7ECD424745D1300821502 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1160;
+						TestTargetID = 6AE7ECB324745D1100821502;
+					};
+				};
+			};
+			buildConfigurationList = 6AE7ECAF24745D1100821502 /* Build configuration list for PBXProject "VLTDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AE7ECAB24745D1100821502;
+			productRefGroup = 6AE7ECB524745D1100821502 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AE7ECB324745D1100821502 /* VLTDemo */,
+				6AE7ECC924745D1300821502 /* VLTDemoTests */,
+				6AE7ECD424745D1300821502 /* VLTDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AE7ECB224745D1100821502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A99903425F049DA00B055A2 /* NavigationDirectionHeaderView.xib in Resources */,
+				6AD5D8CC24EDE0EC004AFCDD /* Polygons.json in Resources */,
+				6A99902D25F049BD00B055A2 /* LayerOptionsView.xib in Resources */,
+				6AC10058251419390084EB48 /* GeoJSON-SectionB.json in Resources */,
+				6AD5D8B224EDCD13004AFCDD /* VisibleFeatures.storyboard in Resources */,
+				87D4007A24C2522C00D10382 /* Modes.storyboard in Resources */,
+				6A99904C25F04A0000B055A2 /* SearchResultCell.xib in Resources */,
+				6A99902725F049B100B055A2 /* RouteOverviewFooterView.xib in Resources */,
+				6AC1005E2514194B0084EB48 /* BoundingBox.storyboard in Resources */,
+				87D4007D24C2522C00D10382 /* Camera.storyboard in Resources */,
+				6A99903D25F049E900B055A2 /* SearchHeaderView.xib in Resources */,
+				6AD5D8AC24EDCCDF004AFCDD /* GeoJSON.storyboard in Resources */,
+				6AD5D8CA24EDE0EC004AFCDD /* Points.json in Resources */,
+				6A99904425F049F700B055A2 /* LocationShortcutCell.xib in Resources */,
+				6AE7ECC424745D1300821502 /* LaunchScreen.storyboard in Resources */,
+				87D4008524C2522C00D10382 /* Shapes.storyboard in Resources */,
+				6AD5D8CB24EDE0EC004AFCDD /* Polylines.json in Resources */,
+				6AD5D8B924EDD132004AFCDD /* Contents.json in Resources */,
+				6AE7ECC124745D1300821502 /* Assets.xcassets in Resources */,
+				6AD5D8C924EDE0EB004AFCDD /* MixedFeatureCollection.json in Resources */,
+				6A998FEF25F0495600B055A2 /* Navigation.storyboard in Resources */,
+				6AE7ECBF24745D1100821502 /* FeatureList.storyboard in Resources */,
+				87D4008924C2522C00D10382 /* VLTMaps.xcassets in Resources */,
+				6AC1005A251419390084EB48 /* GeoJSON-SectionA.json in Resources */,
+				87D4008724C2522C00D10382 /* UserLocation.storyboard in Resources */,
+				6AC10059251419390084EB48 /* RelativePositioning.storyboard in Resources */,
+				87D4004824C24AB000D10382 /* VLTHomeTableViewCell.xib in Resources */,
+				6A20952825F979EE00D7CD83 /* VLT_Denver.gpx in Resources */,
+				6A998FD725F0465700B055A2 /* Mapbox.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE7ECC824745D1300821502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE7ECD324745D1300821502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A5960B08FF831AAB787D739 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VLTDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EE0778FB8D5AB0CD6F58792 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VLTDemo-VLTDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87C0179F25FBEC720095C7C7 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${PODS_ROOT}/SwiftLint/swiftlint autocorrect \n#${PODS_ROOT}/SwiftLint/swiftlint lint \n";
+		};
+		B9387D487B75541F45B449C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VLTDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF59D1B43EB5D54D4F25035D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLTDemoTests/Pods-VLTDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E2CD1070FE5DE8229E5CA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLTDemo-VLTDemoUITests/Pods-VLTDemo-VLTDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD8ABC72905666A57E74337B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VLTDemo/Pods-VLTDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AE7ECB024745D1100821502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A99900525F0497400B055A2 /* VLTNavigation.swift in Sources */,
+				6AD5D8A924EDCCDF004AFCDD /* GeoJSONViewController+Polylines.swift in Sources */,
+				6AC1006425153F350084EB48 /* VLTConstants.swift in Sources */,
+				6AD5D8A824EDCCDF004AFCDD /* GeoJSONViewController.swift in Sources */,
+				87D4007C24C2522C00D10382 /* CameraMetricsViewController.swift in Sources */,
+				6A998FC325F042E400B055A2 /* HERE_ManeuverAction+Extensions.swift in Sources */,
+				6AD5D88124EDCACC004AFCDD /* ImageDownloadHelper.swift in Sources */,
+				6A99903E25F049E900B055A2 /* SearchHeaderView.swift in Sources */,
+				6A998FC425F042E400B055A2 /* UIView+Extensions.swift in Sources */,
+				6AC1006225141E780084EB48 /* VLTToggleButton.swift in Sources */,
+				6AE7ECB824745D1100821502 /* AppDelegate.swift in Sources */,
+				6A540DFD249275CB002FF921 /* UIViewController+Extensions.swift in Sources */,
+				6A99902025F0499800B055A2 /* DirectionsCell.swift in Sources */,
+				6A99900125F0497400B055A2 /* VLTLocation.swift in Sources */,
+				6A998FC225F042E400B055A2 /* Int32+Extension.swift in Sources */,
+				6A99901925F0499000B055A2 /* MapViewController.swift in Sources */,
+				87D4008C24C2522C00D10382 /* CameraMetricsControllerDelegate.swift in Sources */,
+				87D4008324C2522C00D10382 /* ShapesViewController+TrafficExamples.swift in Sources */,
+				6AE7ECBA24745D1100821502 /* SceneDelegate.swift in Sources */,
+				6AC1005F2514194B0084EB48 /* BoundingBox.swift in Sources */,
+				87D4008D24C2522C00D10382 /* CameraMetrics.swift in Sources */,
+				87D4008F24C2522C00D10382 /* DemoFeature.swift in Sources */,
+				6A99904B25F04A0000B055A2 /* SearchResultCell.swift in Sources */,
+				87D4009024C2522C00D10382 /* VLTLiterals+VLTMaps.swift in Sources */,
+				6AD5D8AB24EDCCDF004AFCDD /* GeoJSONViewController+MixedFeatures.swift in Sources */,
+				6A99903525F049DA00B055A2 /* NavigationDirectionHeaderView.swift in Sources */,
+				6AC10056251419390084EB48 /* RelativePositioningTableVC.swift in Sources */,
+				6AD5D8B124EDCD13004AFCDD /* VisibleFeaturesViewController.swift in Sources */,
+				6A99901325F0498500B055A2 /* ModeOfTravelDelegate.swift in Sources */,
+				87D4008624C2522C00D10382 /* ShapesViewController+PolygonExamples.swift in Sources */,
+				6A99900F25F0498500B055A2 /* ExitableViewDelegate.swift in Sources */,
+				6A998FC525F042E400B055A2 /* UIImage+Extensions.swift in Sources */,
+				6A99901025F0498500B055A2 /* SearchDelegate.swift in Sources */,
+				87D4004724C24AB000D10382 /* VLTHomeTableViewCell.swift in Sources */,
+				6A9990AB25F04E6D00B055A2 /* Buildable.swift in Sources */,
+				6A99901125F0498500B055A2 /* Storyboarded.swift in Sources */,
+				87D4008E24C2522C00D10382 /* MapFeature.swift in Sources */,
+				6A99900025F0497400B055A2 /* GenericDefinitions.swift in Sources */,
+				6A99900325F0497400B055A2 /* XibView.swift in Sources */,
+				6A99905F25F04A3400B055A2 /* HERE_VoiceAssistant.swift in Sources */,
+				87D4008B24C2522C00D10382 /* VisibleFeaturesControllerDelegate.swift in Sources */,
+				87D4008224C2522C00D10382 /* ShapesViewController+UserInteraction.swift in Sources */,
+				6A99904525F049F700B055A2 /* LocationShortcutCell.swift in Sources */,
+				6A99901225F0498500B055A2 /* Coordinator.swift in Sources */,
+				6A99902E25F049BD00B055A2 /* LayerOptionsView.swift in Sources */,
+				6A998FD625F0465700B055A2 /* MapboxIntegrationViewController.swift in Sources */,
+				6A99901F25F0499800B055A2 /* DirectionsViewController.swift in Sources */,
+				6A99903C25F049E900B055A2 /* SearchResultsTable.swift in Sources */,
+				6A99902625F049B100B055A2 /* RouteOverviewFooterView.swift in Sources */,
+				6AD5D87F24EDCABF004AFCDD /* String+Extension.swift in Sources */,
+				6A99906825F04A4400B055A2 /* CoreLocation+Extensions.swift in Sources */,
+				6A540DFB2491926A002FF921 /* VLTLabel.swift in Sources */,
+				6AD5D8AA24EDCCDF004AFCDD /* GeoJSONViewController+Polygons.swift in Sources */,
+				87D4008124C2522C00D10382 /* ShapesViewController+CircleExamples.swift in Sources */,
+				6A998FF425F0496B00B055A2 /* NavigationCoordinator.swift in Sources */,
+				6A998FFF25F0497400B055A2 /* VLTMapsRouting.swift in Sources */,
+				6A998FCF25F0455600B055A2 /* CustomMglAnnotationView.swift in Sources */,
+				6A99905125F04A0B00B055A2 /* CircleView.swift in Sources */,
+				87D4007924C2522C00D10382 /* ModesViewController.swift in Sources */,
+				6A99905625F04A2800B055A2 /* VLTLocationManager.swift in Sources */,
+				6A998FC125F042E400B055A2 /* HERE_TransportMode+Extensions.swift in Sources */,
+				87D4007F24C2522C00D10382 /* ShapesViewController+MarkerExamples.swift in Sources */,
+				87D4007E24C2522C00D10382 /* ShapesViewController.swift in Sources */,
+				6A630DA52497DBAA0043D272 /* VLTLiterals.swift in Sources */,
+				6AC1006625153F910084EB48 /* VLTConstants+VLTMaps.swift in Sources */,
+				6A99906625F04A4400B055A2 /* Route+Extensions.swift in Sources */,
+				6A99900225F0497400B055A2 /* GPXRecording.swift in Sources */,
+				6AD5D8B424EDCDAC004AFCDD /* Data+Extensions.swift in Sources */,
+				6A99905D25F04A3400B055A2 /* HERE_LanguageCodeConverter.swift in Sources */,
+				6A869C2F248EC6D4005A77E3 /* Double+Extensions.swift in Sources */,
+				6AE7ECF724747EF000821502 /* FeatureListViewController.swift in Sources */,
+				6A99900425F0497400B055A2 /* XibViewProtocol.swift in Sources */,
+				6AC100602514194B0084EB48 /* BoundingBoxViewController.swift in Sources */,
+				6A869C3124913F15005A77E3 /* UIColor+Extensions.swift in Sources */,
+				6A99901425F0498500B055A2 /* NavigationCoordinatorDelegate.swift in Sources */,
+				87D4007B24C2522C00D10382 /* CameraViewController.swift in Sources */,
+				6AC10057251419390084EB48 /* RelativePositioningViewController.swift in Sources */,
+				6A99906725F04A4400B055A2 /* HEREsdk+Extensions.swift in Sources */,
+				87D4008824C2522C00D10382 /* UserLocationViewController.swift in Sources */,
+				6AD5D8AD24EDCCDF004AFCDD /* GeoJSONViewController+MultiPoints.swift in Sources */,
+				87D4008A24C2522C00D10382 /* VLTMapMode+extensions.swift in Sources */,
+				87438B762485A45C0007D1FC /* VLTTextField.swift in Sources */,
+				87D4008024C2522C00D10382 /* ShapesViewController+PolylineExamples.swift in Sources */,
+				6A998FCA25F0434A00B055A2 /* DemoError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE7ECC624745D1300821502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				876FA84924CB9FAD0098AEAA /* VLTDemoMapsSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE7ECD124745D1300821502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874080E924F47F910085DC6E /* VLTLiterals.swift in Sources */,
+				874080E824F47F0D0085DC6E /* VLTLiterals+VLTMaps.swift in Sources */,
+				876FA84724CB9F8B0098AEAA /* VLTDemoMapsSDKUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AE7ECCC24745D1300821502 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AE7ECB324745D1100821502 /* VLTDemo */;
+			targetProxy = 6AE7ECCB24745D1300821502 /* PBXContainerItemProxy */;
+		};
+		6AE7ECD724745D1300821502 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AE7ECB324745D1100821502 /* VLTDemo */;
+			targetProxy = 6AE7ECD624745D1300821502 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6AE7ECBD24745D1100821502 /* FeatureList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AE7ECBE24745D1100821502 /* Base */,
+			);
+			name = FeatureList.storyboard;
+			sourceTree = "<group>";
+		};
+		6AE7ECC224745D1300821502 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AE7ECC324745D1300821502 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AE7ECDC24745D1300821502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6AE7ECDD24745D1300821502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AE7ECDF24745D1300821502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A648E17EA41238146835923 /* Pods-VLTDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = J2244V2577;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = VLTDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemo;
+				PRODUCT_NAME = VLTDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.Verizon.Location.Technology.VLTDemo";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AE7ECE024745D1300821502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 309F94DD85AFCC3F770C9146 /* Pods-VLTDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = J2244V2577;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = VLTDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemo;
+				PRODUCT_NAME = VLTDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.Verizon.Location.Technology.VLTDemo";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6AE7ECE224745D1300821502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86944E275F186261850E2916 /* Pods-VLTDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2244V2577;
+				INFOPLIST_FILE = VLTDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VLTDemo.app/VLTDemo";
+			};
+			name = Debug;
+		};
+		6AE7ECE324745D1300821502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1292E21CA400DE5A3527F5 /* Pods-VLTDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2244V2577;
+				INFOPLIST_FILE = VLTDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VLTDemo.app/VLTDemo";
+			};
+			name = Release;
+		};
+		6AE7ECE524745D1300821502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7331148D5A5A9C67A2946376 /* Pods-VLTDemo-VLTDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2244V2577;
+				INFOPLIST_FILE = VLTDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VLTDemo;
+			};
+			name = Debug;
+		};
+		6AE7ECE624745D1300821502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63F68B14D5F57E816E47A27 /* Pods-VLTDemo-VLTDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2244V2577;
+				INFOPLIST_FILE = VLTDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Verizon.Location.Technology.VLTDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VLTDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AE7ECAF24745D1100821502 /* Build configuration list for PBXProject "VLTDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE7ECDC24745D1300821502 /* Debug */,
+				6AE7ECDD24745D1300821502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AE7ECDE24745D1300821502 /* Build configuration list for PBXNativeTarget "VLTDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE7ECDF24745D1300821502 /* Debug */,
+				6AE7ECE024745D1300821502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AE7ECE124745D1300821502 /* Build configuration list for PBXNativeTarget "VLTDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE7ECE224745D1300821502 /* Debug */,
+				6AE7ECE324745D1300821502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AE7ECE424745D1300821502 /* Build configuration list for PBXNativeTarget "VLTDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE7ECE524745D1300821502 /* Debug */,
+				6AE7ECE624745D1300821502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AE7ECAC24745D1100821502 /* Project object */;
+}

@@ -10,5 +10,5 @@ import Foundation
 
 /// String literals to be used throughout the app
 class VLTLiterals {
-    //NOTE: Literals for the VLT SDKs are defined in their "Helper" folders
+    // Note: Literals for the VLT SDKs are defined in their "Helper" folders
 }

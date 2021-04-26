@@ -6,9 +6,9 @@
 //  Copyright © 2020 Verizon Location Technology. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 import VLTMaps
-import CoreLocation
 
 /// Extension giving examples of how to interact with VLTMapPolyline objects on the map
 extension ShapesViewController {
@@ -29,8 +29,8 @@ extension ShapesViewController {
         do {
             /// Create a custom polyline object with a title and subtitle that will display a callout when tapped
             let polyline = VLTMapPolyline(coordinates: polylineCoordinates,
-                                          title: literals.polylineTitle,
-                                          subtitle: literals.polylineSubtitle,
+                                          title: VCLiterals.polylineTitle,
+                                          subtitle: VCLiterals.polylineSubtitle,
                                           showCallout: self.runListeners,
                                           strokeWidth: 5,
                                           strokeColor: .red)
@@ -39,10 +39,9 @@ extension ShapesViewController {
             try mapView.add(object: polyline)
             /// Store a reference to the polyline for future use
             self.polyline = polyline
-
         } catch {
             /// If adding polyline to the map fails, display an error
-            showError(withMessage: "\(literals.addPolylineErrorMessage): \(error)")
+            showError(withMessage: "\(VCLiterals.addPolylineErrorMessage): \(error)")
         }
     }
 
@@ -64,16 +63,16 @@ extension ShapesViewController {
             /// Update the stroke width of the polyline
             polyline.strokeWidth = .random(in: 2...15)
             /// Update the title of the polyline with a new one
-            polyline.title = Bool.random() ? "\(literals.polylineText) \(literals.shapeTitleUpdated)" : nil
+            polyline.title = Bool.random() ? "\(VCLiterals.polylineText) \(VCLiterals.shapeTitleUpdated)" : nil
             /// Update the subtitle of the circle with new ones
-            polyline.subtitle = Bool.random() ? "\(literals.polylineText) \(literals.shapeSubtitleUpdated)" : nil
+            polyline.subtitle = Bool.random() ? "\(VCLiterals.polylineText) \(VCLiterals.shapeSubtitleUpdated)" : nil
             /// Update whether or not the circle should display a callout when tapped
             polyline.showCallout = self.runListeners
 
             /// Notify the map to update the polyline
             try mapView.update(object: polyline)
         } catch {
-            showError(withMessage: "\(literals.updatePolylineErrorMessage): \(error)")
+            showError(withMessage: "\(VCLiterals.updatePolylineErrorMessage): \(error)")
         }
     }
 
@@ -89,7 +88,7 @@ extension ShapesViewController {
             self.polyline = nil
         } catch {
             /// If removing polyline fails, throw an error
-            showError(withMessage: "\(literals.removePolylineErrorMessage): \(error)")
+            showError(withMessage: "\(VCLiterals.removePolylineErrorMessage): \(error)")
         }
     }
 }

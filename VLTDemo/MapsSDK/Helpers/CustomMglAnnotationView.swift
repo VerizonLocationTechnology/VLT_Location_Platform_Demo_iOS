@@ -10,7 +10,6 @@ import Mapbox
 
 /// Custom MGLAnnotationView subclass to demonstrate Mapbox's MGLMapViewDelegate
 class CustomMglAnnotationView: MGLAnnotationView {
-
     /// Create a new non-scalling dark gray circle annotation view with a white border
     /// - Parameters:
     ///   - reuseIdentifier: Annotation reuse identifier
@@ -39,7 +38,8 @@ class CustomMglAnnotationView: MGLAnnotationView {
         super.init(frame: frame)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    @available(*, unavailable) // This is really not available to anyone to use
+    required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

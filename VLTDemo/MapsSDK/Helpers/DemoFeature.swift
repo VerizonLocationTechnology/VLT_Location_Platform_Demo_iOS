@@ -11,33 +11,35 @@ import Foundation
 /// Enumeration describing the current features to be demoed in this application
 enum DemoFeature: CaseIterable {
     /// Typealias pointing to string literals for this enum
-    private typealias literals = VLTLiterals.DemoFeatureLiterals
+    private typealias DemoFeatures = VLTLiterals.DemoFeatureLiterals
 
-    case welcome, camera, modes, userLocation, shapes, geoJson, listeners, relativePositioning, boundingBox, mapbox
+    case welcome, camera, modes, userLocation, shapes, geoJson, listeners, relativePositioning, boundingBox, mapbox, navigation
 
     /// Overarching label for each feature to be demoed
     var title: String {
         switch self {
         case .welcome:
-            return literals.welcomeTitle
+            return DemoFeatures.welcomeTitle
         case .camera:
-            return literals.cameraTitle
+            return DemoFeatures.cameraTitle
         case .modes:
-            return literals.modesTitle
+            return DemoFeatures.modesTitle
         case .userLocation:
-            return literals.userLocationTitle
+            return DemoFeatures.userLocationTitle
         case .shapes:
-            return literals.shapesTitle
+            return DemoFeatures.shapesTitle
         case .geoJson:
-            return literals.geoJsonTitle
+            return DemoFeatures.geoJsonTitle
         case .listeners:
-            return literals.listenersTitle
+            return DemoFeatures.listenersTitle
         case .relativePositioning:
-            return literals.relativePositioningTitle
+            return DemoFeatures.relativePositioningTitle
         case .boundingBox:
-            return literals.boundingBoxTitle
+            return DemoFeatures.boundingBoxTitle
         case .mapbox:
-            return literals.mapboxTitle
+            return DemoFeatures.mapboxTitle
+        case .navigation:
+            return DemoFeatures.navigationTitle
         }
     }
 
@@ -45,25 +47,27 @@ enum DemoFeature: CaseIterable {
     var content: String {
         switch self {
         case .welcome:
-            return literals.welcomeContent
+            return DemoFeatures.welcomeContent
         case .camera:
-            return literals.cameraContent
+            return DemoFeatures.cameraContent
         case .modes:
-            return literals.modesContent
+            return DemoFeatures.modesContent
         case .userLocation:
-            return literals.userLocationContent
+            return DemoFeatures.userLocationContent
         case .shapes:
-            return literals.shapesContent
+            return DemoFeatures.shapesContent
         case .geoJson:
-            return literals.geoJsonContent
+            return DemoFeatures.geoJsonContent
         case .listeners:
-            return literals.listenersContent
+            return DemoFeatures.listenersContent
         case .relativePositioning:
-            return literals.relativePositioningContent
+            return DemoFeatures.relativePositioningContent
         case .boundingBox:
-            return literals.boundingBoxContent
+            return DemoFeatures.boundingBoxContent
         case .mapbox:
-            return literals.mapboxContent
+            return DemoFeatures.mapboxContent
+        case .navigation:
+            return DemoFeatures.navigationContent
         }
     }
 
@@ -73,23 +77,25 @@ enum DemoFeature: CaseIterable {
         case .welcome:
             return nil
         case .camera:
-            return literals.cameraSegue
+            return DemoFeatures.cameraSegue
         case .modes:
-            return literals.modesSegue
+            return DemoFeatures.modesSegue
         case .userLocation:
-            return literals.userLocationSegue
+            return DemoFeatures.userLocationSegue
         case .shapes:
-            return literals.shapesSegue
+            return DemoFeatures.shapesSegue
         case .geoJson:
-            return literals.geoJsonSegue
+            return DemoFeatures.geoJsonSegue
         case .listeners:
-            return literals.listenersSegue
+            return DemoFeatures.listenersSegue
         case .relativePositioning:
-            return literals.relativePositioningSegue
+            return DemoFeatures.relativePositioningSegue
         case .boundingBox:
-            return literals.boundingBoxSegue
+            return DemoFeatures.boundingBoxSegue
         case .mapbox:
-            return literals.mapboxSegue
+            return DemoFeatures.mapboxSegue
+        case .navigation:
+            return nil
         }
     }
 }

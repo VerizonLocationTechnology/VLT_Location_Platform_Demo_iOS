@@ -10,5 +10,5 @@ import Foundation
 
 // Constants to be used throughout the app
 class VLTConstants {
-    //NOTE: Constants for the VLT SDKs are defined in their "Helper" folders
+    // Note: Constants for the VLT SDKs are defined in their "Helper" folders
 }

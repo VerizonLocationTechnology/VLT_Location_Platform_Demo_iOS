@@ -40,7 +40,7 @@ extension GeoJSONViewController {
             self.pointGeoJSON = geoJSON
         } catch {
             /// If creating or adding GeoJSON to the map, display an error
-            showError(withMessage: "\(literals.addMarkerErrorMessage): \(error)")
+            showError(withMessage: "\(GeoJsonVC.addMarkerErrorMessage): \(error)")
         }
     }
 
@@ -61,7 +61,7 @@ extension GeoJSONViewController {
             try mapView.update(object: pointGeoJSON)
         } catch {
             /// If updating the geoJSON object fails, display an error
-            showError(withMessage: "\(literals.updateMarkerErrorMessage): \(error)")
+            showError(withMessage: "\(GeoJsonVC.updateMarkerErrorMessage): \(error)")
         }
     }
 
@@ -77,7 +77,7 @@ extension GeoJSONViewController {
             self.pointGeoJSON = nil
         } catch {
             /// If removing geoJSON fails, display an error
-            showError(withMessage: "\(literals.removeMarkerErrorMessage): \(error)")
+            showError(withMessage: "\(GeoJsonVC.removeMarkerErrorMessage): \(error)")
         }
     }
 }

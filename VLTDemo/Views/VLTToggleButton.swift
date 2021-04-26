@@ -9,14 +9,11 @@
 import UIKit
 
 class VLTToggleButton: UIButton {
-    @IBInspectable
-    var selectedColor: UIColor?
+    @IBInspectable var selectedColor: UIColor?
 
-    @IBInspectable
-    var unselectedColor: UIColor?
+    @IBInspectable var unselectedColor: UIColor?
 
-    @IBInspectable
-    var showSelected: Bool = true {
+    @IBInspectable var showSelected: Bool = true {
         didSet {
             self.backgroundColor = showSelected ? selectedColor : unselectedColor
         }

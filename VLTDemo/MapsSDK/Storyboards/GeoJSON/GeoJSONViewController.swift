@@ -6,15 +6,14 @@
 //  Copyright © 2020 Verizon Location Technology. All rights reserved.
 //
 
+import Combine
+import CoreLocation
 import UIKit
 import VLTMaps
-import CoreLocation
-import Combine
 
 class GeoJSONViewController: UIViewController, VLTMapViewDelegate, VisibleFeaturesControllerDelegate {
-
     // MARK: - Public members
-    typealias literals = VLTLiterals.GeoJSONVCLiterals
+    typealias GeoJsonVC = VLTLiterals.GeoJSONVCLiterals
     /// The current features that can be shown on the map and their visibility
     @Published var featureVisibility: MapFeatureVisiblity = MapFeature.initialGeoJSONVisibility
 
@@ -50,7 +49,7 @@ class GeoJSONViewController: UIViewController, VLTMapViewDelegate, VisibleFeatur
     /// The mapView object that displays map data
     @IBOutlet weak var mapView: VLTMapView!
     /// View containing a list of currently visible shapes and features
-    @IBOutlet weak var statusView: VLTView!
+    @IBOutlet weak var statusView: UIView!
     /// Label indicating whether or not the mixed GeoJSON is being shown on the map
     @IBOutlet weak var mixLabel: VLTLabel!
     /// Label indicating whether or not the point GeoJSON is being shown on the map
@@ -60,14 +59,14 @@ class GeoJSONViewController: UIViewController, VLTMapViewDelegate, VisibleFeatur
     /// Label indicating whether or not the polygon GeoJSON being shown on the map
     @IBOutlet weak var polygonLabel: UILabel!
     /// Button for Updating and redrawing shapes being shown on the map
-    @IBOutlet weak var redrawButton: VLTButton!
+    @IBOutlet weak var redrawButton: UIButton!
 
     // MARK: - Page life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         /// Set title for view controller
-        self.title = literals.title
+        self.title = GeoJsonVC.title
 
         /// Get the map mode that matches the device's current interface style
         let mode = VLTMapMode.mapMode(forUserInterfaceStyle: traitCollection.userInterfaceStyle)
@@ -75,7 +74,7 @@ class GeoJSONViewController: UIViewController, VLTMapViewDelegate, VisibleFeatur
         /// Configure the map with the initial mode, any built-in features that should be hidden, and the initial bounded area for the camera
         let mapConfiguration = MapConfiguration(mode: mode,
                                                 hiddenFeatures: [.traffic],
-                                                cameraCenter: CLLocationCoordinate2D(latitude: 42.3637, longitude: -71.053604))
+                                                cameraCenter: CLLocationCoordinate2D(latitude: 42.3637, longitude: -71.053_604))
 
         /// Load the map using your given API key
         mapView.loadMap(apiKey: apiKey, configuration: mapConfiguration)
@@ -126,9 +125,8 @@ class GeoJSONViewController: UIViewController, VLTMapViewDelegate, VisibleFeatur
         /// Subscribe to the featureVisibility object. Update the visibility of the statusView when featureVisibility is updated
         statusSubscriber = $featureVisibility.map({ !$0.values.contains(true) }).receive(on: DispatchQueue.main).assign(to: \.isHidden, on: statusView)
         /// Subscribe to the featureVisibility object. Update the visibility of the redrawButton when featureVisibility is updated
-        redrawSubscriber = $featureVisibility.map({ !($0[.polygon] ?? false || $0[.polyline] ?? false || $0[.marker] ?? false || $0[.mixed] ?? false ) }).receive(on: DispatchQueue.main).assign(to: \.isHidden, on: redrawButton)
+        redrawSubscriber = $featureVisibility.map({ !($0[.polygon] ?? false || $0[.polyline] ?? false || $0[.marker] ?? false || $0[.mixed] ?? false ) }).receive(on: DispatchQueue.main).assign(to: \.isHidden, on: redrawButton) // swiftlint:disable:this line_length
     }
-
 }
 
 /// VisibleFeaturesControllerDelegate Conformance
@@ -143,14 +141,13 @@ extension GeoJSONViewController {
 
 /// Extension giving examples of how to work with user interaction callbacks for the VLTMapViewDelegate
 extension GeoJSONViewController {
-
     /// Handle the map successfully loading
     func didFinishLoadingMap(mapView: VLTMapView) {
         do {
             /// Zoom the camera in to the area where shapes are displayed
             try mapView.camera.set(zoom: 12)
         } catch {
-            showError(withMessage: "\(literals.updateCameraError): \(error)")
+            showError(withMessage: "\(GeoJsonVC.updateCameraError): \(error)")
         }
 
         /// Pull in a custom image to use as a point marker, and register it for use on the map
@@ -167,11 +164,11 @@ extension GeoJSONViewController {
 
     /// Handle the map failing to load
     func didFailLoadingMap(mapView: VLTMapView, error: Error) {
-        showError(withMessage: "\(literals.loadMapError): \(error)")
+        showError(withMessage: "\(GeoJsonVC.loadMapError): \(error)")
     }
 
     /// Handle a user tapping on the mapView
     func tappedOnMap(mapView: VLTMapView, point: CGPoint, coordinate: CLLocationCoordinate2D) {
-        showAlert(withMessage: literals.tappedOnMap)
+        showAlert(withMessage: GeoJsonVC.tappedOnMap)
     }
 }
