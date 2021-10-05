@@ -1,8 +1,8 @@
 //
 // MapViewController.swift
 //
-// Created by Verizon Location Technology.
-// Copyright © 2020 Verizon Location Technology. All rights reserved.
+// Created by Verizon Location Technology
+// Copyright © 2020 Verizon Location Technology
 //
 
 import CoreLocation
@@ -772,6 +772,11 @@ extension MapViewController {
                     try self.initializeMapCamera()
                 } catch {
                     DemoError(file: #file, function: #function, line: #line, error: error).print()
+                }
+            }
+            if #available(iOS 14.0, *) {
+                if vltLocationManager.accuracyAuthorization == .reducedAccuracy {
+                    vltLocationManager.requestTemporaryFullAccuracyAuthorization(withPurposeKey: "VLTLocationManager")
                 }
             }
         } else {

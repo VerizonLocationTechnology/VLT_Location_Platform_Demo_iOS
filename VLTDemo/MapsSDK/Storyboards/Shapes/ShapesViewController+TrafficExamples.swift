@@ -1,9 +1,8 @@
 //
-//  ShapesViewController+TrafficExamples.swift
-//  VLTDemo
+// ShapesViewController+TrafficExamples.swift
 //
-//  Created by Verizon Location Technology.
-//  Copyright © 2020 Verizon Location Technology. All rights reserved.
+// Created by Verizon Location Technology
+// Copyright © 2020 Verizon Location Technology
 //
 
 import Foundation
@@ -26,7 +25,7 @@ extension ShapesViewController {
             showError(withMessage: "\(VCLiterals.updateTrafficFlowErrorMessage): \(error)")
         }
     }
-    
+
     /// Update the visibility of the traffic incidents layer on the map
     func updateTrafficIncidentVisibility() {
         do {
