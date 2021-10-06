@@ -1,6 +1,5 @@
 //
 // RelativePositioningTableVC.swift
-// VLTMaps SDK
 //
 // Created by Verizon Location Technology
 // Copyright © 2020 Verizon Location Technology

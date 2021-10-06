@@ -13,7 +13,7 @@
         <!--Camera-->
         <scene sceneID="PKm-ix-iUF">
             <objects>
-                <viewController id="5e2-Nw-qta" customClass="CameraViewController" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5e2-Nw-qta" customClass="CameraViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J8j-oa-YmL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,7 +223,7 @@
         <!--Metrics-->
         <scene sceneID="edd-uZ-IJ2">
             <objects>
-                <viewController id="2W1-OF-oOS" customClass="CameraMetricsViewController" customModule="VLTMapsSDK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2W1-OF-oOS" customClass="CameraMetricsViewController" customModule="VLTDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g7P-PQ-V6q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,7 +243,7 @@
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="15.31" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMG-4M-0Ei" customClass="VLTTextField" customModule="VLTMapsSDK" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="15.31" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMG-4M-0Ei" customClass="VLTTextField" customModule="VLTDemo" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="25" width="382" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="X38-o1-Y0p"/>
@@ -277,7 +277,7 @@
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="270.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLK-5o-lw3" customClass="VLTTextField" customModule="VLTMapsSDK" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="270.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLK-5o-lw3" customClass="VLTTextField" customModule="VLTDemo" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="25" width="382" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="QU1-Rf-3yo"/>
@@ -311,7 +311,7 @@
                                                 <color key="textColor" name="Secondary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="45.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IZW-By-BTO" customClass="VLTTextField" customModule="VLTMapsSDK" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="45.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IZW-By-BTO" customClass="VLTTextField" customModule="VLTDemo" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="25" width="382" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="1wj-3b-ZuN"/>
@@ -389,13 +389,13 @@
     </scenes>
     <designables>
         <designable name="FLK-5o-lw3">
-            <size key="intrinsicContentSize" width="57" height="21"/>
+            <size key="intrinsicContentSize" width="41" height="21"/>
         </designable>
         <designable name="IZW-By-BTO">
-            <size key="intrinsicContentSize" width="49" height="21"/>
+            <size key="intrinsicContentSize" width="33" height="21"/>
         </designable>
         <designable name="NMG-4M-0Ei">
-            <size key="intrinsicContentSize" width="53" height="21"/>
+            <size key="intrinsicContentSize" width="37" height="21"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>

@@ -1,9 +1,8 @@
 //
-//  VLTLiterals+VLTMaps.swift
-//  VLTDemo
+// VLTLiterals+VLTMaps.swift
 //
-//  Created by Verizon Location Technology
-//  Copyright © 2020 Verizon Location Technology. All rights reserved.
+// Created by Verizon Location Technology
+// Copyright © 2020 Verizon Location Technology
 //
 
 import Foundation
@@ -37,9 +36,14 @@ extension VLTLiterals {
     class ModesVCLiterals {
         /// Title for ModesViewController
         static let title = "Modes"
+        private static let failedToUpdate = "Failed to update"
 
         /// Mode Update error message
         static let modeUpdateErrorMessage = "Could not update map mode"
+
+        // MARK: - Traffic Texts
+        static let updateTrafficFlowErrorMessage = "\(failedToUpdate) traffic flow visibility"
+        static let updateTrafficIncidentMessage = "\(failedToUpdate) traffic incident visibility"
     }
 
     /// String literals for UserLocationViewController
@@ -261,7 +265,7 @@ extension VLTLiterals {
         /// Demo Feature Content
         static let welcomeContent = "Welcome to the VLT Demo Application, view our supported functionality below."
         static let cameraContent = "Use camera controls to programmatically set, manage and limit user zoom, tilt and bearing."
-        static let modesContent = "Verizon map modes show fresh day-time map tiles in multiple styles(e.g. - day, night, satellite, etc.) with additional options including terrain or traffic flow."
+        static let modesContent = "Verizon map modes show fresh day-time map tiles in multiple styles(e.g. - day, day 3D, night, night 3D, satellite, etc.) with additional options including incidents or traffic flow."
         static let userLocationContent = "Display your real-time location, anywhere in the world."
         static let shapesContent = "Place points, lines and shapes to customize maps."
         static let geoJsonContent = "Use GeoJSON feature collections to create and style points, lines and shapes on your map."

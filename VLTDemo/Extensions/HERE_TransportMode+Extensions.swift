@@ -1,6 +1,5 @@
 //
 // HERE_TransportMode+Extensions.swift
-// VLTMaps SDK
 //
 // Created by Verizon Location Technology
 // Copyright © 2021 Verizon Location Technology

@@ -1,7 +1,8 @@
 //
 //  GPXRecording.swift
 //
-//  Copyright © 2021 Verizon. All rights reserved.
+// Created by Verizon Location Technology
+// Copyright © 2020 Verizon Location Technology
 //
 
 import CoreLocation

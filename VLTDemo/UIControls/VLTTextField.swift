@@ -2,8 +2,8 @@
 //  VLTTextField.swift
 //  VLTDemo
 //
-//  Created by Verizon Location Technology
-//  Copyright © 2020 Verizon Location Technology. All rights reserved.
+// Created by Verizon Location Technology
+// Copyright © 2020 Verizon Location Technology
 //
 
 import UIKit

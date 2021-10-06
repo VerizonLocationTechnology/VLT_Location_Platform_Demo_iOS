@@ -1,6 +1,5 @@
 //
 // BoundingBoxViewController.swift
-// VLTMaps SDK
 //
 // Created by Verizon Location Technology
 // Copyright © 2020 Verizon Location Technology
@@ -48,7 +47,7 @@ class BoundingBoxViewController: UIViewController, VLTMapViewDelegate {
 
         /// Retrieve the map mode that reflects the UI style of the current device
         let mode = VLTMapMode.mapMode(forUserInterfaceStyle: interfaceStyle)
-
+        
         /// Configure the map with an initial mode and the initial bounding box (around Colorado)
         let mapConfiguration = MapConfiguration(mode: mode,
                                                 southwestCoordinate: BoundingBox.colorado.sw,
@@ -89,13 +88,19 @@ class BoundingBoxViewController: UIViewController, VLTMapViewDelegate {
             updateBoundingBox(with: .utah)
         }
     }
-
+    
     func updateBoundingBox(with boundingBox: BoundingBox) {
+        let animationCompleted: VoidClosure = {
+            print("Animation Completed")
+        }
+        
         do {
+            print("Animation Started")
             try mapView.camera.updateCamera(southwestBound: boundingBox.sw,
-                                            northeastBound: boundingBox.ne,
-                                            padding: boundingBox.insets,
-                                            withAnimation: true)
+                                                 northeastBound: boundingBox.ne,
+                                                 padding: boundingBox.insets,
+                                                 withAnimation: true,
+                                                 completion: animationCompleted)
         } catch {
             showError(withMessage: VCLiterals.cameraUpdateErrorMessage)
         }

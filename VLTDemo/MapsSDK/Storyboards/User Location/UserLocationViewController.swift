@@ -1,9 +1,8 @@
 //
-//  UserLocationViewController.swift
-//  VLTDemo
+// UserLocationViewController.swift
 //
-//  Created by Verizon Location Technology
-//  Copyright © 2020 Verizon Location Technology. All rights reserved.
+// Created by Verizon Location Technology
+// Copyright © 2020 Verizon Location Technology
 //
 
 import CoreLocation
@@ -27,6 +26,8 @@ class UserLocationViewController: UIViewController {
     // MARK: - IBOutlets
     /// The mapView object that displays map data
     @IBOutlet weak var mapView: VLTMapView!
+    /// Button for requesting loaction of fullAccuracy when its currently reduced
+    @IBOutlet weak var userLocationPrecisionButton: UIButton!
     /// Button for centering the map onto the user's current location
     @IBOutlet weak var userLocationButton: UIButton!
 
@@ -76,6 +77,28 @@ class UserLocationViewController: UIViewController {
             }
         }
     }
+
+    @IBAction func userLocationPrecisionButtonTapped(_ sender: Any) {
+        if #available(iOS 14.0, *) {
+            locationManager.requestTemporaryFullAccuracyAuthorization(withPurposeKey: "VLTLocationManager")
+        }
+    }
+
+    func showUserLocationOnMap() {
+        if #available(iOS 14.0, *) {
+            if locationManager.authorizationStatus == .authorizedAlways || locationManager.authorizationStatus == .authorizedWhenInUse {
+                mapView.showsUserLocation = true
+            }
+            if locationManager.accuracyAuthorization == .reducedAccuracy {
+                userLocationPrecisionButton.isHidden = false
+            }
+        } else {
+            if CLLocationManager.authorizationStatus() == .authorizedAlways || CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+                mapView.showsUserLocation = true
+            }
+            userLocationPrecisionButton.isHidden = true
+        }
+    }
 }
 
 // MARK: - CLLocationManagerDelegate
@@ -96,9 +119,17 @@ extension UserLocationViewController: CLLocationManagerDelegate {
         }
     }
 
-    /// Display an error to the user stating that their location could not be determined
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        showError(withMessage: "\(Literals.locationUpdateErrorMessage): \(error)")
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        showUserLocationOnMap()
+        if #available(iOS 14.0, *) {
+            if locationManager.accuracyAuthorization == .reducedAccuracy {
+                userLocationPrecisionButton.isHidden = false
+            } else {
+                userLocationPrecisionButton.isHidden = true
+            }
+        } else {
+            userLocationPrecisionButton.isHidden = true
+        }
     }
 }
 
@@ -110,7 +141,7 @@ extension UserLocationViewController: VLTMapViewDelegate {
     /// If the map succeeds in loading, attempt to show the user's current location
     func didFinishLoadingMap(mapView: VLTMapView) {
         /// Attempt to show the user's current location
-        mapView.showsUserLocation = true
+        showUserLocationOnMap()
     }
 
     /// If the map fails to load, throw an error

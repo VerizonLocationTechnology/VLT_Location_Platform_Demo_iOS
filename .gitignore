@@ -99,7 +99,8 @@ Gemfile.lock
 
 
 # heresdk dependencies
-Dependencies/HERE
 heresdk.framework
 heresdk.framework.zip
+*heresdk.framework
+*heresdk.framework.zip
 */heresdk.framework/Info.plist

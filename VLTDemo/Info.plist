@@ -17,22 +17,27 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(MARKETING_VERSION)</string>
+	<string>1.4.2</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>HERECredentials</key>
 	<dict>
 		<key>AccessKeyId</key>
-		<string>&lt;-- Enter HERE credentials here, contact Customer Success for your key </string>
+		<string>----- Place your HERE Credential's AccessKeyId here. Please contact customer success for your key. -----</string>
 		<key>AccessKeySecret</key>
-		<string>&lt;-- Enter HERE credentials here, contact Customer Success for your key </string>
+		<string>----- Place your HERE Credential's AccessKeySecret here. Please contact customer success for your key. -----</string>
 	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Do we have permission to access your location always and forever?</string>
+	<string>----- Update the `Always and While In Use` location description to meet your needs. Required for navigation demo to work in background. -----</string>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>VLTLocationManager</key>
+		<string>----- Update the `Request Precision Location` to meet youre needs. Required for navigation demo to work. -----</string>
+	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Do we have permission to access your location when using the application?</string>
+	<string>----- Update the `While In Use` location description to meet your needs. -----</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -79,6 +84,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>VLTApiKey</key>
-	<string>&lt;-- Enter VLTApiKey here, contact Customer Success for your key </string>
+	<string>----- Place your VLTApiKey here. Please contact customer success for your key. -----</string>
 </dict>
 </plist>

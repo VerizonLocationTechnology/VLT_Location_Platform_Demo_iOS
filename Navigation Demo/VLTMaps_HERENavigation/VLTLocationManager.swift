@@ -1,9 +1,8 @@
 //
 //  VLTLocationManager.swift
-//  VLTNavigationDemo
 //
-//  Created by Verizon Location Technology.
-//  Copyright © 2020 Verizon Location Technology. All rights reserved.
+// Created by Verizon Location Technology
+// Copyright © 2020 Verizon Location Technology
 //
 
 import CoreLocation
@@ -64,6 +63,11 @@ class VLTLocationManager: NSObject,
                 debugPrint("--*-- VLTLocationManager - Initial location: \(newLocation.coordinate.latitude) | \(newLocation.coordinate.longitude)")
             }
         }
+    }
+    
+    @available(iOS 14.0, *)
+    var accuracyAuthorization: CLAccuracyAuthorization {
+        return clLocationManager.accuracyAuthorization
     }
 
     /// Conformance to MGLLocationManager - relay's location info back to move the blue dot properly on the map.
@@ -207,7 +211,7 @@ extension VLTLocationManager {
         }
         return CLLocationManager.authorizationStatus()
     }
-
+   
     var headingOrientation: CLDeviceOrientation {
         get {
             return clLocationManager.headingOrientation
@@ -239,9 +243,14 @@ extension VLTLocationManager {
     func stopUpdatingHeading() {
         clLocationManager.stopUpdatingHeading()
     }
-
+    
     func dismissHeadingCalibrationDisplay() {
         clLocationManager.dismissHeadingCalibrationDisplay()
+    }
+    
+    @available(iOS 14.0, *)
+    func requestTemporaryFullAccuracyAuthorization(withPurposeKey purposeKey: String) {
+        clLocationManager.requestTemporaryFullAccuracyAuthorization(withPurposeKey: purposeKey)
     }
 }
 
@@ -261,7 +270,7 @@ extension VLTLocationManager {
             lastKnownLocation = location
         }
     }
-
+    
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
         case .restricted:
@@ -270,8 +279,16 @@ extension VLTLocationManager {
             debugPrint("--*-- VLTLocationManager - Native location services denied by user in device settings")
         case .notDetermined:
             debugPrint("--*-- VLTLocationManager - Native location services notDetermined by user in device settings")
-        case .authorizedWhenInUse, .authorizedAlways:
-            debugPrint("--*-- VLTLocationManager - Native location services authorized by user.")
+        case .authorizedWhenInUse:
+             debugPrint("--*-- VLTLocationManager - Native location services when is use authorized by user.")
+        case .authorizedAlways:
+            debugPrint("--*-- VLTLocationManager - Native location services always authorized by user.")
+            if #available(iOS 14.0, *) {
+                if manager.accuracyAuthorization == .reducedAccuracy {
+                    debugPrint("--*-- VLTLocationManager - Native location services asking for full accuracy.")
+                    requestTemporaryFullAccuracyAuthorization(withPurposeKey: "VLTLocationManager")
+                }
+            }
         @unknown default:
             fatalError("--*-- VLTLocationManager - Unknown location authorization status.")
         }
